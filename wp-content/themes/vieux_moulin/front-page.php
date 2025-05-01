@@ -1,18 +1,18 @@
-<?php get_header(); ?>
+<?php
+/* Template Name: Accueil */
+get_header();
+$title = get_field('titre_section_decouvrir');
+$desc = get_field('description_decouvrir');
+$img = get_field('image_decouvrir');
+$link = get_field('lien_decouvrir');
+?>
 
-    <aside>
-        <h2>Bienvenue sur mon site&nbsp;!</h2>
-    </aside>
-    <?php
-    // On ouvre "la boucle" (The loop), la structure de contrôle de contenu propre à WordPress:
-    if(have_posts()): while (have_posts()): the_post(); ?>
 
-        <div><?= get_the_content(); ?></div>
-
-    <?php
-        // On ferme "la boucle" (The loop)
-    endwhile; else: ?>
-        <p>La page est vide.</p>
-    <?php endif; ?>
+    <section>
+        <h2><?= $title ?></h2>
+        <p><?= $desc ?></p>
+        <img src="<?= $img['url'] ?>" alt="<?= $img['alt'] ?>">
+        <a href="<?=$link['url']  ?>"><?= $link['title'] ?></a>
+    </section>
 
     <?php get_footer(); ?>
