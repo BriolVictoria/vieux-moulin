@@ -73,3 +73,23 @@ function dw_get_navigation_links(string $location): array
     return $links;
 
 }
+
+
+// Activer l'utilisation des vignettes (images de couverture) sur nos post_type
+add_theme_support('post-thumbnails', ['foyer']);
+
+
+// Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
+// avec un identifint spécifique dans la colonne "post_type"
+
+register_post_type('foyer', [
+    'label' => 'Foyers',
+    'description' => 'Listes représentant mes foyers',
+    'menu_position' => 2,
+    'menu_icon' => 'dashicons-admin-home',
+    'public' => true,
+    'rewrite' => [
+        'slug' => 'foyer'
+    ],
+    'supports' => ['title', 'thumbnail', 'editor'],
+]);

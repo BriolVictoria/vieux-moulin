@@ -29,6 +29,13 @@ $titre_section_projets = get_field('titre_section_projets');
 $description_projets = get_field('description_projets');
 $image_projets = get_field('image_projets');
 $bouton_projets = get_field('bouton_projets');
+
+$foyers = new WP_Query([
+    'post_type' => 'foyer',
+    'order' => 'DESC',
+    'orderby' => 'date',
+    'posts_per_page' => 2,
+]);
 ?>
 
 <section class="decouvrir">
@@ -48,6 +55,24 @@ $bouton_projets = get_field('bouton_projets');
 
 <section class="foyer">
     <h2 class="titre_foyer"><?= $titre_section_foyer ?></h2>
+
+    <?php if($foyers->have_posts()): while($foyers->have_posts()): $foyers->the_post(); ?>
+        <article class="projet">
+
+            <div class="projet_card">
+                <figure class="trip_fig">
+                    <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'trip_img']); ?>
+                </figure>
+                <header class="projet_head">
+                    <h3 class="projet_title"><strong class="soulignement_carte_par_projet"><?= get_the_title(); ?></strong></h3>
+                </header>
+                <p class="description_projet"><?= get_the_excerpt() ?></p>
+            </div>
+        </article>
+    <?php endwhile; else: ?>
+        <p>Je n'ai pas de voyages récents à montrer pour le moment...</p>
+    <?php endif; ?>
+
     <a class="bouton_foyer" href="<?= $bouton_foyer['url'] ?>"><?= $bouton_foyer['title'] ?></a>
 </section>
 
