@@ -21,6 +21,35 @@ $image_soutient = get_field('image_soutient');
 
 ?>
 
+<section>
+    <img src="<?= $image_vieuxmoulin['url'] ?>" alt="<?= $image_vieuxmoulin['alt'] ?>">
+    <h2><?= $titre_section_vieuxmoulin ?></h2>
+</section>
+
+<section>
+    <h2><?= $titre_infromation ?></h2>
+    <p><?= $description_infromation ?></p>
+</section>
+
+<section>
+    <h2><?= $titre_video ?></h2>
+</section>
+
+<section>
+    <h2><?= $titre_section_foyer?></h2>
+    <a href="<?= $bouton_foyer['url'] ?>"><?= $bouton_foyer['title'] ?></a>
+</section>
+
+<section>
+    <h2><?= $titre_information ?></h2>
+    <p><?= $description_information ?></p>
+</section>
+
+<section>
+    <h2><?= $titre_soutient ?></h2>
+    <img src="<?= $image_soutient['url'] ?>" alt="<?= $image_soutient['alt'] ?>">
+    <img src="<?= $image_soutient['url'] ?>" alt="<?= $image_soutient['alt'] ?>">
+</section>
 
 
 <?php get_footer(); ?>

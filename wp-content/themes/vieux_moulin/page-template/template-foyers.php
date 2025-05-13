@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Nous soutenir */
+/* Template Name: Nos foyers */
 get_header();
 
 $titre_foyer = get_field('titre_foyer');
@@ -12,11 +12,26 @@ $bouton_maison = get_field('bouton_maison');
 
 $image_encadrement = get_field('image_encadrement');
 $titre_encadrement = get_field('titre_encadrement');
-$titre_section_foyer = get_field('titre_section_foyer');
 $description_encadrement = get_field('description_encadrement');
 
 ?>
 
+<section>
+    <h2><?= $titre_foyer ?></h2>
+    <p><?= $description_foyer ?></p>
+    <img src="<?= $image_foyer['url'] ?>" alt="<?= $image_foyer['title'] ?>">
+</section>
 
+<section>
+    <h2><?= $titre_maison ?></h2>
+    <img src="<?= $image_maison['url'] ?>" alt="<?= $image_maison['title'] ?>">
+    <a href="<?= $bouton_maison['url'] ?>"><?= $bouton_maison['title'] ?></a>
+</section>
+
+<section>
+    <h2><?= $titre_encadrement ?></h2>
+    <p><?=$description_encadrement?></p>
+    <img src="<?= $image_encadrement['url'] ?>" alt="<?= $image_encadrement['alt'] ?>">
+</section>
 
 <?php get_footer(); ?>
