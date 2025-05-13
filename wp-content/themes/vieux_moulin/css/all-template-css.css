@@ -2,6 +2,8 @@
 
 @import url('header.css');
 @import url('footer.css');
+@import url('front-page.css');
+
 
 
 /*Variables pour les couleurs*/
@@ -10,7 +12,13 @@
     --header-background: #fff;
     --black-color: #111;
     --white-color: #fff;
-    --background-color-soutient: #F55C7A;
+    --pink-color: #F55C7A;
+    --decouvrir-background-color: #E0F0E7;
+    --extra-decouvrir-background-color: #B7D8CA;
+    --benevolat-background-color: #E0CEFF;
+    --extra-benevolat-background-color: #B7D8CA;
+    --pink-light-color: #FFD2CE;
+    --pink-darker-color: #FFA69E;
 }
 
 .sr-only {

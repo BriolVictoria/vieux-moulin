@@ -1,0 +1,188 @@
+.decouvrir {
+    background-color:var(--decouvrir-background-color) ;
+    display: flex;
+}
+
+.image_decouvrir {
+    width: 495px;
+    border-radius: 15px;
+    margin-top: 119px;
+    margin-left: 74px;
+    margin-bottom: 118px;
+}
+
+.titre_decouvrir {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 163px;
+    margin-left: 48px;
+}
+
+.description_decouvrir {
+    font-size: 16px;
+    font-weight: 400;
+    width: 52.1%;
+    margin-top: 26px;
+    margin-left: 48px;
+    margin-bottom: 26px;
+}
+
+.bouton_decouvrir {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--extra-decouvrir-background-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    margin-top: 26px;
+    margin-left: 48px;
+}
+
+.decouvrir_container {
+    display: inline-block;
+}
+
+.titre_actualite, .titre_foyer, .titre_partenaires, .titre_famille {
+    display: flex;
+    font-size: 28px;
+    font-weight: 700;
+    justify-content: center;
+    letter-spacing: 3.9px;
+}
+
+.bouton_actualite, .bouton_partenaires {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--pink-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+}
+
+.bouton_foyer {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--extra-decouvrir-background-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    margin-bottom: 113px;
+}
+
+
+.benevolat {
+    background-color:var(--benevolat-background-color);
+    display: flex;
+}
+
+.titre_benevolat {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 117px;
+    margin-left: 237px;
+}
+
+
+
+.description_benevolat {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 26px;
+    margin-left: 237px;
+    width: 51.7%;
+}
+
+.image_benevolat {
+    width: 495px;
+    border-radius: 15px;
+    margin-top: 119px;
+    margin-right: 78px;
+    margin-bottom: 118px;
+}
+
+.benevolat_container {
+    display: inline-block;
+}
+
+.benevolat_container {
+    display: inline-block;
+}
+
+.famille_container {
+    display: inline-block;
+}
+
+.image_famille {
+    width: 495px;
+    border-radius: 15px;
+    margin-left: 237px;
+    margin-top: 26px;
+}
+
+.description_famille {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 48px;
+    margin-top: 58px;
+    width: 28.6%;
+}
+
+.bouton_famille {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--extra-decouvrir-background-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    margin-top: 26px;
+    margin-left: 48px;
+}
+
+.projet {
+    background-color:var(--pink-light-color) ;
+    display: flex;
+}
+
+.titre_projet {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 157px;
+    margin-left: 237px;
+}
+
+.description_projet {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 26px;
+    margin-left: 237px;
+    width: 51.7%;
+    margin-bottom: 26px;
+}
+
+.projet_container {
+    display: inline-block;
+}
+
+.image_projet {
+    width: 495px;
+    border-radius: 15px;
+    margin-top: 119px;
+    margin-right: 78px;
+    margin-bottom: 118px;
+}
+
+.bouton_projet {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--pink-darker-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    margin-top: 26px;
+    margin-left: 237px;
+}

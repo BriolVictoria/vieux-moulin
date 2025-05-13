@@ -32,45 +32,55 @@ $bouton_projets = get_field('bouton_projets');
 ?>
 
 <section class="decouvrir">
-    <h2 class="titre_decouvrir"><?= $titre_section_decouvrir ?></h2>
-    <p class="description_decouvrir"><?=$description_decouvrir?></p>
     <img class="image_decouvrir" src="<?= $image_decouvrir['url'] ?>" alt="<?= $image_decouvrir['alt'] ?>">
-    <a class="bouton_decouvrir" href="<?= $bouton_decouvrir['url'] ?>"><?= $bouton_decouvrir['title'] ?></a>
+    <div class="decouvrir_container">
+        <h2 class="titre_decouvrir"><?= $titre_section_decouvrir ?></h2>
+        <p class="description_decouvrir"><?= $description_decouvrir ?></p>
+        <a class="bouton_decouvrir" href="<?= $bouton_decouvrir['url'] ?>"><?= $bouton_decouvrir['title'] ?></a>
+
+    </div>
 </section>
 
-<section>
-    <h2><?= $titre_actualite?></h2>
-    <a href="<?= $bouton_actualite['url'] ?>"><?= $bouton_actualite['title'] ?></a>
+<section class="actualite">
+    <h2 class="titre_actualite"><?= $titre_actualite ?></h2>
+    <a class="bouton_actualite" href="<?= $bouton_actualite['url'] ?>"><?= $bouton_actualite['title'] ?></a>
 </section>
 
-<section>
-    <h2><?= $titre_section_foyer?></h2>
-    <a href="<?= $bouton_foyer['url'] ?>"><?= $bouton_foyer['title'] ?></a>
+<section class="foyer">
+    <h2 class="titre_foyer"><?= $titre_section_foyer ?></h2>
+    <a class="bouton_foyer" href="<?= $bouton_foyer['url'] ?>"><?= $bouton_foyer['title'] ?></a>
 </section>
 
-<section>
-    <h2><?= $titre_section_benevolat ?></h2>
-    <p><?=$description_benevolat?></p>
-    <img src="<?= $image_benevolat['url'] ?>" alt="<?= $image_benevolat['alt'] ?>">
+<section class="benevolat">
+    <div class="benevolat_container">
+        <h2 class="titre_benevolat"><?= $titre_section_benevolat ?></h2>
+        <p class="description_benevolat"><?= $description_benevolat ?></p>
+    </div>
+    <img class="image_benevolat" src="<?= $image_benevolat['url'] ?>" alt="<?= $image_benevolat['alt'] ?>">
 </section>
 
-<section>
-    <h2><?= $titre_section_partenaires?></h2>
-    <a href="<?= $bouton_partenaire['url'] ?>"><?= $bouton_partenaire['title'] ?></a>
+<section class="partenaires">
+    <h2 class="titre_partenaires"><?= $titre_section_partenaires ?></h2>
+    <a class="bouton_partenaires" href="<?= $bouton_partenaire['url'] ?>"><?= $bouton_partenaire['title'] ?></a>
 </section>
 
-<section>
-    <h2><?= $titre_section_famille ?></h2>
-    <p><?=$description_famille?></p>
-    <img src="<?= $image_famille['url'] ?>" alt="<?= $image_famille['alt'] ?>">
-    <a href="<?= $bouton_famille['url'] ?>"><?= $bouton_famille['title'] ?></a>
+<section class="famille">
+    <h2 class="titre_famille"><?= $titre_section_famille ?></h2>
+    <img class="image_famille" src="<?= $image_famille['url'] ?>" alt="<?= $image_famille['alt'] ?>">
+    <div class="famille_container">
+        <p class="description_famille"><?= $description_famille ?></p>
+        <a class="bouton_famille" href="<?= $bouton_famille['url'] ?>"><?= $bouton_famille['title'] ?></a>
+    </div>
 </section>
 
-<section>
-    <h2><?= $titre_section_projets ?></h2>
-    <p><?=$description_projets?></p>
-    <img src="<?= $image_projets['url'] ?>" alt="<?= $image_projets['alt'] ?>">
-    <a href="<?= $bouton_projets['url'] ?>"><?= $bouton_projets['title'] ?></a>
+<section class="projet">
+    <div class="projet_container">
+        <h2 class="titre_projet"><?= $titre_section_projets ?></h2>
+        <p class="description_projet"><?= $description_projets ?></p>
+        <a class="bouton_projet" href="<?= $bouton_projets['url'] ?>"><?= $bouton_projets['title'] ?></a>
+    </div>
+    <img class="image_projet" src="<?= $image_projets['url'] ?>" alt="<?= $image_projets['alt'] ?>">
+
 </section>
 
 <?php get_footer(); ?>
