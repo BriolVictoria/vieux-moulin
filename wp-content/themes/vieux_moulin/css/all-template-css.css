@@ -8,6 +8,8 @@
 
 :root {
     --header-background: #fff;
+    --black-color: #111;
+    --white-color: #fff;
 }
 
 .sr-only {
@@ -29,7 +31,7 @@
 @font-face {
     font-family: "Montserrat";
     src: url(../fonts/Montserrat/static/Montserrat-Light.ttf) format("truetype");
-    font-weight: 400;
+    font-weight: 300;
 }
 
 @font-face {
@@ -41,7 +43,7 @@
 @font-face {
     font-family: "Montserrat";
     src: url(../fonts/Montserrat/static/Montserrat-Bold.ttf) format("truetype");
-    font-weight: 400;
+    font-weight: 500;
 }
 
 @font-face {

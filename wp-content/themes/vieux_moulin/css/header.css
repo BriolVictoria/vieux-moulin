@@ -7,3 +7,47 @@ body {
     padding: 0;
     font-family: Montserrat, sans serif;
 }
+
+.top_header {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo_header {
+    display: flex;
+    width: 119px;
+    justify-content: flex-start;
+    margin-left: 18px;
+}
+
+a.titre_header {
+    color: var(--black-color);
+    font-size: 28px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 503px;
+}
+
+hr {
+    height: 1px; /*demander*/
+    background-color: var(--black-color);
+    width: 100%;
+    border: 0.3px;
+}
+
+.lien_navigation_header  {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.lien {
+    display: inline;
+    margin-left: 33px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.lien:first-child {
+    margin-left: 347px;
+}

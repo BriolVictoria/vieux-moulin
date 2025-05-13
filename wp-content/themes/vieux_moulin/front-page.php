@@ -31,11 +31,11 @@ $image_projets = get_field('image_projets');
 $bouton_projets = get_field('bouton_projets');
 ?>
 
-<section>
-    <h2><?= $titre_section_decouvrir ?></h2>
-    <p><?=$description_decouvrir?></p>
-    <img src="<?= $image_decouvrir['url'] ?>" alt="<?= $image_decouvrir['alt'] ?>">
-    <a href="<?= $bouton_decouvrir['url'] ?>"><?= $bouton_decouvrir['title'] ?></a>
+<section class="decouvrir">
+    <h2 class="titre_decouvrir"><?= $titre_section_decouvrir ?></h2>
+    <p class="description_decouvrir"><?=$description_decouvrir?></p>
+    <img class="image_decouvrir" src="<?= $image_decouvrir['url'] ?>" alt="<?= $image_decouvrir['alt'] ?>">
+    <a class="bouton_decouvrir" href="<?= $bouton_decouvrir['url'] ?>"><?= $bouton_decouvrir['title'] ?></a>
 </section>
 
 <section>
