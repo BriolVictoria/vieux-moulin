@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Montserrat, sans serif;
+    overflow-x: hidden;
 }
 
 .top_header {
@@ -24,16 +25,19 @@ body {
 a.titre_header {
     color: var(--black-color);
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
     margin-left: 503px;
+    letter-spacing: 4.8px;
 }
 
 hr {
+    display: block;
     height: 1px; /*demander*/
     background-color: var(--black-color);
     width: 100%;
-    border: 0.3px;
+    border: none;
+    margin-bottom: 20px;
 }
 
 .lien_navigation_header  {
@@ -46,13 +50,15 @@ hr {
     margin-left: 33px;
     font-size: 18px;
     font-weight: 400;
+    margin-top: 12px;
 }
 
 .lien:first-child {
     margin-left: 431.0px;
+
 }
 
-.lien:last-child {
+.lien:last-child  a{
     font-weight: 600;
     background-color: var(--pink-color);
     color: var(--white-color);

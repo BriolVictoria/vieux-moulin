@@ -1,0 +1,34 @@
+.logo_footer {
+    width: 119px;
+    margin-top: 22px;
+    margin-left: 18px;
+}
+
+.asbl_footer {
+    margin-top: 26px;
+    margin-left: 18px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer > section {
+    flex: 1;
+    min-width: 220px;
+}
+
+.navigation_footer {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.lien_navigation_footer {
+    text-decoration: none;
+    color: var(--black-color);
+}

@@ -1,6 +1,8 @@
 .decouvrir {
     background-color:var(--decouvrir-background-color) ;
     display: flex;
+    position: relative;
+    margin-top: 12px;
 }
 
 .image_decouvrir {
@@ -9,6 +11,8 @@
     margin-top: 119px;
     margin-left: 74px;
     margin-bottom: 118px;
+    position: relative;
+    z-index: 2;
 }
 
 .titre_decouvrir {
@@ -43,12 +47,56 @@
     display: inline-block;
 }
 
+.one_line_image_decouvrir {
+    width: 484px;
+    position: absolute;
+    top: 0; /* ajuste selon où tu veux la placer */
+    right: 0; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+.back_image_decouvrir {
+    position: absolute;
+    top: 65.8px;
+    left: -44.2px;
+    width: 413px;
+    border-radius: 32px;
+    aspect-ratio: 306 / 248; /*// pour faire un carrée sans utiliser heifht*/
+    background-color: var(--extra-decouvrir-background-color);
+    z-index: 2;
+}
+
 .titre_actualite, .titre_foyer, .titre_partenaires, .titre_famille {
-    display: flex;
+    text-align: center;
     font-size: 28px;
     font-weight: 700;
-    justify-content: center;
     letter-spacing: 3.9px;
+    margin: 0;
+}
+
+.titre_soulignement_actualite {
+    display: inline-block;
+    border-bottom: 3px solid var(--pink-color);
+    padding-bottom: 5px;
+}
+
+.titre_soulignement_foyer {
+    display: inline-block;
+    border-bottom: 3px solid var(--decouvrir-background-color);
+    padding-bottom: 5px;
+}
+
+.titre_soulignement_famille {
+    display: inline-block;
+    border-bottom: 3px solid var(--decouvrir-background-color);
+    padding-bottom: 5px;
+}
+
+
+.titre_soulignement_partenaires {
+    display: inline-block;
+    border-bottom: 3px solid var(--pink-color);
+    padding-bottom: 5px;
 }
 
 .bouton_actualite, .bouton_partenaires {
@@ -76,16 +124,17 @@
 .benevolat {
     background-color:var(--benevolat-background-color);
     display: flex;
+    align-items: center; /* centre verticalement */
+    justify-content: center; /* centre horizontalement */
+    gap: 50px; /* espace entre texte et image, optionnel */
+    padding: 50px 0; /* pour un peu d'espace autour */
 }
 
 .titre_benevolat {
     font-size: 28px;
     font-weight: 700;
-    margin-top: 117px;
     margin-left: 237px;
 }
-
-
 
 .description_benevolat {
     font-size: 16px;
@@ -101,18 +150,37 @@
     margin-top: 119px;
     margin-right: 78px;
     margin-bottom: 118px;
+    z-index: 2;
 }
 
 .benevolat_container {
     display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.benevolat_container {
-    display: inline-block;
+.one_line_image_benevolat {
+    width: 301px;
+    position: absolute;
+    top: 890.4px; /* ajuste selon où tu veux la placer */
+    right: 1328.8px; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+.back_image_benevolat {
+    position: absolute;
+    top: 991px;
+    left: 1264.5px;
+    width: 351.8px;
+    border-radius: 32px 0 0 0;
+    aspect-ratio: 306 / 248; /*// pour faire un carrée sans utiliser heifht*/
+    background-color: var(--extra-benevolat-background-color);
+    z-index: 1;
 }
 
 .famille_container {
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 .image_famille {
@@ -127,7 +195,7 @@
     font-weight: 400;
     margin-left: 48px;
     margin-top: 58px;
-    width: 28.6%;
+    width: 56.8%;
 }
 
 .bouton_famille {
@@ -174,6 +242,14 @@
     margin-bottom: 118px;
 }
 
+.one_line_image_projet {
+    width: 332px;
+    position: absolute;
+    top: 2228.8px; /* ajuste selon où tu veux la placer */
+    right: 1308.1px; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
 .bouton_projet {
     color: var(--black-color);
     text-decoration: none;
@@ -185,3 +261,10 @@
     margin-top: 26px;
     margin-left: 237px;
 }
+
+.projet {
+    background-color:var(--pink-light-color);
+    display: flex;
+    margin-top: 113px;
+}
+
