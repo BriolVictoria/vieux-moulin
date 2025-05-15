@@ -262,7 +262,7 @@
 .one_line_image_benevolat {
     width: 301px;
     position: absolute;
-    top: 890.4px; /* ajuste selon où tu veux la placer */
+    top: 2462.3px; /* ajuste selon où tu veux la placer */
     right: 1328.8px; /* ou left, selon ton design */
     z-index: 1; /* si besoin de la superposer à autre chose */
 }
@@ -313,7 +313,7 @@
 .one_line_image_famille {
     width: 345px;
     position: absolute;
-    top: 1974.4px; /* ajuste selon où tu veux la placer */
+    top: 4153.4px; /* ajuste selon où tu veux la placer */
     right: -0.5px; /* ou left, selon ton design */
     z-index: 1; /* si besoin de la superposer à autre chose */
 }
@@ -353,7 +353,7 @@
 .one_line_image_projet {
     width: 332px;
     position: absolute;
-    top: 2228.8px; /* ajuste selon où tu veux la placer */
+    top: 4430.4px; /* ajuste selon où tu veux la placer */
     right: 1308.1px; /* ou left, selon ton design */
     z-index: 1; /* si besoin de la superposer à autre chose */
 }
