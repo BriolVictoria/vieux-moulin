@@ -87,6 +87,10 @@
     flex-direction: column;
 }
 
+.foyer_post:first-child img{
+    margin-left: 237px;
+}
+
 .foyer_post {
     display: flex;
 }
@@ -96,6 +100,7 @@
     border-bottom: 3px solid var(--decouvrir-background-color);
     padding-bottom: 5px;
     margin-top: 113px;
+    margin-bottom: 26px;
 }
 
 .foyer_img {
@@ -103,11 +108,6 @@
     border: var(--decouvrir-background-color) 6.5px solid;
     margin-left: 374px;
     width: 321px;
-}
-
-.bouton_foyer {
-    margin-left: 832.6px;
-    margin-top: 26px;
 }
 
 .foyer_title {
@@ -216,6 +216,7 @@
     padding: 9px 27.5px;
     border-radius: 15px;
     margin-bottom: 113px;
+    margin-top: 26px;
 }
 
 
@@ -268,7 +269,7 @@
 
 .back_image_benevolat {
     position: absolute;
-    top: 991px;
+    top: 2559.5px;
     left: 1264.5px;
     width: 351.8px;
     border-radius: 32px 0 0 0;

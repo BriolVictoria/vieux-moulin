@@ -125,7 +125,10 @@ $partenaires = new WP_Query([
 
     </div>
 
-    <a class="bouton_foyer" href="<?= $bouton_foyer['url'] ?>"><?= $bouton_foyer['title'] ?></a>
+    <div class="bouton_container">
+        <a class="bouton_foyer" href="<?= $bouton_foyer['url'] ?>"><?= $bouton_foyer['title'] ?></a>
+    </div>
+
 </section>
 
 <section class="benevolat">
