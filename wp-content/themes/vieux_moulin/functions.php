@@ -24,13 +24,64 @@ add_action('wp_enqueue_scripts', function () {
     wp_dequeue_style('global-styles');
 }, 20);
 
+//debut postType
+// Activer l'utilisation des vignettes (images de couverture) sur nos post_type
+add_theme_support('post-thumbnails', ['actualite']);
+
+
+// Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
+// avec un identifint spécifique dans la colonne "post_type"
+
+register_post_type('actualite', [
+    'label' => 'Actualites',
+    'description' => 'Listes représentant mes actualités',
+    'menu_position' => 2,
+    'menu_icon' => 'dashicons-email-alt',
+    'public' => true,
+    'rewrite' => [
+        'slug' => 'actualite'
+    ],
+    'supports' => ['title', 'thumbnail', 'editor', 'excerpt'],
+]);
+
+
+// Activer l'utilisation des vignettes (images de couverture) sur nos post_type
+add_theme_support('post-thumbnails', ['foyer']);
+
+
+// Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
+// avec un identifint spécifique dans la colonne "post_type"
+
+register_post_type('foyer', [
+    'label' => 'Foyers',
+    'description' => 'Listes représentant mes foyers',
+    'menu_position' => 2,
+    'menu_icon' => 'dashicons-admin-home',
+    'public' => true,
+    'rewrite' => [
+        'slug' => 'foyer'
+    ],
+    'supports' => ['title', 'thumbnail', 'editor'],
+]);
+
+
+//fin postType
+
+
+//fonction dd
+
+
 function dd($value)
 {
     var_dump($value);
     die();
 }
 
+//fin fonction dd
 
+
+
+//fonction  pour la navigation
 function register_my_menus() {
     register_nav_menus([
         'header-menu' => 'Menu principal',
@@ -74,22 +125,4 @@ function dw_get_navigation_links(string $location): array
 
 }
 
-
-// Activer l'utilisation des vignettes (images de couverture) sur nos post_type
-add_theme_support('post-thumbnails', ['foyer']);
-
-
-// Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
-// avec un identifint spécifique dans la colonne "post_type"
-
-register_post_type('foyer', [
-    'label' => 'Foyers',
-    'description' => 'Listes représentant mes foyers',
-    'menu_position' => 2,
-    'menu_icon' => 'dashicons-admin-home',
-    'public' => true,
-    'rewrite' => [
-        'slug' => 'foyer'
-    ],
-    'supports' => ['title', 'thumbnail', 'editor'],
-]);
+//fin fonction  pour la navigation

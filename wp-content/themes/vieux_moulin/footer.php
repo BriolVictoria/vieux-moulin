@@ -10,7 +10,7 @@
 
         <section>
             <div class="contacter">
-                <h2>Nous contacter</h2>
+                <h2 class="soulignement_footer">Nous contacter</h2>
                 <p>063/60.11.50</p>
                 <p>srglevieuxmoulin@levm.be</p>
                 <p>Rue des Vennes, n°1 Strainchamps 6637 <br>Fauvillers</p>
@@ -20,7 +20,7 @@
 
         <section>
             <div class="navigation">
-                <h2>Navigation</h2>
+                <h2 class="soulignement_footer">Navigation</h2>
                 <ul class="navigation_footer">
                     <?php foreach (dw_get_navigation_links('footer-menu') as $link): ?>
                         <li class="lien_footer">

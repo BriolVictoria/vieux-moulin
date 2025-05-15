@@ -32,3 +32,8 @@
     text-decoration: none;
     color: var(--black-color);
 }
+
+.soulignement_footer {
+    display: inline-block;
+    border-bottom: 3px solid var(--pink-color);
+}
