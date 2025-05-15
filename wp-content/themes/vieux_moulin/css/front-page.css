@@ -210,6 +210,14 @@
     margin-left: 48px;
 }
 
+.one_line_image_famille {
+    width: 345px;
+    position: absolute;
+    top: 1974.4px; /* ajuste selon où tu veux la placer */
+    right: -0.5px; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
 .projet {
     display: flex;
 }

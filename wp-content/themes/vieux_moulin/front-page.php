@@ -26,6 +26,7 @@ $titre_section_famille = get_field('titre_section_famille');
 $description_famille = get_field('description_famille');
 $bouton_famille = get_field('bouton_famille');
 $image_famille = get_field('image_famille');
+$one_line_image_famille = get_field('one_line_image_famille');
 
 $titre_section_projets = get_field('titre_section_projets');
 $description_projets = get_field('description_projets');
@@ -88,6 +89,7 @@ $one_line_image_projet = get_field('one_line_image_projet');
         <span class="titre_soulignement_famille"><?= $titre_section_famille ?></span>
     </h2>
     <div class="famille_container">
+        <img class="one_line_image_famille" src="<?= $one_line_image_famille['url'] ?>" alt="<?= $one_line_image_famille['alt'] ?>">
         <img class="image_famille" src="<?= $image_famille['url'] ?>" alt="<?= $image_famille['alt'] ?>">
         <div class="contenu_famille">
             <p class="description_famille"><?= $description_famille ?></p>
