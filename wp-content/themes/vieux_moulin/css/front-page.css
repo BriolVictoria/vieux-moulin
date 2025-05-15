@@ -81,6 +81,16 @@
     margin-top: 113px;
 }
 
+.foyer_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.foyer_post {
+    display: flex;
+}
+
 .titre_soulignement_foyer {
     display: inline-block;
     border-bottom: 3px solid var(--decouvrir-background-color);
@@ -88,60 +98,62 @@
     margin-top: 113px;
 }
 
-.foyer_fig {
-    border: var(--decouvrir-background-color) 6.5px solid;
-    width: 18.5%;
-    border-radius: 15px;
-}
-
-.foyer_container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
-}
-
-.foyer_post {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    max-width: 900px;
-    margin-top: 0 auto;
-    flex-wrap: wrap;
-}
-
 .foyer_img {
     border-radius: 15px;
+    border: var(--decouvrir-background-color) 6.5px solid;
+    margin-left: 374px;
+    width: 321px;
+}
+
+.bouton_foyer {
+    margin-left: 832.6px;
+    margin-top: 26px;
 }
 
 .foyer_title {
     font-size: 28px;
     font-weight: 600;
-    margin-left: 745px;
+    margin-left: 48px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.foyer_head {
+    display: inline-block;
 }
 
 .description_foyer {
     font-size: 16px;
     font-weight: 500;
     margin-top: 26px;
-    margin-left: 745px;
-    width: 34.4%;
+    margin-left: 48px;
+    width: 57.9%;
 }
 
 .titre_soulignement_famille {
     display: inline-block;
     border-bottom: 3px solid var(--decouvrir-background-color);
     padding-bottom: 5px;
+    margin-top: 113px;
+
 }
 
+
+.foyer_content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
 .titre_soulignement_partenaires {
     display: inline-block;
     border-bottom: 3px solid var(--pink-color);
     padding-bottom: 5px;
+    margin-top: 113px;
 }
 
-.bouton_actualite, .bouton_partenaires {
+.bouton_actualite {
     color: var(--black-color);
     text-decoration: none;
     font-size: 20px;
@@ -151,18 +163,18 @@
     border-radius: 15px;
 }
 
-.actualite_fig {
+.actualite_fig, .partenaire_fig {
     background-color: var(--pink-color);
     width: 75%;
     padding: 19px;
     border-radius: 15px;
 }
 
-.actualite_img {
+.actualite_img, .partenaire_img {
     border-radius: 15px;
 }
 
-.actualite_title {
+.actualite_title, .partenaire_title {
     font-size: 28px;
     font-weight: 500;
     margin: 10px 0 5px;
@@ -174,7 +186,7 @@
     margin-top: 0;
 }
 
-.actualite_container {
+.actualite_container, .partenaire_container {
     display: flex;
     justify-content: center;
     gap: 48px;
@@ -187,7 +199,7 @@
     justify-content: center;
 }
 
-.actualite_post {
+.actualite_post, .partenaire_post {
     max-width: 300px;
     text-align: center;
     display: flex;
@@ -214,6 +226,7 @@
     justify-content: center; /* centre horizontalement */
     gap: 50px; /* espace entre texte et image, optionnel */
     padding: 50px 0; /* pour un peu d'espace autour */
+    margin-top: 113px;
 }
 
 .titre_benevolat {

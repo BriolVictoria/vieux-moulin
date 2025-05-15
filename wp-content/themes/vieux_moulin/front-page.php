@@ -48,6 +48,13 @@ $foyers = new WP_Query([
     'posts_per_page' => 2,
 ]);
 
+$partenaires = new WP_Query([
+    'post_type' => 'partenaire',
+    'order' => 'DESC',
+    'orderby' => 'date',
+    'posts_per_page' => 3,
+]);
+
 ?>
 
 <section class="decouvrir">
@@ -103,14 +110,19 @@ $foyers = new WP_Query([
                 <figure class="foyer_fig">
                     <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'foyer_img']); ?>
                 </figure>
-                <header class="foyer_head">
-                    <h3 class="foyer_title"><?= get_the_title(); ?></h3>
-                </header>
-                <p class="description_foyer"><?= get_the_excerpt() ?></p>
+
+                <!-- Bloc texte -->
+                <div class="foyer_content">
+                    <header class="foyer_head">
+                        <h3 class="foyer_title"><?= get_the_title(); ?></h3>
+                    </header>
+                    <p class="description_foyer"><?= get_the_excerpt() ?></p>
+                </div>
             </article>
         <?php endwhile; else: ?>
             <p>Je n'ai pas d'actualités récents à montrer pour le moment...</p>
         <?php endif; ?>
+
     </div>
 
     <a class="bouton_foyer" href="<?= $bouton_foyer['url'] ?>"><?= $bouton_foyer['title'] ?></a>
@@ -130,7 +142,23 @@ $foyers = new WP_Query([
     <h2 class="titre_partenaires">
         <span class="titre_soulignement_partenaires"><?= $titre_section_partenaires ?></span>
     </h2>
-    <a class="bouton_partenaires" href="<?= $bouton_partenaire['url'] ?>"><?= $bouton_partenaire['title'] ?></a>
+
+    <div class="partenaire_container">
+
+        <?php if($partenaires->have_posts()): while($partenaires->have_posts()): $partenaires->the_post(); ?>
+            <article class="partenaire_post">
+                <figure class="partenaire_fig">
+                    <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'partenaire_img']); ?>
+                </figure>
+                <header class="partenaire_head">
+                    <h3 class="partenaire_title"><?= get_the_title(); ?></h3>
+                </header>
+            </article>
+        <?php endwhile; else: ?>
+            <p>Je n'ai pas d'actualités récents à montrer pour le moment...</p>
+        <?php endif; ?>
+    </div>
+
 </section>
 
 <section class="famille">

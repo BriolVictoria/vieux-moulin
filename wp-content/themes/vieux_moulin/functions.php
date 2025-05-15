@@ -65,6 +65,26 @@ register_post_type('foyer', [
 ]);
 
 
+// Activer l'utilisation des vignettes (images de couverture) sur nos post_type
+add_theme_support('post-thumbnails', ['partenaire']);
+
+
+// Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
+// avec un identifint spécifique dans la colonne "post_type"
+
+register_post_type('partenaire', [
+    'label' => 'Partenaires',
+    'description' => 'Listes représentant mes partenaires',
+    'menu_position' => 2,
+    'menu_icon' => 'dashicons-businessman',
+    'public' => true,
+    'rewrite' => [
+        'slug' => 'partenaire'
+    ],
+    'supports' => ['title', 'thumbnail'],
+]);
+
+
 //fin postType
 
 
