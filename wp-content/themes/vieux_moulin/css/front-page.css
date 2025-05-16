@@ -1,5 +1,7 @@
+/*Découvrir*/
+
 .decouvrir {
-    background-color:var(--decouvrir-background-color) ;
+    background-color: var(--decouvrir-background-color);
     display: flex;
     position: relative;
     margin-top: 12px;
@@ -66,20 +68,9 @@
     z-index: 2;
 }
 
-.titre_actualite, .titre_foyer, .titre_partenaires, .titre_famille {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 3.9px;
-    margin: 0;
-}
+/*Fin découvrir*/
 
-.titre_soulignement_actualite {
-    display: inline-block;
-    border-bottom: 3px solid var(--pink-color);
-    padding-bottom: 5px;
-    margin-top: 113px;
-}
+/*Foyer*/
 
 .foyer_container {
     display: flex;
@@ -87,7 +78,11 @@
     flex-direction: column;
 }
 
-.foyer_post:first-child img{
+.foyer {
+    position: relative;
+}
+
+.foyer_post:first-child img {
     margin-left: 237px;
 }
 
@@ -130,6 +125,41 @@
     width: 57.9%;
 }
 
+.foyer_content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bouton_foyer {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--extra-decouvrir-background-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    margin-bottom: 113px;
+    margin-top: 26px;
+}
+
+.one_line_image_foyer {
+    width: 428px;
+    position: absolute;
+    bottom: 0; /* ajuste selon où tu veux la placer */
+    left: 0; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+/*Fin foyer*/
+
+/*Famille*/
+
+.famille {
+    position: relative;
+}
+
 .titre_soulignement_famille {
     display: inline-block;
     border-bottom: 3px solid var(--decouvrir-background-color);
@@ -138,15 +168,93 @@
 
 }
 
-
-.foyer_content {
-    flex: 2;
+.famille_container {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
 }
 
-.titre_soulignement_partenaires {
+.image_famille {
+    width: 495px;
+    border-radius: 15px;
+    margin-left: 237px;
+    margin-top: 26px;
+}
+
+.description_famille {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 48px;
+    margin-top: 58px;
+    width: 56.8%;
+    margin-bottom: 0;
+}
+
+.bouton_famille {
+    display: inline-block;
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--extra-decouvrir-background-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    margin-top: 26px;
+    margin-left: 48px;
+}
+
+.one_line_image_famille {
+    width: 345px;
+    position: absolute;
+    bottom: 0; /* ajuste selon où tu veux la placer */
+    right: 0; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+/*Fin famille*/
+
+/*Partenaire et actualité*/
+
+.titre_actualite, .titre_foyer, .titre_partenaires, .titre_famille {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 3.9px;
+    margin: 0;
+}
+
+.one_line_image_actualite {
+    width: 307px;
+    position: absolute;
+    top: 0; /* ajuste selon où tu veux la placer */
+    left: 0; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+.one_line_image_actualite_2 {
+    width: 428px;
+    position: absolute;
+    bottom: 0; /* ajuste selon où tu veux la placer */
+    right: 0; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+.one_line_image_partenaire {
+    width: 335px;
+    position: absolute;
+    top: 0; /* ajuste selon où tu veux la placer */
+    left: 0; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+.actualite {
+    position: relative;
+}
+
+.partenaires {
+    position: relative;
+}
+
+.titre_soulignement_actualite {
     display: inline-block;
     border-bottom: 3px solid var(--pink-color);
     padding-bottom: 5px;
@@ -161,6 +269,13 @@
     background-color: var(--pink-color);
     padding: 9px 27.5px;
     border-radius: 15px;
+}
+
+.titre_soulignement_partenaires {
+    display: inline-block;
+    border-bottom: 3px solid var(--pink-color);
+    padding-bottom: 5px;
+    margin-top: 113px;
 }
 
 .actualite_fig, .partenaire_fig {
@@ -207,27 +322,19 @@
     align-items: center;
 }
 
-.bouton_foyer {
-    color: var(--black-color);
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
-    background-color: var(--extra-decouvrir-background-color);
-    padding: 9px 27.5px;
-    border-radius: 15px;
-    margin-bottom: 113px;
-    margin-top: 26px;
-}
+/*Fin partenaire et actualité*/
 
+/*Bénévolat*/
 
 .benevolat {
-    background-color:var(--benevolat-background-color);
+    background-color: var(--benevolat-background-color);
     display: flex;
     align-items: center; /* centre verticalement */
     justify-content: center; /* centre horizontalement */
     gap: 50px; /* espace entre texte et image, optionnel */
     padding: 50px 0; /* pour un peu d'espace autour */
     margin-top: 113px;
+    position: relative;
 }
 
 .titre_benevolat {
@@ -260,16 +367,16 @@
 }
 
 .one_line_image_benevolat {
-    width: 301px;
+    width: 306px;
     position: absolute;
-    top: 2462.3px; /* ajuste selon où tu veux la placer */
-    right: 1328.8px; /* ou left, selon ton design */
+    top: 0; /* ajuste selon où tu veux la placer */
+    left: 0; /* ou left, selon ton design */
     z-index: 1; /* si besoin de la superposer à autre chose */
 }
 
 .back_image_benevolat {
     position: absolute;
-    top: 2559.5px;
+    top: 128.4px;
     left: 1264.5px;
     width: 351.8px;
     border-radius: 32px 0 0 0;
@@ -278,48 +385,13 @@
     z-index: 1;
 }
 
-.famille_container {
-    display: flex;
-    align-items: center;
-}
+/*Fin bénévolat*/
 
-.image_famille {
-    width: 495px;
-    border-radius: 15px;
-    margin-left: 237px;
-    margin-top: 26px;
-}
-
-.description_famille {
-    font-size: 16px;
-    font-weight: 400;
-    margin-left: 48px;
-    margin-top: 58px;
-    width: 56.8%;
-}
-
-.bouton_famille {
-    color: var(--black-color);
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
-    background-color: var(--extra-decouvrir-background-color);
-    padding: 9px 27.5px;
-    border-radius: 15px;
-    margin-top: 26px;
-    margin-left: 48px;
-}
-
-.one_line_image_famille {
-    width: 345px;
-    position: absolute;
-    top: 4153.4px; /* ajuste selon où tu veux la placer */
-    right: -0.5px; /* ou left, selon ton design */
-    z-index: 1; /* si besoin de la superposer à autre chose */
-}
+/*Projet*/
 
 .projet {
     display: flex;
+    position: relative;
 }
 
 .titre_projet {
@@ -353,8 +425,8 @@
 .one_line_image_projet {
     width: 332px;
     position: absolute;
-    top: 4430.4px; /* ajuste selon où tu veux la placer */
-    right: 1308.1px; /* ou left, selon ton design */
+    top: 0; /* ajuste selon où tu veux la placer */
+    left: 0; /* ou left, selon ton design */
     z-index: 1; /* si besoin de la superposer à autre chose */
 }
 
@@ -371,8 +443,9 @@
 }
 
 .projet {
-    background-color:var(--pink-light-color);
+    background-color: var(--pink-light-color);
     display: flex;
     margin-top: 113px;
 }
 
+/*Fin projet*/

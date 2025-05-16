@@ -10,9 +10,12 @@ $one_line_image_decouvrir = get_field('one_line_image_decouvrir');
 
 $titre_actualite = get_field('titre_actualite');
 $bouton_actualite = get_field('bouton_actualite');
+$one_line_image_actualite = get_field('one_line_image_actualite');
+$one_line_image_actualite_2 = get_field('one_line_image_actualite_2');
 
 $titre_section_foyer = get_field('titre_section_foyer');
 $bouton_foyer = get_field('bouton_foyer');
+$one_line_image_foyer = get_field('one_line_image_foyer');
 
 $titre_section_benevolat = get_field('titre_section_benevolat');
 $description_benevolat = get_field('description_benevolat');
@@ -21,6 +24,7 @@ $one_line_image_benevolat = get_field('one_line_image_benevolat');
 
 $titre_section_partenaires = get_field('titre_section_partenaires');
 $bouton_partenaire = get_field('bouton_partenaire');
+$one_line_image_partenaire = get_field('one_line_image_partenaire');
 
 $titre_section_famille = get_field('titre_section_famille');
 $description_famille = get_field('description_famille');
@@ -69,6 +73,8 @@ $partenaires = new WP_Query([
 </section>
 
 <section class="actualite">
+    <img class="one_line_image_actualite" src="<?= $one_line_image_actualite['url'] ?>" alt="<?= $one_line_image_actualite['alt'] ?>">
+    <img class="one_line_image_actualite_2" src="<?= $one_line_image_actualite_2['url'] ?>" alt="<?= $one_line_image_actualite_2['alt'] ?>">
     <h2 class="titre_actualite">
         <span class="titre_soulignement_actualite"><?= $titre_actualite ?></span>
     </h2>
@@ -95,10 +101,10 @@ $partenaires = new WP_Query([
             <?= $bouton_actualite['title'] ?>
         </a>
     </div>
-
 </section>
 
 <section class="foyer">
+    <img class="one_line_image_foyer" src="<?= $one_line_image_foyer['url'] ?>" alt="<?= $one_line_image_foyer['alt'] ?>">
     <h2 class="titre_foyer">
         <span class="titre_soulignement_foyer"><?= $titre_section_foyer ?></span>
     </h2>
@@ -142,6 +148,7 @@ $partenaires = new WP_Query([
 </section>
 
 <section class="partenaires">
+    <img class="one_line_image_partenaire" src="<?= $one_line_image_partenaire['url'] ?>" alt="<?= $one_line_image_partenaire['alt'] ?>">
     <h2 class="titre_partenaires">
         <span class="titre_soulignement_partenaires"><?= $titre_section_partenaires ?></span>
     </h2>
