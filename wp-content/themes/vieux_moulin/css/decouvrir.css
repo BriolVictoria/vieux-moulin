@@ -1,0 +1,124 @@
+.image_vieuxmoulin {
+    width: 100%;
+    position: relative;
+}
+
+.titre_vieuxmoulin {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--decouvrir-background-color);
+    padding: 55px;
+    border-radius: 35px 35px 0 0;
+    position: absolute;
+    top: 446.2px;
+    right: 0;
+}
+
+.soulignement_titre_vieuxmoulin {
+    display: inline-block;
+    border-bottom: 3px solid var(--extra-decouvrir-background-color);
+    padding-bottom: 5px;
+}
+
+.soulignement_titre_document, .soulignement_titre_soutient {
+    display: inline-block;
+    border-bottom: 3px solid var(--decouvrir-background-color);
+    padding-bottom: 5px;
+}
+
+.information_titre, .video_titre, .titre_document, .soutient_titre {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 123px;
+    margin-left: 237px;
+}
+
+.soutient_titre {
+    font-weight: 700;
+}
+
+.information_description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 26px;
+    margin-left: 237px;
+    width: 71.5%;
+}
+
+.image_galerie_container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 43px;
+    margin-top: 26px;
+}
+
+.galerie_image_information {
+   display: inline-block;
+    max-width: 100%;
+}
+
+.video_video {
+    width: 963px;
+    border-radius: 15px;
+    margin-top: 26px;
+}
+
+.video_container{
+    display: flex;
+    justify-content: center;
+}
+
+.description_document{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 26px;
+    margin-left: 237px;
+}
+
+.image_container_vieuxmoulin {
+    margin-left: 264px;
+    margin-bottom: 113px;
+}
+
+.soutient_image {
+    margin-right: 73px;
+}
+
+.information {
+    position: relative;
+}
+
+.one_line_image_galery {
+    width: 345px;
+    position: absolute;
+    top: 0; /* ajuste selon où tu veux la placer */
+    left: 0; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+.video {
+    position: relative;
+}
+
+.one_line_image_video {
+    width: 345px;
+    position: absolute;
+    bottom: 0; /* ajuste selon où tu veux la placer */
+    right: 0; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+.information_document {
+    position: relative;
+}
+
+.one_line_image_information {
+    width: 345px;
+    position: absolute;
+    bottom: 0; /* ajuste selon où tu veux la placer */
+    right: 0; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
