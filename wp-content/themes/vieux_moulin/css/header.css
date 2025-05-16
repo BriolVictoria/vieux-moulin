@@ -13,6 +13,7 @@ body {
     display: flex;
     align-items: center;
     padding: 0 20px;
+    justify-content: space-between;
 }
 
 .logo_header {
@@ -22,12 +23,17 @@ body {
     margin-left: 18px;
 }
 
+.logo_facebook {
+    width: 25.5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 a.titre_header {
     color: var(--black-color);
     font-size: 28px;
     font-weight: 700;
     text-decoration: none;
-    margin-left: 503px;
     letter-spacing: 4.8px;
 }
 
