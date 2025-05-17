@@ -4,6 +4,7 @@
 @import url('footer.css');
 @import url('front-page.css');
 @import url('decouvrir.css');
+@import url('actualite.css');
 
 
 
@@ -14,6 +15,7 @@
     --black-color: #111;
     --white-color: #fff;
     --pink-color: #F55C7A;
+    --pink-more-light-color: #FFC0CD;
     --decouvrir-background-color: #E0F0E7;
     --extra-decouvrir-background-color: #B7D8CA;
     --benevolat-background-color: #E0CEFF;
