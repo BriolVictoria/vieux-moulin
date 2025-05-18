@@ -1,0 +1,59 @@
+.journee_intro_titre {
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 237px;
+}
+
+.journee_intro_description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 26px;
+    margin-left: 237px;
+    width: 68.0%;
+}
+
+.journee_intro_image {
+    width: 321px;
+    border-radius: 15px;
+    border: var(--decouvrir-background-color) 6.5px solid;
+    flex: 1;
+    margin-top: 113px;
+    margin-bottom: 113px;
+    margin-right: 327px;
+}
+
+.journee_intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    position: relative;
+}
+
+.one_line_image_intro, .one_line_image_galerie {
+    width: 400px;
+    position: absolute;
+    top: 0; /* ajuste selon où tu veux la placer */
+    left: 0; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+.galerie {
+    background-color: var(--decouvrir-background-color);
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 113px;
+}
+
+.titre_galerie {
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 237px;
+}
+
+.titre_faq {
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 237px;
+}

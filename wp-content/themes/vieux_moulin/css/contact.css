@@ -1,0 +1,94 @@
+.form_title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.form_boutton {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--pink-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    margin-left: 237px;
+    margin-bottom: 113px;
+}
+
+.nom_form {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 284px;
+    margin-top: 26px;
+    display: block;
+}
+.titre_soulignement_form {
+    display: inline-block;
+    border-bottom: 3px solid var(--pink-color);
+    padding-bottom: 5px;
+}
+
+.champs_form {
+    border-radius: 15px;
+    background-color: var(--pink-more-light-color);
+    border: none;
+    width: 322px;
+    padding: 10px;
+    margin-left: 284px;
+    margin-top: 26px;
+}
+
+.email {
+    width: 52.8%;
+}
+
+.prenom > .nom_form {
+    margin-left: 0;
+}
+
+.prenom > .champs_form {
+    margin-left: 0;
+}
+
+.form_row.double {
+    display: flex;
+}
+
+.form_row.double > div {
+    flex: 1;
+}
+
+.email input,
+.note textarea {
+    width: 52.8%;
+}
+
+.note > .champs_form{
+    margin-bottom: 26px;
+}
+
+.one_line_image_formulaire {
+    width: 400px;
+    position: absolute;
+    bottom: 0; /* ajuste selon où tu veux la placer */
+    left: 0; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_container {
+
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
