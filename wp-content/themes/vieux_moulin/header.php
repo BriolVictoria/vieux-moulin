@@ -16,7 +16,8 @@
         <h1>
             <a class="titre_header" href="<?php echo esc_url(home_url('/')); ?>">Le vieux moulin</a>
         </h1>
-        <img class="logo_facebook" src="https://vieux-moulin.test/wp-content/uploads/2025/05/Screenshot-2025-05-03-at-3.25.03 PM.png" alt="Icône du site, initial de Vieux Moulin">
+        <a href="https://www.facebook.com/people/Vieux-Moulin-Strainchamps/pfbid02bHjUPaiNnGz9aNMzjdTKdNVNAFZFMSpA6jM7U7szSNdDSpcrUkawR43UuDs23fqsl/"><img class="logo_facebook" src="https://vieux-moulin.test/wp-content/uploads/2025/05/Screenshot-2025-05-03-at-3.25.03 PM.png" alt="Icône du site, initial de Vieux Moulin"></a>
+
     </section>
     <hr>
     <section class="bottom_header">
