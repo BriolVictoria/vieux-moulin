@@ -67,6 +67,15 @@
     padding: 12px 30px;
     border-radius: 15px;
     margin-left: 318.1px;
+    margin-top: 26px;
+    transition: transform 0.2s ease;
+}
+
+.form_boutton:hover {
+    display: inline-block;
+    margin-top: 26px;
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--pink-color);
 }
 
 /* Image décorative en bas à gauche */

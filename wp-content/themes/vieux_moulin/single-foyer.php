@@ -16,8 +16,8 @@ $one_line_image_par_projet = get_field('one_line_image_par_projet');
 
 <section>
     <?php
-    if (have_rows('page_projet')):
-        while (have_rows('page_projet')): the_row();
+    if (have_rows('page_foyer')):
+        while (have_rows('page_foyer')): the_row();
             $plan = get_sub_field('plan');
             $titre_plan = get_sub_field('titre_plan');
             $one_line_image_plan = get_sub_field('one_line_image_plan');

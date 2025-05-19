@@ -43,6 +43,13 @@
     border-radius: 15px;
     margin-top: 26px;
     margin-left: 48px;
+    transition: transform 0.2s ease;
+}
+.bouton_decouvrir:hover {
+    display: inline-block;
+    margin-top: -10px;
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
 }
 
 .decouvrir_container {
@@ -142,6 +149,14 @@
     border-radius: 15px;
     margin-bottom: 113px;
     margin-top: 26px;
+    transition: transform 0.2s ease;
+}
+
+.bouton_foyer:hover {
+    display: inline-block;
+    margin-top: 26px;
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
 }
 
 .one_line_image_foyer {
@@ -199,6 +214,14 @@
     border-radius: 15px;
     margin-top: 26px;
     margin-left: 48px;
+    transition: transform 0.2s ease;
+}
+
+.bouton_famille:hover {
+    display: inline-block;
+    margin-top: 26px;
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
 }
 
 .one_line_image_famille {
@@ -268,6 +291,15 @@
     background-color: var(--pink-color);
     padding: 9px 27.5px;
     border-radius: 15px;
+    transition: transform 0.2s ease;
+    margin-top: 26px;
+}
+
+.bouton_actualite:hover {
+    display: inline-block;
+    margin-top: 26px;
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--pink-color);
 }
 
 .titre_soulignement_partenaires {
@@ -282,6 +314,12 @@
     width: 75%;
     padding: 19px;
     border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+
+.actualite_fig:hover, .partenaire_fig:hover {
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--pink-color);
 }
 
 .actualite_img, .partenaire_img {
