@@ -1,94 +1,97 @@
-.form_title {
-    font-size: 28px;
-    font-weight: 600;
-    margin-top: 90px;
-    text-align: center;
-}
-
-.form_boutton {
-    color: var(--black-color);
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
-    background-color: var(--pink-color);
-    padding: 9px 27.5px;
-    border-radius: 15px;
-    margin-left: 237px;
-    margin-bottom: 113px;
-}
-
-.nom_form {
-    font-size: 20px;
-    font-weight: 400;
-    margin-left: 284px;
-    margin-top: 26px;
-    display: block;
-}
-.titre_soulignement_form {
-    display: inline-block;
-    border-bottom: 3px solid var(--pink-color);
-    padding-bottom: 5px;
-}
-
-.champs_form {
-    border-radius: 15px;
-    background-color: var(--pink-more-light-color);
-    border: none;
-    width: 322px;
-    padding: 10px;
-    margin-left: 284px;
-    margin-top: 26px;
-}
-
-.email {
-    width: 52.8%;
-}
-
-.prenom > .nom_form {
-    margin-left: 0;
-}
-
-.prenom > .champs_form {
-    margin-left: 0;
-}
-
-.form_row.double {
-    display: flex;
-}
-
-.form_row.double > div {
-    flex: 1;
-}
-
-.email input,
-.note textarea {
-    width: 52.8%;
-}
-
-.note > .champs_form{
-    margin-bottom: 26px;
-}
-
-.one_line_image_formulaire {
-    width: 400px;
-    position: absolute;
-    bottom: 0; /* ajuste selon où tu veux la placer */
-    left: 0; /* ou left, selon ton design */
-    z-index: 1; /* si besoin de la superposer à autre chose */
-}
-
+/* Centrage du formulaire entier */
 .form {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 0 40px 20px;
 }
 
+/* Formulaire centré avec taille max */
 .form_container {
-
     width: 100%;
     max-width: 900px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
+/* Ligne nom + prénom côte à côte */
+.form_row.double {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Chacun prend 50% */
+.form_row.double > div {
+    flex: 1;
+}
+
+/* Réinitialisation des marges Nom & Prénom */
+.nom_form {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 8px 0;
+}
+
+.champs_form {
+    border-radius: 15px;
+    background-color: var(--pink-more-light-color);
+    border: none;
+    width: 100%;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Email et Note en pleine largeur */
+.email input,
+.note textarea {
+    width: 100%;
+}
+
+/* Espace en bas du champ note */
+.note > .champs_form {
+    margin-bottom: 26px;
+}
+
+.form_boutton {
+    align-self: flex-start;
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--pink-color);
+    padding: 12px 30px;
+    border-radius: 15px;
+    margin-left: 318.1px;
+}
+
+/* Image décorative en bas à gauche */
+.one_line_image_formulaire {
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.form_title {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 26px;
+}
+
+.form_title > p {
+    margin: 0;
+}
+
+.titre_soulignement_form {
+    display: inline-block;
+    border-bottom: 3px solid var(--pink-color);
+    padding-bottom: 5px;
+    margin-bottom: 26px;
+}
+
