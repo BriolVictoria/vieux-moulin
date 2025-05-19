@@ -1,0 +1,146 @@
+.intro_foyers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    position: relative;
+}
+
+.intro_titre_foyers {
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 237px;
+    margin-top: 90px;
+}
+
+.intro_description_foyers {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 237px;
+    margin-top: 26px;
+}
+
+.intro_image_foyers {
+    width: 321px;
+    border-radius: 15px;
+    border: var(--decouvrir-background-color) 6.5px solid;
+    flex: 1;
+    margin-top: 143px;
+    margin-right: 327px;
+}
+
+.encadrement {
+    background-color: var(--decouvrir-background-color);
+    display: flex;
+    position: relative;
+    margin-bottom: 113px;
+    margin-top: 113px;
+}
+
+.back_image_encadrement {
+    position: absolute;
+    top: 65.8px;
+    left: -44.2px;
+    width: 413px;
+    border-radius: 32px;
+    aspect-ratio: 306 / 248; /*// pour faire un carrée sans utiliser heifht*/
+    background-color: var(--extra-decouvrir-background-color);
+    z-index: 2;
+}
+
+.encadrement_image {
+    width: 495px;
+    border-radius: 15px;
+    margin-top: 119px;
+    margin-left: 74px;
+    margin-bottom: 118px;
+    position: relative;
+    z-index: 2;
+}
+
+.encadrement_titre {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 163px;
+    margin-left: 48px;
+}
+
+.encadrement_description {
+    font-size: 16px;
+    font-weight: 400;
+    width: 52.1%;
+    margin-top: 26px;
+    margin-left: 48px;
+    margin-bottom: 26px;
+}
+
+.bouton_decouvrir {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--extra-decouvrir-background-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    margin-top: 26px;
+    margin-left: 48px;
+}
+
+.decouvrir_container {
+    display: inline-block;
+}
+
+.one_line_image_foyers {
+    width: 366px;
+    position: absolute;
+    top: 0; /* ajuste selon où tu veux la placer */
+    left: 0; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+.foyer_carte_titre {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.titre_soulignement_foyer {
+    display: inline-block;
+    border-bottom: 3px solid var(--decouvrir-background-color);
+    padding-bottom: 5px;
+    margin-top: 113px;
+}
+
+.foyer_carte_image {
+    border-radius: 15px;
+    border: var(--decouvrir-background-color) 6.5px solid;
+    width: 321px;
+    margin-bottom: 26px;
+}
+
+.foyer_cartes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 142px;
+    position: relative;
+}
+
+.bouton_foyer_cartes {
+    text-decoration: none;
+    background-color: var(--extra-decouvrir-background-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black-color);
+    margin-left: 43.7px;
+}
+
+.one_line_image_nos_foyers {
+    width: 366px;
+    position: absolute;
+    bottom: 0; /* ajuste selon où tu veux la placer */
+    right: 0; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
