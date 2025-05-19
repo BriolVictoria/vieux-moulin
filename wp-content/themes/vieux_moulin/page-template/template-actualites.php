@@ -28,4 +28,6 @@ $one_line_image_actualite = get_field('one_line_image_actualite');
     <img class="intro_image_actualite" src="<?= $image_actualite_intro['url'] ?>" alt="<?= $image_actualite_intro['alt'] ?>">
 </section>
 
+<?php include get_template_directory() . '/single-actualité.php'; ?> <!--Demander si on peut faire ça-->
+
 <?php get_footer(); ?>
