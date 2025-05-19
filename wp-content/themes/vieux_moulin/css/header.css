@@ -46,25 +46,32 @@ hr {
     margin-bottom: 20px;
 }
 
-.lien_navigation_header  {
+.lien_navigation_header {
     text-decoration: none;
     color: var(--black-color);
 }
 
 .lien {
-    display: inline;
+    display: inline-block;
     margin-left: 33px;
     font-size: 18px;
     font-weight: 400;
     margin-top: 12px;
+    transition: transform 0.2s ease;
 }
+
+.lien:hover {
+    transform: translate(2px);
+    font-weight: 600;
+}
+
 
 .lien:first-child {
     margin-left: 431.0px;
 
 }
 
-.lien:last-child  a{
+.lien:last-child a {
     font-weight: 600;
     background-color: var(--pink-color);
     color: var(--white-color);
@@ -72,3 +79,8 @@ hr {
     border-radius: 45px;
 }
 
+.lien:last-child a:hover {
+    background-color: var(--white-color);
+    color: var(--pink-color);
+    text-shadow: none;
+}
