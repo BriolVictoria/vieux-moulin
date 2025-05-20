@@ -28,7 +28,6 @@ add_action('wp_enqueue_scripts', function () {
 // Activer l'utilisation des vignettes (images de couverture) sur nos post_type
 add_theme_support('post-thumbnails', ['actualite']);
 
-
 // Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
 // avec un identifint spécifique dans la colonne "post_type"
 

@@ -52,3 +52,47 @@
     gap: 48px;
     position: relative;
 }
+
+.actualite_all {
+    background-color: var(--pink-more-light-color);
+    display: flex;
+    position: relative;
+    margin-top: 113px;
+    margin-bottom: 113px;
+}
+
+.actualite_all_title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 141px;
+    margin-left: 237px;
+}
+
+.actualite_all_description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 26px;
+    margin-left: 237px;
+}
+
+.actualite_all_img {
+    width: 495px;
+    aspect-ratio: 16 / 9;
+    margin-right: 75px;
+    margin-top: 119px;
+    margin-bottom: 119px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.back_image_actualite_all {
+    position: absolute;
+    top: 65.8px;
+    right: -44.2px;
+    width: 413px;
+    border-radius: 32px;
+    aspect-ratio: 306 / 248; /*// pour faire un carrée sans utiliser heifht*/
+    background-color: var(--pink-color);
+    z-index: 2;
+}
