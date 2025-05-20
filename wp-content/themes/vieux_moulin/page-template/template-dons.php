@@ -33,14 +33,14 @@ $one_line_image_formulaire = get_field('one_line_image_formulaire');
                 <label class="nom_form" for="name">
                     <span class="titre_soulignement_form">Nom</span>
                 </label>
-                <input class="champs_form" type="text" name="name" id="name">
+                <input class="champs_form" type="text" name="name" id="name" placeholder="Gold">
             </div>
 
             <div class="prenom">
                 <label class="nom_form" for="prenom">
                     <span class="titre_soulignement_form">Prenom</span>
                 </label>
-                <input class="champs_form" type="text" name="prenom" id="prenom">
+                <input class="champs_form" type="text" name="prenom" id="prenom" placeholder="Joe">
             </div>
         </div>
 
@@ -49,7 +49,7 @@ $one_line_image_formulaire = get_field('one_line_image_formulaire');
             <label class="nom_form" for="email">
                 <span class="titre_soulignement_form">Email</span>
             </label>
-            <input class="champs_form" type="email" name="email" id="email">
+            <input class="champs_form" type="email" name="email" id="email" placeholder="joe.gold@gmail.com">
         </div>
 
         <div class="form_row double">
@@ -78,7 +78,7 @@ $one_line_image_formulaire = get_field('one_line_image_formulaire');
             <label class="nom_form" for="montant">
                 <span class="titre_soulignement_form">Montant</span>
             </label>
-            <input class="champs_form small" type="number" name="montant" id="montant">
+            <input class="champs_form small" type="number" name="montant" id="montant"  placeholder="100">
         </div>
 
         <a class="form_boutton" href="<?= $bouton_formualire['url'] ?>"><?= $bouton_formualire['title'] ?></a>

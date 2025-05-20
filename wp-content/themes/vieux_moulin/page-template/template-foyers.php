@@ -27,7 +27,8 @@ $foyers = new WP_Query([
 ?>
 
 <section class="intro_foyers">
-    <img class="one_line_image_foyers" src="<?= $one_line_image_foyers['url'] ?>" alt="<?= $one_line_image_foyers['title'] ?>">
+    <img class="one_line_image_foyers" src="<?= $one_line_image_foyers['url'] ?>"
+         alt="<?= $one_line_image_foyers['title'] ?>">
     <div class="intro_container_foyers">
         <h2 class="intro_titre_foyers"><?= $titre_foyer ?></h2>
         <p class="intro_description_foyers"><?= $description_foyer ?></p>
@@ -36,8 +37,9 @@ $foyers = new WP_Query([
 </section>
 
 <section class="foyer_cartes">
-    <img class="one_line_image_nos_foyers" src="<?= $one_line_image_nos_foyers['url'] ?>" alt="<?= $one_line_image_nos_foyers['title'] ?>">
-    <?php if($foyers->have_posts()): while($foyers->have_posts()): $foyers->the_post(); ?>
+    <img class="one_line_image_nos_foyers" src="<?= $one_line_image_nos_foyers['url'] ?>"
+         alt="<?= $one_line_image_nos_foyers['title'] ?>">
+    <?php if ($foyers->have_posts()): while ($foyers->have_posts()): $foyers->the_post(); ?>
         <article class="foyer_carte">
 
             <!-- Bloc texte -->
@@ -51,7 +53,10 @@ $foyers = new WP_Query([
             <figure class="foyer_carte_fig">
                 <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'foyer_carte_image']); ?>
             </figure>
-            <a class="bouton_foyer_cartes" href="<?= $bouton_maison['url'] ?>"><?= $bouton_maison['title'] ?></a>
+            <div class="bouton_container_foyer">
+                <a class="bouton_foyer_cartes" href="<?= $bouton_maison['url'] ?>"><?= $bouton_maison['title'] ?></a>
+            </div>
+
         </article>
     <?php endwhile; else: ?>
         <p>Je n'ai pas d'actualités récents à montrer pour le moment...</p>
@@ -61,7 +66,7 @@ $foyers = new WP_Query([
 <section class="encadrement">
     <div class="back_image_encadrement"></div>
     <img class="encadrement_image" src="<?= $image_encadrement['url'] ?>" alt="<?= $image_encadrement['alt'] ?>">
-    <div class="decouvrir_container">
+    <div class="encadrement_container">
         <h2 class="encadrement_titre"><?= $titre_encadrement ?></h2>
         <p class="encadrement_description"><?= $description_encadrement ?></p>
     </div>

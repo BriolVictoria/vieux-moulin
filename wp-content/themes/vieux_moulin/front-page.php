@@ -67,29 +67,35 @@ $partenaires = new WP_Query([
     <div class="decouvrir_container">
         <h2 class="titre_decouvrir"><?= $titre_section_decouvrir ?></h2>
         <p class="description_decouvrir"><?= $description_decouvrir ?></p>
-        <a class="bouton_decouvrir" href="<?= $bouton_decouvrir['url'] ?>"><?= $bouton_decouvrir['title'] ?></a>
+        <div class="bouton_container_decouvrir">
+            <a class="bouton_decouvrir" href="<?= $bouton_decouvrir['url'] ?>"><?= $bouton_decouvrir['title'] ?></a>
+        </div>
+
     </div>
-    <img class="one_line_image_decouvrir" src="<?= $one_line_image_decouvrir['url'] ?>" alt="<?= $one_line_image_decouvrir['alt'] ?>">
+    <img class="one_line_image_decouvrir" src="<?= $one_line_image_decouvrir['url'] ?>"
+         alt="<?= $one_line_image_decouvrir['alt'] ?>">
 </section>
 
 <section class="actualite">
-    <img class="one_line_image_actualite" src="<?= $one_line_image_actualite['url'] ?>" alt="<?= $one_line_image_actualite['alt'] ?>">
-    <img class="one_line_image_actualite_2" src="<?= $one_line_image_actualite_2['url'] ?>" alt="<?= $one_line_image_actualite_2['alt'] ?>">
+    <img class="one_line_image_actualite" src="<?= $one_line_image_actualite['url'] ?>"
+         alt="<?= $one_line_image_actualite['alt'] ?>">
+    <img class="one_line_image_actualite_2" src="<?= $one_line_image_actualite_2['url'] ?>"
+         alt="<?= $one_line_image_actualite_2['alt'] ?>">
     <h2 class="titre_actualite">
         <span class="titre_soulignement_actualite"><?= $titre_actualite ?></span>
     </h2>
 
     <div class="actualite_container">
 
-        <?php if($actualites->have_posts()): while($actualites->have_posts()): $actualites->the_post(); ?>
+        <?php if ($actualites->have_posts()): while ($actualites->have_posts()): $actualites->the_post(); ?>
             <article class="actualite_post">
                     <figure class="actualite_fig">
                         <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'actualite_img']); ?>
                     </figure>
-                    <header class="actualite_head">
-                        <h3 class="actualite_title"><?= get_the_title(); ?></h3>
-                    </header>
-                    <p class="description_actualite"><?= get_the_excerpt() ?></p>
+                <header class="actualite_head">
+                    <h3 class="actualite_title"><?= get_the_title(); ?></h3>
+                </header>
+                <p class="description_actualite"><?= get_the_excerpt() ?></p>
             </article>
         <?php endwhile; else: ?>
             <p>Je n'ai pas d'actualités récents à montrer pour le moment...</p>
@@ -104,14 +110,15 @@ $partenaires = new WP_Query([
 </section>
 
 <section class="foyer">
-    <img class="one_line_image_foyer" src="<?= $one_line_image_foyer['url'] ?>" alt="<?= $one_line_image_foyer['alt'] ?>">
+    <img class="one_line_image_foyer" src="<?= $one_line_image_foyer['url'] ?>"
+         alt="<?= $one_line_image_foyer['alt'] ?>">
     <h2 class="titre_foyer">
         <span class="titre_soulignement_foyer"><?= $titre_section_foyer ?></span>
     </h2>
 
     <div class="foyer_container">
 
-        <?php if($foyers->have_posts()): while($foyers->have_posts()): $foyers->the_post(); ?>
+        <?php if ($foyers->have_posts()): while ($foyers->have_posts()): $foyers->the_post(); ?>
             <article class="foyer_post">
                 <figure class="foyer_fig">
                     <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'foyer_img']); ?>
@@ -138,7 +145,8 @@ $partenaires = new WP_Query([
 </section>
 
 <section class="benevolat">
-    <img class="one_line_image_benevolat" src="<?= $one_line_image_benevolat['url'] ?>" alt="<?= $one_line_image_benevolat['alt'] ?>">
+    <img class="one_line_image_benevolat" src="<?= $one_line_image_benevolat['url'] ?>"
+         alt="<?= $one_line_image_benevolat['alt'] ?>">
     <div class="benevolat_container">
         <h2 class="titre_benevolat"><?= $titre_section_benevolat ?></h2>
         <p class="description_benevolat"><?= $description_benevolat ?></p>
@@ -148,14 +156,15 @@ $partenaires = new WP_Query([
 </section>
 
 <section class="partenaires">
-    <img class="one_line_image_partenaire" src="<?= $one_line_image_partenaire['url'] ?>" alt="<?= $one_line_image_partenaire['alt'] ?>">
+    <img class="one_line_image_partenaire" src="<?= $one_line_image_partenaire['url'] ?>"
+         alt="<?= $one_line_image_partenaire['alt'] ?>">
     <h2 class="titre_partenaires">
         <span class="titre_soulignement_partenaires"><?= $titre_section_partenaires ?></span>
     </h2>
 
     <div class="partenaire_container">
 
-        <?php if($partenaires->have_posts()): while($partenaires->have_posts()): $partenaires->the_post(); ?>
+        <?php if ($partenaires->have_posts()): while ($partenaires->have_posts()): $partenaires->the_post(); ?>
             <article class="partenaire_post">
                 <figure class="partenaire_fig">
                     <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'partenaire_img']); ?>
@@ -176,7 +185,8 @@ $partenaires = new WP_Query([
         <span class="titre_soulignement_famille"><?= $titre_section_famille ?></span>
     </h2>
     <div class="famille_container">
-        <img class="one_line_image_famille" src="<?= $one_line_image_famille['url'] ?>" alt="<?= $one_line_image_famille['alt'] ?>">
+        <img class="one_line_image_famille" src="<?= $one_line_image_famille['url'] ?>"
+             alt="<?= $one_line_image_famille['alt'] ?>">
         <img class="image_famille" src="<?= $image_famille['url'] ?>" alt="<?= $image_famille['alt'] ?>">
         <div class="contenu_famille">
             <p class="description_famille"><?= $description_famille ?></p>
@@ -187,11 +197,11 @@ $partenaires = new WP_Query([
 
 
 <section class="projet">
-    <img class="one_line_image_projet" src="<?= $one_line_image_projet['url'] ?>" alt="<?= $one_line_image_projet['alt'] ?>">
+    <img class="one_line_image_projet" src="<?= $one_line_image_projet['url'] ?>"
+         alt="<?= $one_line_image_projet['alt'] ?>">
     <div class="projet_container">
         <h2 class="titre_projet"><?= $titre_section_projets ?></h2>
         <p class="description_projet"><?= $description_projets ?></p>
-        <a class="bouton_projet" href="<?= $bouton_projets['url'] ?>"><?= $bouton_projets['title'] ?></a>
     </div>
     <img class="image_projet" src="<?= $image_projets['url'] ?>" alt="<?= $image_projets['alt'] ?>">
 </section>

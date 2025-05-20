@@ -56,7 +56,9 @@ $foyers = new WP_Query([
                  alt="<?= $image['alt'] ?>">
         <?php endforeach; ?>
     </div>
-    <a class="bouton_journee_type" href="<?= $bouton_journee_type['url'] ?>"><?= $bouton_journee_type['title'] ?></a>
+    <div class="bouton_container_journee">
+        <a class="bouton_journee_type" href="<?= $bouton_journee_type['url'] ?>"><?= $bouton_journee_type['title'] ?></a>
+    </div>
 </section>
 
 <section class="video">
@@ -110,8 +112,11 @@ $foyers = new WP_Query([
     </h2>
     <p class="description_document"><?= $description_information ?></p>
     <div class="document_boutons">
-        <a class="carnet_daccueil" href="<?= $carnet_daccueil['url'] ?>"><?= $carnet_daccueil['title'] ?></a>
-        <a class="projet_educatif" href="<?= $projet_educatif['url'] ?>"><?= $projet_educatif['title'] ?></a>
+        <div class="bouton_container_document">
+            <a class="carnet_daccueil" href="<?= $carnet_daccueil['url'] ?>"><?= $carnet_daccueil['title'] ?></a>
+
+            <a class="projet_educatif" href="<?= $projet_educatif['url'] ?>"><?= $projet_educatif['title'] ?></a>
+        </div>
     </div>
 </section>
 

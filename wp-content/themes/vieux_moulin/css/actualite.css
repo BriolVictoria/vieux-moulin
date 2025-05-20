@@ -1,20 +1,25 @@
 .image_actualite {
     width: 100%;
+    display: block;
     position: relative;
 }
 
 .titre_page_actualite {
-    width: 100%;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-    background-color: var(--pink-more-light-color);
-    padding: 55px;
-    border-radius: 35px 35px 0 0;
     position: absolute;
     top: 276.8px;
-    right: 0;
+    left: 0; /* pour bien aligner à gauche */
+    right: 0; /* et à droite */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: var(--pink-more-light-color);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 55px; /* padding seulement horizontal */
 }
+
 
 .soulignement_titre_actualite {
     display: inline-block;
@@ -42,7 +47,6 @@
     width: 321px;
     flex: 1;
     margin-top: 113px;
-    margin-bottom: 113px;
 }
 
 .intro_actualite {
@@ -73,14 +77,15 @@
     font-weight: 400;
     margin-top: 26px;
     margin-left: 237px;
+    width: 54.6%;
 }
 
 .actualite_all_img {
-    width: 495px;
+    width: 294px;
     aspect-ratio: 16 / 9;
-    margin-right: 75px;
-    margin-top: 119px;
-    margin-bottom: 119px;
+    margin-right: 163px;
+    margin-top: 127px;
+    margin-bottom: 107px;
     border-radius: 15px;
     position: relative;
     z-index: 2;
@@ -96,3 +101,4 @@
     background-color: var(--pink-color);
     z-index: 2;
 }
+

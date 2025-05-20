@@ -4,17 +4,20 @@
 }
 
 .titre_vieuxmoulin {
-    width: 100%;
+    position: absolute;
+    top: 470.8px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
     font-weight: 700;
-    text-align: center;
     background-color: var(--decouvrir-background-color);
-    padding: 55px;
     border-radius: 35px 35px 0 0;
-    position: absolute;
-    top: 451.0px;
-    right: 0;
+    padding: 55px; /* padding uniquement horizontal */
 }
+
 
 .soulignement_titre_vieuxmoulin {
     display: inline-block;
@@ -132,13 +135,11 @@
     background-color: var(--extra-decouvrir-background-color);
     padding: 9px 27.5px;
     border-radius: 15px;
-    margin-top: 26px;
     margin-left: 237px;
     transition: transform 0.2s ease;
 }
+
 .bouton_journee_type:hover {
-    display: inline-block;
-    margin-top: -18px;
     transform: translateX(2px);
     box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
 }
@@ -160,12 +161,14 @@
 }
 
 .carnet_daccueil:hover, .projet_educatif:hover {
-    display: inline-block;
-    margin-top: -18px;
     transform: translateX(2px);
     box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
 }
 
 .document_boutons  {
     margin-top: 26px;
+}
+
+.bouton_container_journee, .bouton_container_document {
+    display: flex;
 }

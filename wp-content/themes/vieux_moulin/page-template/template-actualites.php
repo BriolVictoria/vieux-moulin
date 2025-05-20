@@ -38,13 +38,13 @@ $actualites = new WP_Query([
 <section>
     <?php if($actualites->have_posts()): while($actualites->have_posts()): $actualites->the_post(); ?>
         <article class="actualite_all">
+
             <div class="actualite_all_text_container">
                 <header class="actualite_all_head">
                     <h3 class="actualite_all_title"><?= get_the_title(); ?></h3>
                 </header>
                 <p class="actualite_all_description"><?= get_the_content() ?></p>
             </div>
-
 
             <figure class="actualite_all_fig">
                 <div class="back_image_actualite_all"></div>

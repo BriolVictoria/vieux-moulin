@@ -2,6 +2,10 @@
     background-color: var(--header-background);
 }
 
+header {
+    display: block;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -16,6 +20,19 @@ body {
     justify-content: space-between;
 }
 
+.bottom_header {
+
+    border-top: 0.5px var(--black-color) solid;
+    border-bottom: 0.5px var(--black-color) solid;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--white-color);
+
+}
+
+
+
 .logo_header {
     display: flex;
     width: 119px;
@@ -27,6 +44,12 @@ body {
     width: 25.5px;
     display: flex;
     justify-content: flex-end;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 26px;
+}
+
+.logo_facebook:hover {
+    transform: scale(1.3);
 }
 
 a.titre_header {
@@ -35,7 +58,15 @@ a.titre_header {
     font-weight: 700;
     text-decoration: none;
     letter-spacing: 4.8px;
+    display: inline-block;
+    transition: transform 0.3s ease, letter-spacing 0.3s ease;
 }
+
+a.titre_header:hover {
+    transform: scale(1.08);
+    letter-spacing: 6px;
+}
+
 
 hr {
     display: block;
@@ -57,12 +88,6 @@ hr {
     font-size: 18px;
     font-weight: 400;
     margin-top: 12px;
-    transition: transform 0.2s ease;
-}
-
-.lien:hover {
-    transform: translate(2px);
-    font-weight: 600;
 }
 
 
@@ -84,3 +109,35 @@ hr {
     color: var(--pink-color);
     text-shadow: none;
 }
+
+.lien_navigation_header {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #000; /* adapte selon ton design */
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.lien_navigation_header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 2px solid var(--pink-more-light-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.lien_navigation_header:hover {
+    color: var(--pink-color);
+}
+
+.lien_navigation_header:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+

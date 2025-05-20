@@ -6,3 +6,10 @@ select {
     font-size: 16px;
     color: var(--pink-color);
 }
+
+[placeholder], textarea {
+    font-size: 16px;
+    color: var(--pink-color);
+}
+
+

@@ -37,6 +37,10 @@
     margin-top: 113px;
 }
 
+.encadrement_container {
+    padding-top: 30px;
+}
+
 .back_image_encadrement {
     position: absolute;
     top: 65.8px;
@@ -82,7 +86,6 @@
     background-color: var(--extra-decouvrir-background-color);
     padding: 9px 27.5px;
     border-radius: 15px;
-    margin-top: 26px;
     margin-left: 48px;
 }
 
@@ -128,21 +131,19 @@
 }
 
 .bouton_foyer_cartes {
-    text-decoration: none;
-    background-color: var(--extra-decouvrir-background-color);
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--black-color);
     margin-left: 43.7px;
-    margin-top: 26px;
+
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--extra-decouvrir-background-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
     transition: transform 0.2s ease;
 }
 
 .bouton_foyer_cartes:hover {
-    display: inline-block;
-    margin-top: -20px;
     transform: translateX(2px);
     box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
 }
@@ -153,4 +154,8 @@
     bottom: 0; /* ajuste selon où tu veux la placer */
     right: 0; /* ou left, selon ton design */
     z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+.bouton_container_foyer {
+    display: flex;
 }

@@ -157,6 +157,8 @@
     font-size: 30px;
     font-weight: 600;
     margin-left: 48px;
+    margin-bottom: 0;
+
 }
 
 .titre_soulignement_benevolat_soutient {
@@ -170,6 +172,7 @@
     font-weight: 600;
     margin-top: 26px;
     margin-left: 48px;
+    margin-bottom: 0;
 }
 
 .benevolat_soutenir_description {
@@ -220,4 +223,10 @@
     bottom: 0; /* ajuste selon où tu veux la placer */
     right: 0; /* ou left, selon ton design */
     z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+.exemple_fig:hover{
+
+transform: translateX(2px);
+box-shadow: 0 10px 30px var(--pink-color);
 }

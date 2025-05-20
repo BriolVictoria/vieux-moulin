@@ -41,15 +41,22 @@
     background-color: var(--extra-decouvrir-background-color);
     padding: 9px 27.5px;
     border-radius: 15px;
-    margin-top: 26px;
     margin-left: 48px;
     transition: transform 0.2s ease;
 }
+
+.bouton_decouvrir {
+    margin-top: 0;
+}
+
 .bouton_decouvrir:hover {
     display: inline-block;
-    margin-top: -10px;
     transform: translateX(2px);
-    box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
+    box-shadow: 0 10px 30px var(--extra-decouvrir-background-color);
+}
+
+.bouton_container_decouvrir {
+    display: flex;
 }
 
 .decouvrir_container {

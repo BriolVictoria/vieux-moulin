@@ -16,14 +16,14 @@ $one_line_image_formulaire = get_field('one_line_image_formulaire');
                 <label class="nom_form" for="name">
                     <span class="titre_soulignement_form">Nom</span>
                 </label>
-                <input class="champs_form" type="text" name="name" id="name">
+                <input class="champs_form" type="text" name="name" id="name" placeholder="Gold">
             </div>
 
             <div class="prenom">
                 <label class="nom_form" for="prenom">
                     <span class="titre_soulignement_form">Prenom</span>
                 </label>
-                <input class="champs_form" type="text" name="prenom" id="prenom">
+                <input class="champs_form" type="text" name="prenom" id="prenom" placeholder="Joe">
             </div>
         </div>
 
@@ -32,14 +32,14 @@ $one_line_image_formulaire = get_field('one_line_image_formulaire');
             <label class="nom_form" for="email">
                 <span class="titre_soulignement_form">Email</span>
             </label>
-            <input class="champs_form" type="email" name="email" id="email">
+            <input class="champs_form" type="email" name="email" id="email" placeholder="joe.gold@gmail.com">
         </div>
 
         <div class="form_row note">
             <label class="nom_form" for="note">
                 <span class="titre_soulignement_form">Note</span>
             </label>
-            <textarea class="champs_form" name="note" id="note" cols="30" rows="5"></textarea>
+            <textarea class="champs_form" name="note" id="note" cols="30" rows="5" placeholder="Votre message... "></textarea>
         </div>
 
 
