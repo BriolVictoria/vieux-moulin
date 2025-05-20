@@ -9,6 +9,7 @@ $titre_infromation = get_field('titre_infromation');
 $description_infromation = get_field('description_infromation');
 $galerie_image_information = get_field('galerie_image_information');
 $one_line_image_galery = get_field('one_line_image_galery');
+$bouton_journee_type = get_field('bouton_journee_type');
 
 $titre_video = get_field('titre_video');
 $video_video = get_field('video_video');
@@ -21,6 +22,8 @@ $one_line_image_foyer = get_field('one_line_image_foyer');
 $titre_information = get_field('titre_information');
 $description_information = get_field('description_information');
 $one_line_image_information = get_field('one_line_image_information');
+$carnet_daccueil = get_field('carnet_daccueil');
+$projet_educatif = get_field('projet_educatif');
 
 $titre_soutient = get_field('titre_soutient');
 $image_soutient_1 = get_field('image_soutient_1');
@@ -53,6 +56,7 @@ $foyers = new WP_Query([
                  alt="<?= $image['alt'] ?>">
         <?php endforeach; ?>
     </div>
+    <a class="bouton_journee_type" href="<?= $bouton_journee_type['url'] ?>"><?= $bouton_journee_type['title'] ?></a>
 </section>
 
 <section class="video">
@@ -105,6 +109,10 @@ $foyers = new WP_Query([
         <span class="soulignement_titre_document"><?= $titre_information ?></span>
     </h2>
     <p class="description_document"><?= $description_information ?></p>
+    <div class="document_boutons">
+        <a class="carnet_daccueil" href="<?= $carnet_daccueil['url'] ?>"><?= $carnet_daccueil['title'] ?></a>
+        <a class="projet_educatif" href="<?= $projet_educatif['url'] ?>"><?= $projet_educatif['title'] ?></a>
+    </div>
 </section>
 
 <section class="soutient">

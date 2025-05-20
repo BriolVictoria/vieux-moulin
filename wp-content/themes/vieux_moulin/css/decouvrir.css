@@ -53,6 +53,7 @@
     justify-content: center;
     gap: 43px;
     margin-top: 26px;
+    margin-bottom: 50px;
 }
 
 .galerie_image_information {
@@ -121,4 +122,50 @@
     bottom: 0; /* ajuste selon où tu veux la placer */
     right: 0; /* ou left, selon ton design */
     z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+.bouton_journee_type {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--extra-decouvrir-background-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    margin-top: 26px;
+    margin-left: 237px;
+    transition: transform 0.2s ease;
+}
+.bouton_journee_type:hover {
+    display: inline-block;
+    margin-top: -18px;
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
+}
+
+.carnet_daccueil, .projet_educatif {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 13px;
+    text-decoration: none;
+    color: var(--black-color);
+    background-color: var(--extra-decouvrir-background-color);
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+    margin-right: 48px;
+}
+
+.carnet_daccueil {
+    margin-left: 237px;
+}
+
+.carnet_daccueil:hover, .projet_educatif:hover {
+    display: inline-block;
+    margin-top: -18px;
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
+}
+
+.document_boutons  {
+    margin-top: 26px;
 }
