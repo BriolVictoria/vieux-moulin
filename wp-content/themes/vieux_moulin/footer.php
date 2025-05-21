@@ -11,6 +11,13 @@
         <section>
             <div class="contacter">
                 <h2 class="soulignement_footer">Nous contacter</h2>
+                <p class="footer_boutton">
+                    <span class="footer_element">SCHIMIT Jean-François GSM:</span> <a class="footer_boutton"
+                                                                                      href="tel:+32488774850">0488/774.850</a>
+
+                    <span class="footer_element">Email:</span> <a class="footer_boutton"
+                                                                  href="mailto:direction@levm.be">direction@levm.be</a>
+                </p>
                 <a class="footer_boutton" href="tel:+3263601150">063/60.11.50</a>
                 <a class="footer_boutton" href="https://mail.google.com/mail/?view=cm&fs=1&to=srglevieuxmoulin@levm.be">
                     srglevieuxmoulin@levm.be
@@ -19,13 +26,7 @@
                    href="https://www.google.com/maps/search/?api=1&query=Rue+des+Vennes+n%C2%B01+Strainchamps+6637+Fauvillers">
                     Rue des Vennes, n°1 Strainchamps 6637 Fauvillers
                 </a>
-                <p class="footer_boutton">
-                    <span class="footer_element">SCHIMIT Jean-François GSM:</span> <a class="footer_boutton"
-                                                                                      href="tel:+32488774850">0488/774.850</a>
 
-                    <span class="footer_element">Email:</span> <a class="footer_boutton"
-                                                                  href="mailto:direction@levm.be">direction@levm.be</a>
-                </p>
 
 
             </div>
