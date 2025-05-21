@@ -1,0 +1,44 @@
+.one_line_image_plan {
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.location {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 113px;
+    margin-bottom: 113px;
+}
+
+.titre_plan {
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 48px;
+}
+
+.location_container li {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 48px;
+}
+
+.location_container {
+    margin-left: 48px;
+}
+
+.location_container ul {
+    margin:0;
+    padding: 0;
+}
+
+.acf-map {
+    border-radius: 15px;
+    border: var(--decouvrir-background-color) 6.5px solid;
+    margin-left: 237px;
+    width: 321px;
+    margin-top: 113px;
+}

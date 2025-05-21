@@ -3,9 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= wp_title('·', false, 'right') . get_bloginfo('name') ?></title>
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/all-template-css.css?v=<?= time(); ?> ">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/all-template-css.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/map.js"></script>
 
 </head>
 

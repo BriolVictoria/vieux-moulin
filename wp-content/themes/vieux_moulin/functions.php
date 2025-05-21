@@ -145,3 +145,23 @@ function dw_get_navigation_links(string $location): array
 }
 
 //fin fonction  pour la navigation
+//Import de la MAP
+
+function enqueue_leaflet_map_script() {
+    // Ton champ ACF (OpenStreetMap)
+    $location = get_field('ma_carte');
+
+    // Si les données sont présentes, on les passe au JS
+    if( $location ) {
+        wp_enqueue_script('carte-js', get_template_directory_uri() . '/assets/js/map.js', [], false, true);
+
+        wp_localize_script('carte-js', 'acfMapData', [
+            'lat' => $location['lat'],
+            'lng' => $location['lng'],
+            'zoom' => $location['zoom'],
+            'address' => $location['address']
+        ]);
+    }
+}
+add_action('wp_enqueue_scripts', 'enqueue_leaflet_map_script');
+
