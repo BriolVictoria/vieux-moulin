@@ -54,7 +54,7 @@ $foyers = new WP_Query([
                 <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'foyer_carte_image']); ?>
             </figure>
             <div class="bouton_container_foyer">
-                <a class="bouton_foyer_cartes" href="<?= $bouton_maison['url'] ?>"><?= $bouton_maison['title'] ?></a>
+                <a class="bouton_foyer_cartes" href="<?= get_permalink() ?>"><?= $bouton_maison['title'] ?></a>
             </div>
 
         </article>

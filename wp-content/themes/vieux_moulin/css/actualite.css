@@ -20,6 +20,13 @@
     padding: 55px; /* padding seulement horizontal */
 }
 
+.actualite_list{
+    padding:0;
+    list-style: none;
+}
+.actualite_list li:nth-child(even) article {
+    flex-direction: row-reverse;
+}
 
 .soulignement_titre_actualite {
     display: inline-block;

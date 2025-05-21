@@ -36,8 +36,10 @@ $actualites = new WP_Query([
 </section>
 
 <section>
+    <ul class="actualite_list">
     <?php if($actualites->have_posts()): while($actualites->have_posts()): $actualites->the_post(); ?>
-        <article class="actualite_all">
+    <li>
+        <article class="actualite_all" id="<?= sanitize_html_class(get_the_title()) ?>">
 
             <div class="actualite_all_text_container">
                 <header class="actualite_all_head">
@@ -53,9 +55,11 @@ $actualites = new WP_Query([
             </figure>
 
         </article>
+    </li>
     <?php endwhile; else: ?>
         <p>Je n'ai pas d'actualités récents à montrer pour le moment...</p>
     <?php endif; ?>
+    </ul>
 
 </section>
 

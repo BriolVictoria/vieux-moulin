@@ -89,6 +89,7 @@ $partenaires = new WP_Query([
 
         <?php if ($actualites->have_posts()): while ($actualites->have_posts()): $actualites->the_post(); ?>
             <article class="actualite_post">
+                <a href="<?= get_permalink(173)?>/#<?= sanitize_html_class(get_the_title()) ?>" class="actualite_card"></a>
                     <figure class="actualite_fig">
                         <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'actualite_img']); ?>
                     </figure>
