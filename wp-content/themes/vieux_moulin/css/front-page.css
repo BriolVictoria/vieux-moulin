@@ -73,9 +73,9 @@
 .one_line_image_decouvrir {
     width: 484px;
     position: absolute;
-    top: 0; /* ajuste selon où tu veux la placer */
-    right: 0; /* ou left, selon ton design */
-    z-index: 1; /* si besoin de la superposer à autre chose */
+    top: 0;
+    right: 0;
+    z-index: 1;
 }
 
     /*Style backImage découvrir*/
@@ -86,7 +86,7 @@
     left: -44.2px;
     width: 413px;
     border-radius: 32px;
-    aspect-ratio: 306 / 248; /*// pour faire un carrée sans utiliser heifht*/
+    aspect-ratio: 306 / 248; /*Pour faire un carrée sans utiliser heifht*/
     background-color: var(--extra-decouvrir-background-color);
     z-index: 2;
 }
@@ -116,6 +116,7 @@
     border-bottom: 3px solid var(--pink-color);
     padding-bottom: 5px;
     margin-top: 113px;
+    font-weight: 600;
 }
 
     /*Description actualité*/
@@ -131,17 +132,17 @@
 .one_line_image_actualite {
     width: 217.11px;
     position: absolute;
-    top: 0; /* ajuste selon où tu veux la placer */
-    left: 0; /* ou left, selon ton design */
-    z-index: 1; /* si besoin de la superposer à autre chose */
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .one_line_image_actualite_2 {
     width: 428px;
     position: absolute;
-    bottom: 0; /* ajuste selon où tu veux la placer */
-    right: 0; /* ou left, selon ton design */
-    z-index: 1; /* si besoin de la superposer à autre chose */
+    bottom: 0;
+    right: 0;
+    z-index: 1;
 }
 
     /*Carte actualité*/
@@ -221,6 +222,7 @@
     padding-bottom: 5px;
     margin-top: 113px;
     margin-bottom: 26px;
+    font-weight: 600;
 }
 
     /*Description foyer*/
@@ -294,10 +296,10 @@
 .benevolat {
     background-color: var(--benevolat-background-color);
     display: flex;
-    align-items: center; /* centre verticalement */
-    justify-content: center; /* centre horizontalement */
-    gap: 50px; /* espace entre texte et image, optionnel */
-    padding: 50px 0; /* pour un peu d'espace autour */
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 0;
     margin-top: 113px;
     position: relative;
 }
@@ -380,6 +382,7 @@
     border-bottom: 3px solid var(--decouvrir-background-color);
     padding-bottom: 5px;
     margin-top: 113px;
+    font-weight: 600;
 }
 
     /*Image famille*/
@@ -452,9 +455,9 @@
 .one_line_image_partenaire {
     width: 335px;
     position: absolute;
-    top: 0; /* ajuste selon où tu veux la placer */
-    left: 0; /* ou left, selon ton design */
-    z-index: 1; /* si besoin de la superposer à autre chose */
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
     /*Titre partenaires*/
@@ -464,6 +467,7 @@
     border-bottom: 3px solid var(--pink-color);
     padding-bottom: 5px;
     margin-top: 113px;
+    font-weight: 600;
 }
 
 /*Fin du style de la section partenaires*/
@@ -521,9 +525,9 @@
 .one_line_image_projet {
     width: 332px;
     position: absolute;
-    top: 0; /* ajuste selon où tu veux la placer */
-    left: 0; /* ou left, selon ton design */
-    z-index: 1; /* si besoin de la superposer à autre chose */
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 /*Fin style de la section projets*/

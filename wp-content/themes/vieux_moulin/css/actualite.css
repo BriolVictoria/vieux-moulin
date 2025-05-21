@@ -1,8 +1,13 @@
+/*Style du fond d'actualité*/
+
+    /*Image actualité*/
 .image_actualite {
     width: 100%;
     display: block;
     position: relative;
 }
+
+    /*Titre actualité*/
 
 .titre_page_actualite {
     position: absolute;
@@ -13,26 +18,33 @@
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     background-color: var(--pink-more-light-color);
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     padding: 55px; /* padding seulement horizontal */
 }
 
-.actualite_list{
-    padding:0;
-    list-style: none;
-}
-.actualite_list li:nth-child(even) article {
-    flex-direction: row-reverse;
-}
-
 .soulignement_titre_actualite {
     display: inline-block;
     border-bottom: 3px solid var(--pink-color);
     padding-bottom: 5px;
+    font-weight: 600;
 }
+
+/*Fin style du fond d'actualité*/
+
+/*Style intro actualité*/
+
+.intro_actualite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    position: relative;
+}
+
+    /*Titre intro actualité*/
 
 .intro_titre_actualite {
     font-size: 28px;
@@ -40,12 +52,16 @@
     margin-left: 237px;
 }
 
+    /*Description intro actualité*/
+
 .intro_description_actualite {
     font-size: 16px;
     font-weight: 400;
     margin-left: 237px;
     margin-top: 26px;
 }
+
+    /*Image intro actualité*/
 
 .intro_image_actualite {
     border-radius: 15px;
@@ -56,12 +72,17 @@
     margin-top: 113px;
 }
 
-.intro_actualite {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 48px;
-    position: relative;
+.intro_container {
+    margin-top: 100px;
+}
+
+/*Fin style intro actualité*/
+
+/*Style banniére actualité*/
+
+.actualite_list{
+    padding:0;
+    list-style: none;
 }
 
 .actualite_all {
@@ -72,6 +93,8 @@
     margin-bottom: 113px;
 }
 
+    /*Titre banniére actualité*/
+
 .actualite_all_title {
     font-size: 28px;
     font-weight: 600;
@@ -79,18 +102,22 @@
     margin-left: 237px;
 }
 
+    /*Description banniére actualité*/
+
 .actualite_all_description {
     font-size: 16px;
     font-weight: 400;
     margin-top: 26px;
     margin-left: 237px;
-    width: 54.6%;
+    width: 60%;
 }
+
+    /*Image banniére actualité*/
 
 .actualite_all_img {
     width: 294px;
     aspect-ratio: 16 / 9;
-    margin-right: 163px;
+    margin-right: 74.1px;
     margin-top: 127px;
     margin-bottom: 107px;
     border-radius: 15px;
@@ -98,14 +125,87 @@
     z-index: 2;
 }
 
+    /*BackImage banniére actualité*/
+
 .back_image_actualite_all {
     position: absolute;
     top: 65.8px;
-    right: -44.2px;
-    width: 413px;
+    right: -97.8px;
+    width: 351.7px;
     border-radius: 32px;
     aspect-ratio: 306 / 248; /*// pour faire un carrée sans utiliser heifht*/
     background-color: var(--pink-color);
     z-index: 2;
 }
 
+/*One line image banniére actualité*/
+
+.image_cpt {
+    width: 484px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+/*Fin style banniére actualité*/
+
+/*Style banniére actualité inversé*/
+
+.actualite_list li:nth-child(even) article {
+    flex-direction: row-reverse;
+}
+
+/*BackImage banniére actualité inversé*/
+
+.actualite_list li:nth-child(even) .back_image_actualite_all {
+    position: absolute;
+    top: 65.8px;
+    left: -97.8px;
+    width: 351.7px;
+    border-radius: 32px;
+    aspect-ratio: 306 / 248; /*// pour faire un carrée sans utiliser heifht*/
+    background-color: var(--pink-color);
+    z-index: 2;
+}
+
+/*Image banniére actualité inversé*/
+
+.actualite_list li:nth-child(even) .actualite_all_img {
+    width: 294px;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+    margin: 127px 0 107px 74.1px;
+}
+
+    /*Titre banniére actualité inversé*/
+
+.actualite_list li:nth-child(even) .actualite_all_title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 141px;
+    margin-left: 48px;
+}
+
+    /*Description banniére actualité inversé*/
+
+.actualite_list li:nth-child(even) .actualite_all_description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 26px;
+    margin-left: 48px;
+    width: 54.6%;
+}
+
+.actualite_list li:nth-child(even) .actualite_all_text_container {
+    margin-top: 20px;
+}
+
+.actualite_all_fig {
+    margin: 0;
+}
+
+.actualite_all_text_container {
+    margin-top: 20px;
+}

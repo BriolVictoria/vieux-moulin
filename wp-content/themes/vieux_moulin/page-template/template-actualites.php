@@ -10,6 +10,8 @@ $description_actualite_intro = get_field('description_actualite_intro');
 $image_actualite_intro = get_field('image_actualite_intro');
 $one_line_image_actualite = get_field('one_line_image_actualite');
 
+$image_cpt = get_field('image_cpt');
+
 $actualites = new WP_Query([
     'post_type' => 'actualite',
     'order' => 'DESC',
@@ -39,6 +41,7 @@ $actualites = new WP_Query([
     <ul class="actualite_list">
     <?php if($actualites->have_posts()): while($actualites->have_posts()): $actualites->the_post(); ?>
     <li>
+        <img class="image_cpt" src="<?= $image_cpt['url'] ?>" alt="<?= $image_cpt['alt'] ?>">
         <article class="actualite_all" id="<?= sanitize_html_class(get_the_title()) ?>">
 
             <div class="actualite_all_text_container">

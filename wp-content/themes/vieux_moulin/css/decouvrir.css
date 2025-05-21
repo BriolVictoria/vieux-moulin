@@ -1,7 +1,13 @@
+/*Style de la banniére*/
+
+    /*Image de fond de la banniére*/
+
 .image_vieuxmoulin {
     width: 100%;
     position: relative;
 }
+
+    /*Titre de la banniére*/
 
 .titre_vieuxmoulin {
     position: absolute;
@@ -12,12 +18,11 @@
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     background-color: var(--decouvrir-background-color);
     border-radius: 35px 35px 0 0;
-    padding: 55px; /* padding uniquement horizontal */
+    padding: 55px;
 }
-
 
 .soulignement_titre_vieuxmoulin {
     display: inline-block;
@@ -25,22 +30,11 @@
     padding-bottom: 5px;
 }
 
-.soulignement_titre_document, .soulignement_titre_soutient {
-    display: inline-block;
-    border-bottom: 3px solid var(--decouvrir-background-color);
-    padding-bottom: 5px;
-}
+/*Fin style de la banniére*/
 
-.information_titre, .video_titre, .titre_document, .soutient_titre {
-    font-size: 28px;
-    font-weight: 600;
-    margin-top: 123px;
-    margin-left: 237px;
-}
+/*Style de l'intro*/
 
-.soutient_titre {
-    font-weight: 700;
-}
+    /*Description de l'intro*/
 
 .information_description {
     font-size: 16px;
@@ -48,6 +42,13 @@
     margin-top: 26px;
     margin-left: 237px;
     width: 71.5%;
+}
+
+    /*Galerie de l'intro*/
+
+.galerie_image_information {
+    display: inline-block;
+    max-width: 100%;
 }
 
 .image_galerie_container {
@@ -59,79 +60,23 @@
     margin-bottom: 50px;
 }
 
-.galerie_image_information {
-   display: inline-block;
-    max-width: 100%;
-}
-
-.video_video {
-    width: 963px;
-    border-radius: 15px;
-    margin-top: 26px;
-}
-
-.video_container{
-    display: flex;
-    justify-content: center;
-}
-
-.description_document{
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 26px;
-    margin-left: 237px;
-}
-
-.image_container_vieuxmoulin {
-    margin-left: 264px;
-    margin-bottom: 113px;
-}
-
-.soutient_image {
-    margin-right: 73px;
-}
-
-.information {
-    position: relative;
-}
+        /*One line image de la galery de l'intro*/
 
 .one_line_image_galery {
     width: 345px;
     position: absolute;
-    top: 0; /* ajuste selon où tu veux la placer */
-    left: 0; /* ou left, selon ton design */
-    z-index: 1; /* si besoin de la superposer à autre chose */
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
-.video {
-    position: relative;
-}
-
-.one_line_image_video {
-    width: 345px;
-    position: absolute;
-    bottom: 0; /* ajuste selon où tu veux la placer */
-    right: 0; /* ou left, selon ton design */
-    z-index: 1; /* si besoin de la superposer à autre chose */
-}
-
-.information_document {
-    position: relative;
-}
-
-.one_line_image_information {
-    width: 345px;
-    position: absolute;
-    bottom: 0; /* ajuste selon où tu veux la placer */
-    right: 0; /* ou left, selon ton design */
-    z-index: 1; /* si besoin de la superposer à autre chose */
-}
+    /*Bouton de l'intro (journée type)*/
 
 .bouton_journee_type {
     color: var(--black-color);
     text-decoration: none;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
     background-color: var(--extra-decouvrir-background-color);
     padding: 9px 27.5px;
     border-radius: 15px;
@@ -144,9 +89,80 @@
     box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
 }
 
+
+/*Fin style de la banniére*/
+
+/*Style de la video*/
+
+.video {
+    position: relative;
+}
+
+    /*Titre de la video*/
+
+.video_video {
+    width: 963px;
+    border-radius: 15px;
+    margin-top: 26px;
+}
+
+    /*La video de la video*/
+
+.video_container{
+    display: flex;
+    justify-content: center;
+}
+
+    /*One line image de la video*/
+
+.one_line_image_video {
+    width: 345px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/*Fin style de la banniére*/
+
+/*Style de plus d'information*/
+
+.information {
+    position: relative;
+}
+
+.information_document {
+    position: relative;
+}
+
+    /*Description de plus d'information*/
+
+.description_document{
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 26px;
+    margin-left: 237px;
+}
+
+    /*One line image de plus d'information*/
+
+.one_line_image_information {
+    width: 345px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+    /*Lien de plus d'information*/
+
+.document_boutons  {
+    margin-top: 26px;
+}
+
 .carnet_daccueil, .projet_educatif {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 300;
     padding: 13px;
     text-decoration: none;
     color: var(--black-color);
@@ -160,15 +176,49 @@
     margin-left: 237px;
 }
 
+    /*Effet de plus d'information*/
+
 .carnet_daccueil:hover, .projet_educatif:hover {
     transform: translateX(2px);
     box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
 }
 
-.document_boutons  {
-    margin-top: 26px;
+/*Fin style de plus d'information*/
+
+/*Style de soutient*/
+
+.image_container_vieuxmoulin {
+    margin-left: 264px;
+    margin-bottom: 113px;
 }
 
+    /*Titre de soutient*/
+
+.soutient_titre {
+    font-weight: 600;
+}
+
+    /*Images de soutient*/
+
+.soutient_image {
+    margin-right: 73px;
+}
+
+/*Debut style en commun de certains éléments*/
+
+.soulignement_titre_document, .soulignement_titre_soutient {
+    display: inline-block;
+    border-bottom: 3px solid var(--decouvrir-background-color);
+    padding-bottom: 5px;
+}
+
+.information_titre, .video_titre, .titre_document, .soutient_titre {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 123px;
+    margin-left: 237px;
+}
 .bouton_container_journee, .bouton_container_document {
     display: flex;
 }
+
