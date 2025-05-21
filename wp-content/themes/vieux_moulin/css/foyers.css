@@ -1,3 +1,5 @@
+/*Style intro foyers*/
+
 .intro_foyers {
     display: flex;
     align-items: center;
@@ -6,6 +8,8 @@
     position: relative;
 }
 
+    /*Titre intro foyers*/
+
 .intro_titre_foyers {
     font-size: 28px;
     font-weight: 600;
@@ -13,12 +17,16 @@
     margin-top: 90px;
 }
 
+    /*Description intro foyers*/
+
 .intro_description_foyers {
     font-size: 16px;
     font-weight: 400;
     margin-left: 237px;
     margin-top: 26px;
 }
+
+    /*Image intro foyers*/
 
 .intro_image_foyers {
     width: 321px;
@@ -28,6 +36,97 @@
     margin-top: 143px;
     margin-right: 327px;
 }
+
+    /*One line image intro foyers*/
+
+.one_line_image_foyers {
+    width: 366px;
+    position: absolute;
+    top: 0; /* ajuste selon où tu veux la placer */
+    left: 0; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+/*Fin style intro foyers*/
+
+/*Style différents foyers*/
+
+.foyer_cartes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 142px;
+    position: relative;
+}
+
+    /*Titre différents foyers*/
+
+.titre_soulignement_foyer {
+    display: inline-block;
+    border-bottom: 3px solid var(--decouvrir-background-color);
+    padding-bottom: 5px;
+    margin-top: 113px;
+    font-weight: 600;
+}
+
+.foyer_carte_titre {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+    /*Bouton différents foyers*/
+
+.bouton_foyer_cartes {
+    margin-left: 43.7px;
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: var(--extra-decouvrir-background-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+
+.decouvrir_container {
+    display: inline-block;
+}
+
+.bouton_container_foyer {
+    display: flex;
+}
+
+    /*Image différents foyers*/
+
+.foyer_carte_image {
+    border-radius: 15px;
+    border: var(--decouvrir-background-color) 6.5px solid;
+    width: 321px;
+    margin-bottom: 26px;
+}
+
+    /*One line image différents foyers*/
+
+.one_line_image_nos_foyers {
+    width: 366px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+    /*Effet différents foyers*/
+
+.bouton_foyer_cartes:hover {
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
+}
+
+/*Fin style différents foyers*/
+
+/*Style encadrement*/
 
 .encadrement {
     background-color: var(--decouvrir-background-color);
@@ -41,6 +140,8 @@
     padding-top: 30px;
 }
 
+    /*Backimage encadrement*/
+
 .back_image_encadrement {
     position: absolute;
     top: 65.8px;
@@ -52,6 +153,8 @@
     z-index: 2;
 }
 
+    /*Image encadrement*/
+
 .encadrement_image {
     width: 495px;
     border-radius: 15px;
@@ -62,12 +165,16 @@
     z-index: 2;
 }
 
+    /*Titre encadrement*/
+
 .encadrement_titre {
     font-size: 28px;
     font-weight: 600;
     margin-top: 163px;
     margin-left: 48px;
 }
+
+    /*Description encadrement*/
 
 .encadrement_description {
     font-size: 16px;
@@ -76,86 +183,4 @@
     margin-top: 26px;
     margin-left: 48px;
     margin-bottom: 26px;
-}
-
-.bouton_decouvrir_foyer {
-    color: var(--black-color);
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
-    background-color: var(--extra-decouvrir-background-color);
-    padding: 9px 27.5px;
-    border-radius: 15px;
-    margin-left: 48px;
-}
-
-.decouvrir_container {
-    display: inline-block;
-}
-
-.one_line_image_foyers {
-    width: 366px;
-    position: absolute;
-    top: 0; /* ajuste selon où tu veux la placer */
-    left: 0; /* ou left, selon ton design */
-    z-index: 1; /* si besoin de la superposer à autre chose */
-}
-
-.foyer_carte_titre {
-    font-size: 28px;
-    font-weight: 600;
-    text-align: center;
-    margin: 0;
-}
-
-.titre_soulignement_foyer {
-    display: inline-block;
-    border-bottom: 3px solid var(--decouvrir-background-color);
-    padding-bottom: 5px;
-    margin-top: 113px;
-}
-
-.foyer_carte_image {
-    border-radius: 15px;
-    border: var(--decouvrir-background-color) 6.5px solid;
-    width: 321px;
-    margin-bottom: 26px;
-}
-
-.foyer_cartes {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 142px;
-    position: relative;
-}
-
-.bouton_foyer_cartes {
-    margin-left: 43.7px;
-
-    color: var(--black-color);
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
-    background-color: var(--extra-decouvrir-background-color);
-    padding: 9px 27.5px;
-    border-radius: 15px;
-    transition: transform 0.2s ease;
-}
-
-.bouton_foyer_cartes:hover {
-    transform: translateX(2px);
-    box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
-}
-
-.one_line_image_nos_foyers {
-    width: 366px;
-    position: absolute;
-    bottom: 0; /* ajuste selon où tu veux la placer */
-    right: 0; /* ou left, selon ton design */
-    z-index: 1; /* si besoin de la superposer à autre chose */
-}
-
-.bouton_container_foyer {
-    display: flex;
 }
