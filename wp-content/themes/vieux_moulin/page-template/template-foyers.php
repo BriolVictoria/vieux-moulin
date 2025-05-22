@@ -17,6 +17,7 @@ $description_encadrement = get_field('description_encadrement');
 $titre_galerie = get_field('titre_galerie');
 $galerie_photo = get_field('galerie_photo');
 $one_line_image_galerie = get_field('one_line_image_galerie');
+$bouton_journee_type = get_field('bouton_journee_type');
 
 $foyers = new WP_Query([
     'post_type' => 'foyer',
@@ -82,6 +83,9 @@ $foyers = new WP_Query([
         <?php foreach ($galerie_photo as $image): ?>
             <img class="galerie_photo" src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>">
         <?php endforeach; ?>
+    </div>
+    <div class="bouton_container_journee">
+        <a class="bouton_journee_type" href="<?= $bouton_journee_type['url'] ?>"><?= $bouton_journee_type['title'] ?></a>
     </div>
 </section>
 

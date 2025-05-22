@@ -1,8 +1,22 @@
+/*Style de l'intro d'une journée type*/
+
+.journee_intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    position: relative;
+}
+
+    /*Titre d'une journée type*/
+
 .journee_intro_titre {
     font-size: 28px;
     font-weight: 600;
     margin-left: 237px;
 }
+
+    /*Description d'une journée type*/
 
 .journee_intro_description {
     font-size: 16px;
@@ -11,6 +25,8 @@
     margin-left: 237px;
     width: 68.0%;
 }
+
+    /*Image d'une journée type*/
 
 .journee_intro_image {
     width: 321px;
@@ -22,13 +38,7 @@
     margin-right: 327px;
 }
 
-.journee_intro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 48px;
-    position: relative;
-}
+    /*One line image d'une journée type*/
 
 .one_line_image_intro, .one_line_image_galerie {
     width: 400px;
@@ -38,6 +48,10 @@
     z-index: 1; /* si besoin de la superposer à autre chose */
 }
 
+/*Fin style de l'intro d'une journée type*/
+
+/*Style de la galerie d'une journée type*/
+
 .galerie {
     background-color: var(--decouvrir-background-color);
     position: relative;
@@ -46,11 +60,19 @@
     margin-bottom: 113px;
 }
 
+    /*Titre de la galerie d'une journée type*/
+
 .titre_galerie {
     font-size: 28px;
     font-weight: 600;
     margin-left: 237px;
 }
+
+/*Fin style de la galerie d'une journée type*/
+
+/*Style de la faq d'une journée type*/
+
+    /*Titre de la faq d'une journée type*/
 
 .titre_faq {
     font-size: 28px;
