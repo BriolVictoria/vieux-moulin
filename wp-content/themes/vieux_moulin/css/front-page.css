@@ -119,6 +119,12 @@
     font-weight: 600;
 }
 
+/*Image actualité*/
+
+.actualite_fig {
+    width: 66.2%;
+}
+
     /*Description actualité*/
 
 .description_actualite {
@@ -183,6 +189,30 @@
 .actualite_card {
     transition: transform 0.2s ease;
 }
+
+.actualite_post {
+    border-radius: 30px;
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+
+.actualite_post:hover {
+    transform: translateX(2px);
+
+}
+
+.actualite_fig:hover {
+    box-shadow: 0 10px 30px var(--pink-color, #ffccd5);
+}
+
+.actualite_card_inner {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 
     /*Fin du style de la section actualité*/
 
@@ -320,6 +350,7 @@
     margin-top: 26px;
     margin-left: 237px;
     width: 51.7%;
+    margin-bottom: 0;
 }
 
 /*Image bénévolat*/
@@ -349,7 +380,7 @@
     z-index: 1;
 }
 
-/*Back image bénévolat*/
+    /*Back image bénévolat*/
 
 .back_image_benevolat {
     position: absolute;
@@ -362,6 +393,31 @@
     z-index: 1;
 }
 
+    /*Bouton bénévolat*/
+
+.bouton_benevolat {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: var(--extra-benevolat-background-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    margin-left: 237px;
+    margin-top: 26px;
+    transition: transform 0.2s ease;
+}
+
+.bouton_container_benevolat {
+    display: flex;
+}
+    /*Effet bouton benevolat*/
+
+.bouton_benevolat:hover {
+    display: inline-block;
+    transform: translateX(2px);
+    box-shadow: 0 10px 30px var(--extra-benevolat-background-color);
+}
 /*Fin du style de la section bénévolat*/
 
 /*Style de la section famille*/
@@ -461,6 +517,12 @@
     z-index: 1;
 }
 
+/*Image partenaires*/
+
+.partenaire_fig{
+    width: 75%;
+}
+
     /*Titre partenaires*/
 
 .titre_soulignement_partenaires {
@@ -555,7 +617,6 @@
 
 .actualite_fig, .partenaire_fig {
     background-color: var(--pink-color);
-    width: 75%;
     padding: 19px;
     border-radius: 15px;
     transition: transform 0.2s ease;

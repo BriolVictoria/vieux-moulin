@@ -19,7 +19,7 @@
                                                                   href="mailto:direction@levm.be">direction@levm.be</a>
                 </p>
                 <a class="footer_boutton" href="tel:+3263601150">063/60.11.50</a>
-                <a class="footer_boutton" href="https://mail.google.com/mail/?view=cm&fs=1&to=srglevieuxmoulin@levm.be">
+                <a class="footer_boutton" href="mailto:srglevieuxmoulin@levm.be">
                     srglevieuxmoulin@levm.be
                 </a>
                 <a class="footer_boutton"

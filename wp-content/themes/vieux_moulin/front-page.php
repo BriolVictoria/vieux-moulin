@@ -21,6 +21,7 @@ $titre_section_benevolat = get_field('titre_section_benevolat');
 $description_benevolat = get_field('description_benevolat');
 $image_benevolat = get_field('image_benevolat');
 $one_line_image_benevolat = get_field('one_line_image_benevolat');
+$bouton_benevolat= get_field('bouton_benevolat');
 
 $titre_section_partenaires = get_field('titre_section_partenaires');
 $bouton_partenaire = get_field('bouton_partenaire');
@@ -86,23 +87,22 @@ $partenaires = new WP_Query([
     </h2>
 
     <div class="actualite_container">
-
         <?php if ($actualites->have_posts()): while ($actualites->have_posts()): $actualites->the_post(); ?>
             <article class="actualite_post">
-                <a href="<?= get_permalink(173)?>/#<?= sanitize_html_class(get_the_title()) ?>" class="actualite_card"></a>
+                <a href="<?= get_permalink(173)?>/#<?= sanitize_html_class(get_the_title()) ?>" class="actualite_card_inner">
                     <figure class="actualite_fig">
-                        <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'actualite_img']); ?>
+                        <?= get_the_post_thumbnail(null, 'medium', ['class' => 'actualite_img']); ?>
                     </figure>
-                <header class="actualite_head">
-                    <h3 class="actualite_title"><?= get_the_title(); ?></h3>
-                </header>
-                <p class="description_actualite"><?= get_the_excerpt() ?></p>
+                    <header class="actualite_head">
+                        <h3 class="actualite_title"><?= get_the_title(); ?></h3>
+                        <p class="description_actualite"><?= get_the_date('d/m/Y'); ?></p>
+                    </header>
+                </a>
             </article>
         <?php endwhile; else: ?>
-            <p>Je n'ai pas d'actualités récents à montrer pour le moment...</p>
+            <p>Je n'ai pas d'actualités récentes à montrer pour le moment...</p>
         <?php endif; ?>
     </div>
-
     <div class="bouton_container">
         <a class="bouton_actualite" href="<?= $bouton_actualite['url'] ?>">
             <?= $bouton_actualite['title'] ?>
@@ -151,9 +151,16 @@ $partenaires = new WP_Query([
     <div class="benevolat_container">
         <h2 class="titre_benevolat"><?= $titre_section_benevolat ?></h2>
         <p class="description_benevolat"><?= $description_benevolat ?></p>
+        <div class="bouton_container_benevolat">
+            <a class="bouton_benevolat" href="<?= $bouton_benevolat['url'] ?>">
+                <?= $bouton_benevolat['title'] ?>
+            </a>
+        </div>
     </div>
+
     <div class="back_image_benevolat"></div>
     <img class="image_benevolat" src="<?= $image_benevolat['url'] ?>" alt="<?= $image_benevolat['alt'] ?>">
+
 </section>
 
 <section class="partenaires">
