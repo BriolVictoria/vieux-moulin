@@ -24,6 +24,11 @@ $foyers = new WP_Query([
     'posts_per_page' => 2,
 ]);
 
+
+
+
+
+$titre_question = get_field('titre_question');
 ?>
 
 <section class="journee_intro">
@@ -71,21 +76,21 @@ $foyers = new WP_Query([
 
 </section>
 
-
 <section class="faq">
     <h2 class="titre_faq"><?= $titre_faq ?></h2>
     <?php
-    if (have_rows('faq')):
-        while (have_rows('faq')): the_row();
+    if (have_rows('faq')): while (have_rows('faq')): the_row();
             $titre_question = get_sub_field('titre_question');
             ?>
-            <p class="titre_question"><?= $titre_question ?></p>
+            <section class="faq_container">
+                    <p class="titre_question"><?= $titre_question ?><span class="etoile">&#9733;</span></p>
+
+            </section>
         <?php
         endwhile;
     endif;
     ?>
 </section>
-
 
 <section class="galerie">
     <img class="one_line_image_galerie" src="<?= $one_line_image_galerie['url'] ?>"
@@ -100,5 +105,5 @@ $foyers = new WP_Query([
     </div>
 </section>
 
-
 <?php get_footer(); ?>
+

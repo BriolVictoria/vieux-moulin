@@ -79,3 +79,30 @@
     font-weight: 600;
     margin-left: 237px;
 }
+
+    /*Question de la faq d'une journée type*/
+
+.titre_question {
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 15px;
+    margin-left: 287px;
+    width: 66%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 19px 0 19px 12px;
+    background-color: var(--extra-decouvrir-background-color);
+    align-items: center;
+}
+
+    /*Etoile de la faq d'une journée type*/
+
+.etoile {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--white-color);
+    margin-right: 25px;
+    margin-left: auto; /*Aide à mettre l'étoile sur le côté le plus à droite*/
+    transform: scale(4);
+    margin-top: -17.4px;
+}
