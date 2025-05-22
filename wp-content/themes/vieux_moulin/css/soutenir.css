@@ -1,21 +1,4 @@
-.qrcode_image {
-    width: 213px;
-    margin-top: 90px;
-    margin-left: 237px;
-}
-
-.qrcode_titre {
-    font-size: 28px;
-    font-weight: 600;
-    margin: 0;
-}
-
-.qrcode_description {
-    font-size: 16px;
-    font-weight: 400;
-    width: 52.9%;
-    margin-top: 26px;
-}
+/*Style de l'intro du qrcode*/
 
 .qrcode {
     display: flex;
@@ -25,6 +8,22 @@
     position: relative;
 }
 
+    /*QRCODE image*/
+
+.qrcode_image {
+    width: 213px;
+    margin-top: 90px;
+    margin-left: 237px;
+}
+
+    /*QRCODE titre*/
+
+.qrcode_titre {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+}
+
 .qrcode_text {
     display: flex;
     flex-direction: column;
@@ -32,47 +31,28 @@
     margin-top: 117px;
 }
 
-.titre_par_dons {
-    font-size: 28px;
-    margin-left: 237px;
-    margin-bottom: 0;
-}
+    /*QRCODE description*/
 
-.description_par_don {
+.qrcode_description {
     font-size: 16px;
-    margin-top: 26px;
-    margin-left: 237px;
-    width: 61.8%;
-}
-
-.image_par_dons {
-    border-radius: 15px;
-    border: var(--pink-more-light-color) 6.5px solid;
-    width: 321px;
-    flex: 1;
-    margin: 113px 344px 113px 0;
-}
-
-.bouton_par_dons {
-    width: fit-content;
-    color: var(--black-color);
-    text-decoration: none;
-    font-size: 20px;
     font-weight: 400;
-    background-color: var(--pink-color);
-    padding: 9px 27.5px;
-    border-radius: 15px;
-    margin-left: 237px;
+    width: 52.9%;
     margin-top: 26px;
-    transition: transform 0.2s ease;
 }
 
-.bouton_par_dons:hover {
-    display: inline-block;
-    margin-top: 26px;
-    transform: translateX(2px);
-    box-shadow:  0 10px 30px var(--pink-color);
+    /*QRCODE one line image*/
+
+.one_line_image_qrcode {
+    width: 481px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
 }
+
+/*Fin style de l'intro du qrcode*/
+
+/*Style des dons*/
 
 .dons {
     display: flex;
@@ -86,14 +66,73 @@
     display: flex;
     flex-direction: column;
 }
+    /*Titre des dons*/
+
+.titre_par_dons {
+    font-size: 28px;
+    margin-left: 237px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+    /*Description des dons*/
+
+.description_par_don {
+    font-size: 16px;
+    margin-top: 26px;
+    margin-left: 237px;
+    width: 61.8%;
+}
+
+    /*Image des dons*/
+
+.image_par_dons {
+    border-radius: 15px;
+    border: var(--pink-more-light-color) 6.5px solid;
+    width: 321px;
+    flex: 1;
+    margin: 113px 344px 113px 0;
+}
+
+    /*Bouton des dons*/
+
+.bouton_par_dons {
+    width: fit-content;
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: var(--pink-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    margin-left: 237px;
+    margin-top: 26px;
+    transition: transform 0.2s ease;
+}
+
+    /*Effets des boutons des dons*/
+
+.bouton_par_dons:hover {
+    display: inline-block;
+    margin-top: 26px;
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--pink-color);
+}
+
+    /*One line image des dons*/
 
 .one_line_par_dons {
     width: 200px;
     position: absolute;
-    top: 0; /* ajuste selon où tu veux la placer */
-    left: 0; /* ou left, selon ton design */
-    z-index: 1; /* si besoin de la superposer à autre chose */
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
+
+/*Fin style des dons*/
+
+/*Style des exemples de dons*/
+
 
 .exemple {
     max-width: 300px;
@@ -112,27 +151,29 @@
     margin-top: 113px;
 }
 
+    /*Description des exemples de dons*/
+
 .exemple_description {
-    font-weight: 100;
+    font-weight: 200;
     font-size: 24px;
     margin-top: 0;
 }
 
+    /*Description des exemples de dons*/
+
 .exemple_titre {
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
     margin: 10px 0 5px;
 }
+
+    /*Image des exemples de dons*/
 
 .exemple_fig {
     background-color: var(--pink-color);
     width: 75%;
     padding: 19px;
     border-radius: 15px;
-}
-
-.exemple_fig:hover {
-    box-shadow:  0 10px 30px var(--pink-color);
 }
 
 .exemple_image {
@@ -143,6 +184,21 @@
     border-radius: 15px;
 }
 
+    /*Effet des exemples de dons*/
+
+.exemple_fig:hover {
+    box-shadow:  0 10px 30px var(--pink-color);
+}
+
+.exemple_fig:hover{
+    transform: translateX(2px);
+    box-shadow: 0 10px 30px var(--pink-color);
+}
+
+/*Fin style des exemples de dons*/
+
+/*Style du bénévolat/soutenir*/
+
 .benevolat_soutenir {
     background-color: var(--pink-more-light-color);
     display: flex;
@@ -152,6 +208,13 @@
     align-items: center;
     justify-content: center;
 }
+
+.text_container {
+    display: flex;
+    flex-direction: column;
+}
+
+    /*Titre du bénévolat/soutenir*/
 
 .benevolat_soutenir_titre1 {
     font-size: 30px;
@@ -165,6 +228,7 @@
     display: inline-block;
     border-bottom: 3px solid var(--pink-color);
     padding-bottom: 5px;
+    font-weight: 600;
 }
 
 .benevolat_soutenir_titre2 {
@@ -175,6 +239,8 @@
     margin-bottom: 0;
 }
 
+    /*Description du bénévolat/soutenir*/
+
 .benevolat_soutenir_description {
     font-size: 16px;
     font-weight: 400;
@@ -182,6 +248,8 @@
     margin-left: 48px;
     width: 52.8%;
 }
+
+    /*Image du bénévolat/soutenir*/
 
 .benevolat_soutenir_image {
     width: 495px;
@@ -192,6 +260,8 @@
     position: relative;
     z-index: 2;
 }
+
+    /*Backimage du bénévolat/soutenir*/
 
 .back_image_benevolat_soutenir {
     position: absolute;
@@ -204,29 +274,12 @@
     z-index: 1;
 }
 
-.text_container {
-    display: flex;
-    flex-direction: column;
-}
+    /*One line image  du bénévolat/soutenir*/
 
 .one_line_image_soutenir {
     width: 414px;
     position: absolute;
-    bottom: 0; /* ajuste selon où tu veux la placer */
-    right: 0; /* ou left, selon ton design */
-    z-index: 1; /* si besoin de la superposer à autre chose */
-}
-
-.one_line_image_qrcode {
-    width: 481px;
-    position: absolute;
-    bottom: 0; /* ajuste selon où tu veux la placer */
-    right: 0; /* ou left, selon ton design */
-    z-index: 1; /* si besoin de la superposer à autre chose */
-}
-
-.exemple_fig:hover{
-
-transform: translateX(2px);
-box-shadow: 0 10px 30px var(--pink-color);
+    bottom: 0;
+    right: 0;
+    z-index: 1;
 }
