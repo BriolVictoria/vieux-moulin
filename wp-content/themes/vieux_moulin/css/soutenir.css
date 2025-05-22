@@ -54,12 +54,15 @@
 
 /*Style des dons*/
 
+.different_dons {
+    position: relative;
+}
+
 .dons {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 48px;
-    position: relative;
 }
 
 .contenu-gauche {
@@ -121,10 +124,10 @@
 
     /*One line image des dons*/
 
-.one_line_par_dons {
-    width: 200px;
+.one_line_dons {
+    width: 312px;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     z-index: 1;
 }
