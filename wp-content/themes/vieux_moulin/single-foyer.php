@@ -32,8 +32,8 @@ $one_line_image_galerie = get_field('one_line_image_galerie');
              data-lng="<?php echo esc_attr($location['lng']); ?>"
              data-zoom="<?php echo esc_attr($location['zoom']); ?>">
 
-            <p><?php echo esc_html($location['address']); ?></p>
         </div>
+            <p><?php echo esc_html($location['address']); ?></p>
     <?php endif; ?>
     <img class="one_line_image_plan" src="<?= $one_line_image_plan['url'] ?>"
          alt="<?= $one_line_image_plan['title'] ?>">
