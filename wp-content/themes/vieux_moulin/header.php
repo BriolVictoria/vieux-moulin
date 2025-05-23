@@ -7,8 +7,8 @@
           href="<?php echo get_template_directory_uri(); ?>/css/all-template-css.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/map.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/bgm.js"></script>
+
 
 </head>
 
@@ -22,7 +22,7 @@
             <h1>
                 <a class="titre_header" href="<?php echo esc_url(home_url('/')); ?>">Le vieux moulin</a>
             </h1>
-            <a href="#" class="openBtn">
+            <a href="#" id="openBtn">
             <span class="burger-icon">
                 <span></span>
                 <span></span>
