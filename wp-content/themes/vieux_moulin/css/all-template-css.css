@@ -13,6 +13,7 @@
 @import url('single-foyer.css');
 @import url('media-queries_header.css');
 @import url('media-queries_front-page.css');
+@import url('404.css');
 
 
 
@@ -96,7 +97,6 @@
     src: url(../fonts/Montserrat/static/Montserrat-ExtraBold.ttf) format("truetype");
     font-weight: 800;
 }
-
 
 
 
