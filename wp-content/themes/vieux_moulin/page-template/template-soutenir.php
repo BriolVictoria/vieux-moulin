@@ -44,7 +44,7 @@ $one_line_image_soutenir = get_field('one_line_image_soutenir');
                 <div class="contenu-gauche">
                     <h2 class="titre_par_dons"><?= $titre_par_dons ?></h2>
                     <p class="description_par_don"><?= $description_par_don ?></p>
-                    <a class="bouton_par_dons" href="<?= $bouton_par_dons['url'] ?>"><?= $bouton_par_dons['title'] ?></a>
+                    <a class="bouton_par_dons" title="Vers le formulaire de dons" href="<?= $bouton_par_dons['url'] ?>"><?= $bouton_par_dons['title'] ?></a>
                 </div>
 
                 <div class="contenu-droite">

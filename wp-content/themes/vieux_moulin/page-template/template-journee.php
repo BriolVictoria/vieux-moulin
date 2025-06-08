@@ -71,26 +71,33 @@ $titre_question = get_field('titre_question');
     </div>
 
     <div class="bouton_container">
-        <a class="bouton_foyer" href="<?= $bouton_foyer['url'] ?>"><?= $bouton_foyer['title'] ?></a>
+        <a class="bouton_foyer" title="Vers la page Foyers" href="<?= $bouton_foyer['url'] ?>"><?= $bouton_foyer['title'] ?></a>
     </div>
 
 </section>
-
+<!--FAQ
 <section class="faq">
-    <h2 class="titre_faq"><?= $titre_faq ?></h2>
+    <h2 class="titre_faq"><?php /*= $titre_faq */?></h2>
     <?php
-    if (have_rows('faq')): while (have_rows('faq')): the_row();
-            $titre_question = get_sub_field('titre_question');
-            ?>
-            <section class="faq_container">
-                    <p class="titre_question"><?= $titre_question ?><span class="etoile">&#9733;</span></p>
+/*    $faq = get_field('faq'); // Récupère le champ répéteur 'faq'
 
+    if ($faq): // Si on a des questions
+        foreach ($faq as $row):
+            $titre_question = $row['titre_question'] ?? '';
+            */?>
+            <section class="faq_container">
+                <p class="titre_question"><?php /*= $titre_question */?><span class="etoile">&#9733;</span></p>
             </section>
         <?php
-        endwhile;
+/*        endforeach;
+    else:
+        echo '<p>Aucune question FAQ trouvée.</p>';
     endif;
-    ?>
+    */?>
 </section>
+<pre>
+<?php /*var_dump(get_field('faq')); */?>
+</pre>-->
 
 <section class="galerie">
     <img class="one_line_image_galerie" src="<?= $one_line_image_galerie['url'] ?>"

@@ -55,7 +55,7 @@ $foyers = new WP_Query([
                 <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'foyer_carte_image']); ?>
             </figure>
             <div class="bouton_container_foyer">
-                <a class="bouton_foyer_cartes" href="<?= get_permalink() ?>"><?= $bouton_maison['title'] ?></a>
+                <a class="bouton_foyer_cartes" title="Vers la page du Foyer" href="<?= get_permalink() ?>"><?= $bouton_maison['title'] ?></a>
             </div>
 
         </article>
@@ -85,7 +85,7 @@ $foyers = new WP_Query([
         <?php endforeach; ?>
     </div>
     <div class="bouton_container_journee">
-        <a class="bouton_journee_type" href="<?= $bouton_journee_type['url'] ?>"><?= $bouton_journee_type['title'] ?></a>
+        <a class="bouton_journee_type" title="Vers la page Journée type" href="<?= $bouton_journee_type['url'] ?>"><?= $bouton_journee_type['title'] ?></a>
     </div>
 </section>
 

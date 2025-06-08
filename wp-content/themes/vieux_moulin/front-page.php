@@ -69,7 +69,7 @@ $partenaires = new WP_Query([
         <h2 class="titre_decouvrir"><?= $titre_section_decouvrir ?></h2>
         <p class="description_decouvrir"><?= $description_decouvrir ?></p>
         <div class="bouton_container_decouvrir">
-            <a class="bouton_decouvrir" href="<?= $bouton_decouvrir['url'] ?>"><?= $bouton_decouvrir['title'] ?></a>
+            <a class="bouton_decouvrir" title="Vers la page Nous découvrir" href="<?= $bouton_decouvrir['url'] ?>"><?= $bouton_decouvrir['title'] ?></a>
         </div>
 
     </div>
@@ -89,7 +89,7 @@ $partenaires = new WP_Query([
     <div class="actualite_container">
         <?php if ($actualites->have_posts()): while ($actualites->have_posts()): $actualites->the_post(); ?>
             <article class="actualite_post">
-                <a href="<?= get_permalink(173)?>/#<?= sanitize_html_class(get_the_title()) ?>" class="actualite_card_inner">
+                <a href="<?= get_permalink(173)?>/#<?= sanitize_html_class(get_the_title()) ?>" title="Vers l'actualité" class="actualite_card_inner">
                     <figure class="actualite_fig">
                         <?= get_the_post_thumbnail(null, 'medium', ['class' => 'actualite_img']); ?>
                     </figure>
@@ -104,7 +104,7 @@ $partenaires = new WP_Query([
         <?php endif; ?>
     </div>
     <div class="bouton_container">
-        <a class="bouton_actualite" href="<?= $bouton_actualite['url'] ?>">
+        <a class="bouton_actualite" title="Vers la page Actualité" href="<?= $bouton_actualite['url'] ?>">
             <?= $bouton_actualite['title'] ?>
         </a>
     </div>
@@ -140,7 +140,7 @@ $partenaires = new WP_Query([
     </div>
 
     <div class="bouton_container">
-        <a class="bouton_foyer" href="<?= $bouton_foyer['url'] ?>"><?= $bouton_foyer['title'] ?></a>
+        <a class="bouton_foyer" title="Vers la page Foyers" href="<?= $bouton_foyer['url'] ?>"><?= $bouton_foyer['title'] ?></a>
     </div>
 
 </section>
@@ -152,7 +152,7 @@ $partenaires = new WP_Query([
         <h2 class="titre_benevolat"><?= $titre_section_benevolat ?></h2>
         <p class="description_benevolat"><?= $description_benevolat ?></p>
         <div class="bouton_container_benevolat">
-            <a class="bouton_benevolat" href="<?= $bouton_benevolat['url'] ?>">
+            <a class="bouton_benevolat" title="Vers la page Contact" href="<?= $bouton_benevolat['url'] ?>">
                 <?= $bouton_benevolat['title'] ?>
             </a>
         </div>
@@ -198,7 +198,7 @@ $partenaires = new WP_Query([
         <img class="image_famille" src="<?= $image_famille['url'] ?>" alt="<?= $image_famille['alt'] ?>">
         <div class="contenu_famille">
             <p class="description_famille"><?= $description_famille ?></p>
-            <a class="bouton_famille" href="<?= $bouton_famille['url'] ?>"><?= $bouton_famille['title'] ?></a>
+            <a class="bouton_famille" title="Vers le site Famille d'accueil" href="<?= $bouton_famille['url'] ?>"><?= $bouton_famille['title'] ?></a>
         </div>
     </div>
 </section>

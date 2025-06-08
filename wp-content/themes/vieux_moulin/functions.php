@@ -90,11 +90,11 @@ register_post_type('partenaire', [
 //fonction dd
 
 
-function dd($value)
+/*function dd($value)
 {
     var_dump($value);
     die();
-}
+}*/
 
 //fin fonction dd
 

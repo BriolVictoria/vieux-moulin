@@ -112,6 +112,7 @@
     font-size: 16px;
     color: var(--pink-color);
     font-weight: 200;
+    resize: vertical;
 }
 
     /*Rangé double ou simple du formulaire*/

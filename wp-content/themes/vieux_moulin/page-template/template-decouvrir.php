@@ -47,7 +47,8 @@ $foyers = new WP_Query([
 </section>
 
 <section class="information">
-    <img class="one_line_image_galery" src="<?= $one_line_image_galery['url'] ?>" alt="<?= $one_line_image_galery['alt'] ?>">
+    <img class="one_line_image_galery" src="<?= $one_line_image_galery['url'] ?>"
+         alt="<?= $one_line_image_galery['alt'] ?>">
     <h2 class="information_titre"><?= $titre_infromation ?></h2>
     <p class="information_description"><?= $description_infromation ?></p>
     <div class="image_galerie_container">
@@ -57,15 +58,18 @@ $foyers = new WP_Query([
         <?php endforeach; ?>
     </div>
     <div class="bouton_container_journee">
-        <a class="bouton_journee_type" href="<?= $bouton_journee_type['url'] ?>"><?= $bouton_journee_type['title'] ?></a>
+        <a class="bouton_journee_type" title="Vers la page Journée type"
+           href="<?= $bouton_journee_type['url'] ?>"><?= $bouton_journee_type['title'] ?> </a>
     </div>
 </section>
 
 <section class="video">
-    <img class="one_line_image_video" src="<?= $one_line_image_video['url'] ?>" alt="<?= $one_line_image_video['alt'] ?>">
+    <img class="one_line_image_video" src="<?= $one_line_image_video['url'] ?>"
+         alt="<?= $one_line_image_video['alt'] ?>">
     <h2 class="video_titre"><?= $titre_video ?></h2>
     <div class="video_container">
-        <video class="video_video" src="<?= $video_video['url'] ?>" muted loop autoplay ><?= $video_video['title'] ?></video>
+        <video class="video_video" src="<?= $video_video['url'] ?>" muted loop
+               autoplay><?= $video_video['title'] ?></video>
     </div>
 
 </section>
@@ -100,22 +104,23 @@ $foyers = new WP_Query([
     </div>
 
     <div class="bouton_container">
-        <a class="bouton_foyer" href="<?= $bouton_foyer['url'] ?>"><?= $bouton_foyer['title'] ?></a>
+        <a class="bouton_foyer" title="Vers la page Foyers" href="<?= $bouton_foyer['url'] ?>"><?= $bouton_foyer['title'] ?></a>
     </div>
 
 </section>
 
 <section class="information_document">
-    <img class="one_line_image_information" src="<?= $one_line_image_information['url'] ?>" alt="<?= $one_line_image_information['alt'] ?>">
+    <img class="one_line_image_information" src="<?= $one_line_image_information['url'] ?>"
+         alt="<?= $one_line_image_information['alt'] ?>">
     <h2 class="titre_document">
         <span class="soulignement_titre_document"><?= $titre_information ?></span>
     </h2>
     <p class="description_document"><?= $description_information ?></p>
     <div class="document_boutons">
         <div class="bouton_container_document">
-            <a class="carnet_daccueil" href="<?= $carnet_daccueil['url'] ?>"><?= $carnet_daccueil['title'] ?></a>
+            <a class="carnet_daccueil" title="Vers le document Carnet d'accueil" href="<?= $carnet_daccueil['url'] ?>"><?= $carnet_daccueil['title'] ?></a>
 
-            <a class="projet_educatif" href="<?= $projet_educatif['url'] ?>"><?= $projet_educatif['title'] ?></a>
+            <a class="projet_educatif" title="Vers le document Projet educatif" href="<?= $projet_educatif['url'] ?>"><?= $projet_educatif['title'] ?></a>
         </div>
     </div>
 </section>
@@ -125,8 +130,12 @@ $foyers = new WP_Query([
         <span class="soulignement_titre_soutient"><?= $titre_soutient ?></span>
     </h2>
     <div class="image_container_vieuxmoulin">
-        <img  class="soutient_image" src="<?= $image_soutient_1['url'] ?>" alt="<?= $image_soutient_1['alt'] ?>">
-        <img  class="soutient_image" src="<?= $image_soutient['url'] ?>" alt="<?= $image_soutient['alt'] ?>">
+        <a href="https://www.federation-wallonie-bruxelles.be/" title="Vers le site de la Fédération Wallonie Bruxelles"><img class="soutient_image"
+                                                                     src="<?= $image_soutient_1['url'] ?>"
+                                                                     alt="<?= $image_soutient_1['alt'] ?>"></a>
+
+        <a href="https://www.aidealajeunesse.cfwb.be/" title="Vers le site de L'aide à la jeunesse"><img class="soutient_image" src="<?= $image_soutient['url'] ?>"
+                                                            alt="<?= $image_soutient['alt'] ?>"></a>
     </div>
 
 </section>
