@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/bgm.js"></script>
+    <link rel="icon" href="<?= get_site_icon_url('22') ?>">
 
 
 </head>

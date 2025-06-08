@@ -47,3 +47,13 @@
     color: var(--black-color);
     font-weight: 200;
 }
+
+.legal-title_page {
+    font-size: 2.2rem;
+    color: var(--pink-color); /* Titre en rose vif */
+    border-bottom: 4px solid var(--pink-darker-color); /* Ligne plus sombre en contraste */
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    display: inline-block;
+}
