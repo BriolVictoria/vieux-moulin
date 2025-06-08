@@ -118,9 +118,9 @@ $foyers = new WP_Query([
     <p class="description_document"><?= $description_information ?></p>
     <div class="document_boutons">
         <div class="bouton_container_document">
-            <a class="carnet_daccueil" title="Vers le document Carnet d'accueil" href="<?= $carnet_daccueil['url'] ?>"><?= $carnet_daccueil['title'] ?></a>
+            <a class="carnet_daccueil" title="Vers le document Carnet d'accueil" target="_blank" href="<?= $carnet_daccueil['url'] ?>"><?= $carnet_daccueil['title'] ?></a>
 
-            <a class="projet_educatif" title="Vers le document Projet educatif" href="<?= $projet_educatif['url'] ?>"><?= $projet_educatif['title'] ?></a>
+            <a class="projet_educatif" title="Vers le document Projet educatif" target="_blank" href="<?= $projet_educatif['url'] ?>"><?= $projet_educatif['title'] ?></a>
         </div>
     </div>
 </section>
@@ -130,11 +130,11 @@ $foyers = new WP_Query([
         <span class="soulignement_titre_soutient"><?= $titre_soutient ?></span>
     </h2>
     <div class="image_container_vieuxmoulin">
-        <a href="https://www.federation-wallonie-bruxelles.be/" title="Vers le site de la Fédération Wallonie Bruxelles"><img class="soutient_image"
+        <a href="https://www.federation-wallonie-bruxelles.be/" target="_blank" title="Vers le site de la Fédération Wallonie Bruxelles"><img class="soutient_image"
                                                                      src="<?= $image_soutient_1['url'] ?>"
                                                                      alt="<?= $image_soutient_1['alt'] ?>"></a>
 
-        <a href="https://www.aidealajeunesse.cfwb.be/" title="Vers le site de L'aide à la jeunesse"><img class="soutient_image" src="<?= $image_soutient['url'] ?>"
+        <a href="https://www.aidealajeunesse.cfwb.be/" target="_blank" title="Vers le site de L'aide à la jeunesse"><img class="soutient_image" src="<?= $image_soutient['url'] ?>"
                                                             alt="<?= $image_soutient['alt'] ?>"></a>
     </div>
 

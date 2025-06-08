@@ -42,7 +42,7 @@
         <h1>
             <a class="titre_header" title="Vers la page Accueil" href="<?php echo esc_url(home_url('/')); ?>">Le vieux moulin</a>
         </h1>
-        <a class="logo_facebook hidden_for_bgm" title="Vers la page Facebook"
+        <a class="logo_facebook hidden_for_bgm" target="_blank" title="Vers la page Facebook"
            href="https://www.facebook.com/people/Vieux-Moulin-Strainchamps/pfbid02bHjUPaiNnGz9aNMzjdTKdNVNAFZFMSpA6jM7U7szSNdDSpcrUkawR43UuDs23fqsl/"><img
                     class="logo_facebook"
                     src="https://vieux-moulin.test/wp-content/uploads/2025/05/Screenshot-2025-05-03-at-3.25.03 PM.png"

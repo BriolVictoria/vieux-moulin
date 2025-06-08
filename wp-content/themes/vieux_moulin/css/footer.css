@@ -104,3 +104,22 @@ p > .footer_boutton {
     transform: scaleX(1);
     transform-origin: left;
 }
+
+.infos_supp {
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+
+.blog_info,
+.mention_lien {
+    font-size: 14px;
+    color: var(--black-color);
+    margin-right: 10px;
+}

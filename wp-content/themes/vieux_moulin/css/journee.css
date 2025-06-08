@@ -18,7 +18,7 @@
 
     /*Description d'une journée type*/
 
-.journee_intro_description {
+.intro_container_journee p {
     font-size: 16px;
     font-weight: 400;
     margin-top: 26px;

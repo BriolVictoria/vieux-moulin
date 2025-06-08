@@ -198,7 +198,7 @@ $partenaires = new WP_Query([
         <img class="image_famille" src="<?= $image_famille['url'] ?>" alt="<?= $image_famille['alt'] ?>">
         <div class="contenu_famille">
             <p class="description_famille"><?= $description_famille ?></p>
-            <a class="bouton_famille" title="Vers le site Famille d'accueil" href="<?= $bouton_famille['url'] ?>"><?= $bouton_famille['title'] ?></a>
+            <a class="bouton_famille" target="_blank" title="Vers le site Famille d'accueil" href="<?= $bouton_famille['url'] ?>"><?= $bouton_famille['title'] ?></a>
         </div>
     </div>
 </section>

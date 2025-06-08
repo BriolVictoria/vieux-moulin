@@ -12,17 +12,17 @@
             <div class="contacter">
                 <h2 class="soulignement_footer">Nous contacter</h2>
                 <p class="footer_boutton">
-                    <span class="footer_element">SCHIMIT Jean-François GSM:</span> <a class="footer_boutton" title="Vers le numéro de téléphone de monsieur Jean-François Schimit"
+                    <span class="footer_element">SCHIMIT Jean-François GSM:</span> <a class="footer_boutton" target="_blank" title="Vers le numéro de téléphone de monsieur Jean-François Schimit"
                                                                                       href="tel:+32488774850">0488/774.850</a>
 
-                    <span class="footer_element">Email:</span> <a class="footer_boutton" title="Vers le mail de la direction du Vieux moulin"
+                    <span class="footer_element">Email:</span> <a class="footer_boutton" target="_blank" title="Vers le mail de la direction du Vieux moulin"
                                                                   href="mailto:direction@levm.be">direction@levm.be</a>
                 </p>
-                <a class="footer_boutton" title="Vers le numéro de téléphone du Vieux moulin" href="tel:+3263601150">063/60.11.50</a>
-                <a class="footer_boutton" title="Vers le mail du Vieux moulin" href="mailto:srglevieuxmoulin@levm.be">
+                <a class="footer_boutton" target="_blank" title="Vers le numéro de téléphone du Vieux moulin" href="tel:+3263601150">063/60.11.50</a>
+                <a class="footer_boutton" target="_blank" title="Vers le mail du Vieux moulin" href="mailto:srglevieuxmoulin@levm.be">
                     srglevieuxmoulin@levm.be
                 </a>
-                <a class="footer_boutton" title="Vers la localisation du vieux moulin"
+                <a class="footer_boutton" target="_blank" title="Vers la localisation du vieux moulin"
                    href="https://www.google.com/maps/search/?api=1&query=Rue+des+Vennes+n%C2%B01+Strainchamps+6637+Fauvillers">
                     Rue des Vennes, n°1 Strainchamps 6637 Fauvillers
                 </a>
@@ -56,6 +56,11 @@
             </iframe>
 
         </section>
+
+        <div class="infos_supp">
+            <p class="blog_info">© 2025 <?= get_bloginfo('name'); ?>. Tous droit réservé.</p>
+            <a href="<?= get_permalink(get_page_by_path('mentions-legales')) ?>" class="mention_lien">Mentions légales</a>
+        </div>
 
     </section>
 </footer>
