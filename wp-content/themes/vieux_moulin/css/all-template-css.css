@@ -11,8 +11,6 @@
 @import url('dons.css');
 @import url('foyers.css');
 @import url('single-foyer.css');
-@import url('media-queries_header.css');
-@import url('media-queries_front-page.css');
 @import url('404.css');
 @import url('mentions_legales.css');
 
@@ -33,6 +31,7 @@
     --extra-benevolat-background-color: #CCAFFF;
     --pink-light-color: #FFD2CE;
     --pink-darker-color: #FFA69E;
+    --logo-facebook: #95D1EA;
 }
 
 .sr-only {
