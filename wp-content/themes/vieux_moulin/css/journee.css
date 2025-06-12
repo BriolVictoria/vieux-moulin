@@ -106,3 +106,57 @@
     transform: scale(4);
     margin-top: -17.4px;
 }
+
+
+@media (max-width: 1515px) {
+    .journee_intro_image {
+        margin-right: 185px;
+    }
+}
+
+@media (max-width: 1230px) {
+    .intro_container_journee p {
+        margin-left: 100px;
+    }
+
+    .journee_intro_titre {
+        margin-left: 100px;
+    }
+
+    .one_line_image_intro {
+        width: 275px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .journee_intro {
+        display: block;
+    }
+
+    .journee_intro_image {
+        margin-left: 100px;
+        margin-top: 0;
+    }
+
+    .one_line_image_intro {
+        width: 181px;
+    }
+}
+
+@media (max-width: 685px) {
+  .journee_intro_image, .journee_intro_titre, .intro_container_journee p {
+      margin-left: 65px;
+    }
+
+    .one_line_image_intro {
+        top: 615px;
+        width: 265px;
+    }
+}
+
+@media (max-width: 555px) {
+    .one_line_image_intro {
+        top: 645px;
+        width: 265px;
+    }
+}
