@@ -17,6 +17,12 @@
     right: 0;
     z-index: 1;
 }
+
+.plan {
+    width: 375px;
+    margin-left: 300px;
+}
+
     /*Titre foyer*/
 
 .titre_plan {
@@ -52,3 +58,41 @@
     margin-top: 113px;
     aspect-ratio: 1;
 }
+
+
+
+@media (max-width: 1410px) {
+    .plan {
+        margin-left: 114px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .plan {
+        margin-left: 65px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .location {
+        display: block;
+    }
+
+    .one_line_image_plan {
+        width: 560px;
+    }
+}
+
+@media (max-width: 855px) {
+    .one_line_image_plan {
+        width: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .one_line_image_plan {
+        width: 300px;
+    }
+}
+
+

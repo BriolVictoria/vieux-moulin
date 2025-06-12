@@ -4,6 +4,7 @@ $one_line_image_par_projet = get_field('one_line_image_par_projet');
 
 $plan = get_field('plan');
 $titre_plan = get_field('titre_plan');
+$plan = get_field('plan');
 $one_line_image_plan = get_field('one_line_image_plan');
 $description_plan = get_field('description_plan');
 $titre_galerie = get_field('titre_galerie');
@@ -23,20 +24,8 @@ $one_line_image_galerie = get_field('one_line_image_galerie');
     </section>
 
 <section class="location">
-    <?php
-    $location = get_field('plan');
-
-    if( $location ): ?>
-        <div class="acf-map"
-             data-lat="<?php echo esc_attr($location['lat']); ?>"
-             data-lng="<?php echo esc_attr($location['lng']); ?>"
-             data-zoom="<?php echo esc_attr($location['zoom']); ?>">
-
-        </div>
-            <p><?php echo esc_html($location['address']); ?></p>
-    <?php endif; ?>
-    <img class="one_line_image_plan" src="<?= $one_line_image_plan['url'] ?>"
-         alt="<?= $one_line_image_plan['title'] ?>">
+    <img class="one_line_image_plan" src="<?= $one_line_image_plan['url'] ?>" alt="<?= $one_line_image_plan['title'] ?>">
+    <img class="plan" src="<?= $plan['url'] ?>" alt="<?= $plan['title'] ?>">
     <div class="location_container">
         <h2 class="titre_plan"><?= $titre_plan ?></h2>
         <p class="description_plan"><?= $description_plan ?></p>

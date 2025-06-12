@@ -8,7 +8,7 @@
     position: relative;
 }
 
-    /*QRCODE image*/
+/*QRCODE image*/
 
 .qrcode_image {
     width: 213px;
@@ -16,7 +16,7 @@
     margin-left: 237px;
 }
 
-    /*QRCODE titre*/
+/*QRCODE titre*/
 
 .qrcode_titre {
     font-size: 28px;
@@ -31,7 +31,7 @@
     margin-top: 117px;
 }
 
-    /*QRCODE description*/
+/*QRCODE description*/
 
 .qrcode_description {
     font-size: 16px;
@@ -40,7 +40,7 @@
     margin-top: 26px;
 }
 
-    /*QRCODE one line image*/
+/*QRCODE one line image*/
 
 .one_line_image_qrcode {
     width: 481px;
@@ -69,7 +69,8 @@
     display: flex;
     flex-direction: column;
 }
-    /*Titre des dons*/
+
+/*Titre des dons*/
 
 .titre_par_dons {
     font-size: 28px;
@@ -78,7 +79,7 @@
     font-weight: 600;
 }
 
-    /*Description des dons*/
+/*Description des dons*/
 
 .description_par_don {
     font-size: 16px;
@@ -87,7 +88,7 @@
     width: 61.8%;
 }
 
-    /*Image des dons*/
+/*Image des dons*/
 
 .image_par_dons {
     border-radius: 15px;
@@ -97,7 +98,7 @@
     margin: 113px 344px 113px 0;
 }
 
-    /*Bouton des dons*/
+/*Bouton des dons*/
 
 .bouton_par_dons {
     width: fit-content;
@@ -113,16 +114,16 @@
     transition: transform 0.2s ease;
 }
 
-    /*Effets des boutons des dons*/
+/*Effets des boutons des dons*/
 
 .bouton_par_dons:hover {
     display: inline-block;
     margin-top: 26px;
     transform: translateX(2px);
-    box-shadow:  0 10px 30px var(--pink-color);
+    box-shadow: 0 10px 30px var(--pink-color);
 }
 
-    /*One line image des dons*/
+/*One line image des dons*/
 
 .one_line_dons {
     width: 312px;
@@ -154,7 +155,7 @@
     margin-top: 113px;
 }
 
-    /*Description des exemples de dons*/
+/*Description des exemples de dons*/
 
 .exemple_description {
     font-weight: 200;
@@ -162,7 +163,7 @@
     margin-top: 0;
 }
 
-    /*Description des exemples de dons*/
+/*Description des exemples de dons*/
 
 .exemple_titre {
     font-size: 28px;
@@ -170,7 +171,7 @@
     margin: 10px 0 5px;
 }
 
-    /*Image des exemples de dons*/
+/*Image des exemples de dons*/
 
 .exemple_fig {
     background-color: var(--pink-color);
@@ -187,13 +188,13 @@
     border-radius: 15px;
 }
 
-    /*Effet des exemples de dons*/
+/*Effet des exemples de dons*/
 
 .exemple_fig:hover {
-    box-shadow:  0 10px 30px var(--pink-color);
+    box-shadow: 0 10px 30px var(--pink-color);
 }
 
-.exemple_fig:hover{
+.exemple_fig:hover {
     transform: translateX(2px);
     box-shadow: 0 10px 30px var(--pink-color);
 }
@@ -217,7 +218,7 @@
     flex-direction: column;
 }
 
-    /*Titre du bénévolat/soutenir*/
+/*Titre du bénévolat/soutenir*/
 
 .benevolat_soutenir_titre1 {
     font-size: 30px;
@@ -242,7 +243,7 @@
     margin-bottom: 0;
 }
 
-    /*Description du bénévolat/soutenir*/
+/*Description du bénévolat/soutenir*/
 
 .benevolat_soutenir_description {
     font-size: 16px;
@@ -252,7 +253,7 @@
     width: 52.8%;
 }
 
-    /*Image du bénévolat/soutenir*/
+/*Image du bénévolat/soutenir*/
 
 .benevolat_soutenir_image {
     width: 495px;
@@ -264,7 +265,7 @@
     z-index: 2;
 }
 
-    /*Backimage du bénévolat/soutenir*/
+/*Backimage du bénévolat/soutenir*/
 
 .back_image_benevolat_soutenir {
     position: absolute;
@@ -277,7 +278,7 @@
     z-index: 1;
 }
 
-    /*One line image  du bénévolat/soutenir*/
+/*One line image  du bénévolat/soutenir*/
 
 .one_line_image_soutenir {
     width: 414px;
@@ -285,4 +286,111 @@
     bottom: 0;
     right: 0;
     z-index: 1;
+}
+
+@media (max-width: 1420px) {
+    .back_image_benevolat_soutenir {
+        display: none
+    }
+}
+
+@media (max-width: 1370px) {
+    .image_par_dons {
+        margin-right: 200px;
+    }
+}
+
+@media (max-width: 1345px) {
+    .qrcode {
+        display: block;
+    }
+
+    .qrcode_text {
+        margin-left: 130px;
+        margin-top: 50px;
+    }
+
+    .qrcode_description {
+        width: 60%;
+    }
+
+    .qrcode_image {
+        width: 145px;
+        margin-left: 130px;
+    }
+}
+
+@media (max-width: 1315px) {
+    .benevolat_soutenir_image {
+        width: 395px;
+    }
+}
+
+@media (max-width: 1255px) {
+    .benevolat_soutenir_description {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1220px) {
+    .description_par_don, .titre_par_dons {
+        margin-left: 140px;
+    }
+
+    .description_par_don {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1145px) {
+    .dons {
+        display: block;
+    }
+
+    .description_par_don, .image_par_dons, .titre_par_dons, .bouton_par_dons {
+        margin-left: 140px;
+    }
+
+    .image_par_dons {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 945px) {
+    .benevolat_soutenir {
+        display: block;
+    }
+
+    .benevolat_soutenir_image {
+        margin-top: 55px;
+        margin-bottom: 0;
+        margin-left: 50px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 850px) {
+    .description_par_don {
+        width: 62%;
+    }
+
+    .description_par_don, .image_par_dons, .titre_par_dons, .bouton_par_dons {
+        margin-left: 65px;
+    }
+
+}
+
+
+@media (max-width: 770px) {
+    .qrcode_text {
+        margin-left: 65px;
+    }
+
+    .qrcode_image {
+        margin-left: 65px;
+    }
+
+    .qrcode_description {
+        width: 74%;
+    }
 }

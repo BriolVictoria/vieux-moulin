@@ -36,6 +36,8 @@
     font-size: 20px;
     font-weight: 400;
     margin: 0 0 8px 0;
+    display: block;
+    width: 108%;
 }
 
 .titre_soulignement_form {
@@ -128,3 +130,21 @@
 }
 
 /*Fin style du formulaire*/
+
+@media (max-width: 1365px) {
+    .one_line_image_formulaire {
+        width: 320px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .one_line_image_formulaire {
+        width: 240px;
+    }
+}
+
+@media (max-width: 610px) {
+    .one_line_image_formulaire {
+        width: 155px;
+    }
+}
