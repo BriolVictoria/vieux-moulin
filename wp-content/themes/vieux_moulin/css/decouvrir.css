@@ -1,13 +1,13 @@
 /*Style de la banniére*/
 
-    /*Image de fond de la banniére*/
+/*Image de fond de la banniére*/
 
 .image_vieuxmoulin {
     width: 100%;
     position: relative;
 }
 
-    /*Titre de la banniére*/
+/*Titre de la banniére*/
 
 .titre_vieuxmoulin {
     position: absolute;
@@ -34,7 +34,7 @@
 
 /*Style de l'intro*/
 
-    /*Description de l'intro*/
+/*Description de l'intro*/
 
 .information_description {
     font-size: 16px;
@@ -44,7 +44,7 @@
     width: 71.5%;
 }
 
-    /*Galerie de l'intro*/
+/*Galerie de l'intro*/
 
 .galerie_image_information {
     display: inline-block;
@@ -60,7 +60,7 @@
     margin-bottom: 50px;
 }
 
-        /*One line image de la galery de l'intro*/
+/*One line image de la galery de l'intro*/
 
 .one_line_image_galery {
     width: 345px;
@@ -70,7 +70,7 @@
     z-index: 1;
 }
 
-    /*Bouton de l'intro (journée type)*/
+/*Bouton de l'intro (journée type)*/
 
 .bouton_journee_type {
     color: var(--black-color);
@@ -86,7 +86,7 @@
 
 .bouton_journee_type:hover {
     transform: translateX(2px);
-    box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
+    box-shadow: 0 10px 30px var(--extra-decouvrir-background-color);
 }
 
 
@@ -98,7 +98,7 @@
     position: relative;
 }
 
-    /*Titre de la video*/
+/*Titre de la video*/
 
 .video_video {
     width: 963px;
@@ -106,14 +106,14 @@
     margin-top: 26px;
 }
 
-    /*La video de la video*/
+/*La video de la video*/
 
-.video_container{
+.video_container {
     display: flex;
     justify-content: center;
 }
 
-    /*One line image de la video*/
+/*One line image de la video*/
 
 .one_line_image_video {
     width: 345px;
@@ -135,16 +135,16 @@
     position: relative;
 }
 
-    /*Description de plus d'information*/
+/*Description de plus d'information*/
 
-.description_document{
+.description_document {
     font-size: 16px;
     font-weight: 200;
     margin-top: 26px;
     margin-left: 237px;
 }
 
-    /*One line image de plus d'information*/
+/*One line image de plus d'information*/
 
 .one_line_image_information {
     width: 345px;
@@ -154,9 +154,9 @@
     z-index: 1;
 }
 
-    /*Lien de plus d'information*/
+/*Lien de plus d'information*/
 
-.document_boutons  {
+.document_boutons {
     margin-top: 26px;
 }
 
@@ -176,11 +176,11 @@
     margin-left: 237px;
 }
 
-    /*Effet de plus d'information*/
+/*Effet de plus d'information*/
 
 .carnet_daccueil:hover, .projet_educatif:hover {
     transform: translateX(2px);
-    box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
+    box-shadow: 0 10px 30px var(--extra-decouvrir-background-color);
 }
 
 /*Fin style de plus d'information*/
@@ -192,13 +192,13 @@
     margin-bottom: 113px;
 }
 
-    /*Titre de soutient*/
+/*Titre de soutient*/
 
 .soutient_titre {
     font-weight: 600;
 }
 
-    /*Images de soutient*/
+/*Images de soutient*/
 
 .soutient_image {
     margin-right: 73px;
@@ -218,7 +218,267 @@
     margin-top: 123px;
     margin-left: 237px;
 }
+
 .bouton_container_journee, .bouton_container_document {
     display: flex;
 }
+
+
+
+.image_container_vieuxmoulin {
+    margin-left: 220px;
+}
+
+
+@media (max-width: 1570px) {
+    .one_line_image_video {
+        bottom: -50px;
+    }
+}
+
+@media (max-width: 1445px) {
+    .one_line_image_video {
+        width: 245px;
+    }
+}
+
+@media (max-width: 1430px) {
+    .video_titre {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1425px) {
+    .titre_vieuxmoulin {
+        top: 453px;
+        padding: 32px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .titre_vieuxmoulin {
+        padding: 16px;
+    }
+    .bouton_journee_type {
+        margin-left: 190px;
+    }
+
+    .one_line_image_video {
+        width: 220px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .one_line_image_video {
+        width: 200px;
+    }
+
+    .image_container_vieuxmoulin a:first-of-type .soutient_image {
+        width: 200px;
+    }
+
+    .image_container_vieuxmoulin a:nth-child(2) .soutient_image {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1115px) {
+    .one_line_image_information {
+        width: 230px;
+    }
+}
+
+
+@media (max-width: 1090px) {
+    .titre_vieuxmoulin {
+        top: 418px;
+        padding: 13px;
+        font-size: 23px;
+    }
+
+    .bouton_journee_type {
+        margin-left: 110px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .titre_vieuxmoulin {
+        top: 414px;
+    }
+}
+
+@media (max-width: 1065px) {
+    .video_video {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .image_galerie_container {
+        grid-template-columns: repeat(2, auto);
+        gap: 30px;
+    }
+
+    .information_description {
+        margin-left: 50px;
+        width: 85%;
+    }
+
+    .information_titre {
+        margin-left: 50px;
+    }
+
+    .one_line_image_galery {
+        top: -143px;
+        width: 311px;
+    }
+
+    .bouton_journee_type {
+        margin-left: 35px;
+    }
+
+    .image_container_vieuxmoulin a:first-of-type .soutient_image {
+        width: 200px;
+    }
+
+    .image_container_vieuxmoulin a:nth-child(2) .soutient_image {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1015px) {
+    .titre_vieuxmoulin {
+        top: 418px;
+        padding: 13px;
+        font-size: 23px;
+    }
+
+    .bouton_journee_type {
+        margin-left: 115px;
+    }
+}
+
+@media (max-width: 955px) {
+    .description_document, .titre_document, .carnet_daccueil,.soutient_titre {
+        margin-left: 55px;
+    }
+
+    .image_container_vieuxmoulin {
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 885px) {
+    .titre_vieuxmoulin {
+        top: 273px;
+    }
+}
+
+@media (max-width: 870px) {
+    .titre_vieuxmoulin {
+        top: 270px;
+    }
+}
+
+@media (max-width: 805px) {
+    .image_container_vieuxmoulin a:first-of-type .soutient_image {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .one_line_image_galery {
+        top: -127px;
+        width: 254px;
+    }
+
+    .one_line_image_video {
+        width: 145px;
+    }
+
+}
+
+@media (max-width: 790px) {
+    .one_line_image_information {
+        width: 180px;
+    }
+}
+
+
+@media (max-width: 715px) {
+    .titre_vieuxmoulin {
+        top: 230px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .image_galerie_container {
+        margin-left: 40px;
+    }
+
+    .galerie_image_information {
+        max-width: 93%;
+    }
+
+    .bouton_journee_type {
+        margin-left: 45px;
+    }
+
+    .video_video {
+        width: 455px;
+        margin-right: 110px;
+    }
+}
+
+@media (max-width: 655px) {
+    .video_video {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .titre_vieuxmoulin {
+        top: 175px;
+    }
+}
+
+@media (max-width: 600px) {
+    .soutient_images_container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px 50px 20px;
+        gap: 20px;
+    }
+
+    .soutient_image {
+        width: 100%;
+        flex: unset;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 580px) {
+    .one_line_image_information {
+        bottom: -100px;
+    }
+}
+
+@media (max-width: 565px) {
+    .titre_vieuxmoulin {
+        top: 160px;
+    }
+}
+
+@media (max-width: 450px) {
+    .titre_vieuxmoulin {
+        top: 59px;
+        padding: 8px;
+        font-size: 18px;
+    }
+}
+
+
+
 
