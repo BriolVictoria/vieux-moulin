@@ -185,3 +185,213 @@
     margin-bottom: 26px;
 }
 
+@media (max-width: 1477px) {
+    .one_line_image_galery {
+        width: 270px;
+    }
+}
+
+
+@media (max-width: 1525px) {
+    .one_line_image_nos_foyers {
+        width: 290px;
+    }
+}
+
+@media (max-width: 1370px) {
+    .one_line_image_nos_foyers {
+        bottom: -117px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .bouton_journee_type {
+        margin-left: 190px;
+    }
+}
+
+@media (max-width: 1275px) {
+    .intro_image_foyers {
+        margin-right: 110px;
+    }
+}
+
+
+@media (max-width: 1180px) {
+    .encadrement_image {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .bouton_journee_type {
+        margin-left: 110px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .encadrement_titre {
+        margin-top: 115px;
+        width: 70%;
+    }
+}
+
+
+
+@media (max-width: 1070px) {
+    .intro_description_foyers {
+        margin-left: 65px;
+    }
+
+    .intro_titre_foyers {
+        margin-left: 65px;
+    }
+
+    .one_line_image_foyers{
+        width: 252px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .image_galerie_container {
+        grid-template-columns: repeat(2, auto);
+        gap: 30px;
+    }
+
+    .one_line_image_galerie {
+        width: 160px;
+    }
+
+    .titre_galerie {
+        margin-left: 50px;
+    }
+
+    .one_line_image_foyers {
+        top: -143px;
+        width: 311px;
+    }
+
+    .bouton_journee_type {
+        margin-left: 35px;
+    }
+}
+
+
+
+@media (max-width: 1015px) {
+    .bouton_journee_type {
+        margin-left: 115px;
+    }
+}
+
+
+@media (max-width: 960px) {
+    .encadrement_image {
+        width: 295px;
+        margin-left: 40px;
+    }
+
+    .encadrement_description {
+        width: 85%;
+    }
+
+    .encadrement_titre {
+        margin-top: 85px;
+    }
+    
+    .back_image_encadrement {
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    .foyer_cartes > article.foyer_carte:nth-of-type(2) .titre_soulignement_foyer {
+        margin-top: -25px;
+    }
+}
+
+
+@media (max-width: 825px) {
+    .intro_foyers {
+        display: block;
+    }
+
+    .intro_image_foyers {
+        margin-top: 35px;
+        margin-left: 65px;
+    }
+
+    .intro_description_foyers {
+        width: 80%;
+    }
+
+    .one_line_image_foyers {
+        top: -100px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .one_line_image_foyers {
+        top: -127px;
+        width: 254px;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .encadrement {
+        display: block;
+    }
+
+    .encadrement_description {
+        padding-bottom: 30px;
+    }
+
+    .encadrement_image {
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .encadrement_titre {
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+    .image_galerie_container {
+        margin-left: 40px;
+    }
+
+    .galerie_photo {
+        max-width: 93%;
+    }
+
+    .bouton_journee_type {
+        margin-left: 45px;
+    }
+}
+
+
+@media (max-width: 560px) {
+    .one_line_image_nos_foyers {
+        width: 240px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
