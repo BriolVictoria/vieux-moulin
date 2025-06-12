@@ -211,6 +211,7 @@ $partenaires = new WP_Query([
         <h2 class="titre_projet"><?= $titre_section_projets ?></h2>
         <p class="description_projet"><?= $description_projets ?></p>
     </div>
+    <div class="back_image_projet"></div>
     <img class="image_projet" src="<?= $image_projets['url'] ?>" alt="<?= $image_projets['alt'] ?>">
 </section>
 

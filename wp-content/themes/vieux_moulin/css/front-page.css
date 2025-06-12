@@ -581,6 +581,8 @@
     margin-top: 119px;
     margin-right: 78px;
     margin-bottom: 118px;
+    z-index: 2;
+
 }
 
 /*One line image projets*/
@@ -590,6 +592,17 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
+}
+
+.back_image_projet {
+    position: absolute;
+    top: 81.4px;
+    left: 1264.5px;
+    width: 351.8px;
+    border-radius: 32px 0 0 0;
+    aspect-ratio: 306 / 248; /*Pour faire un carrée sans utiliser heifht, demander si on peut*/
+    background-color: var(--pink-darker-color);
     z-index: 1;
 }
 
@@ -661,6 +674,235 @@
 /* Base desktop déjà définie */
 
 /* Responsive tablette et mobile */
+
+@media (max-width: 1615px) {
+    .back_image_benevolat {
+        display: none;
+    }
+
+    .back_image_projet {
+        display: none;
+    }
+}
+
+@media (max-width: 1450px) {
+    .description_benevolat {
+        width: 74%;
+    }
+
+    .description_projet {
+        width: 74%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .one_line_image_famille {
+        width: 280px;
+    }
+}
+
+@media (max-width: 1405px) {
+    .description_benevolat {
+        width: 60%;
+    }
+
+    .description_projet {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 1365px) {
+    .foyer_post:first-child img {
+        margin-left: 66px;
+    }
+
+    .foyer_img {
+        margin-left: 166px;
+    }
+
+}
+
+@media (max-width: 1350px) {
+    .description_famille {
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 1310px) {
+    .image_famille {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .description_decouvrir {
+        width: 80%;
+    }
+
+    .one_line_image_decouvrir {
+        width: 296px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .one_line_image_actualite_2 {
+        width: 280px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .description_benevolat {
+        margin-left: 50px;
+    }
+
+    .titre_benevolat {
+        margin-left: 50px;
+    }
+
+    .bouton_benevolat {
+        margin-left: 50px;
+    }
+
+    .description_projet {
+        margin-left: 50px;
+    }
+
+    .titre_projet {
+        margin-left: 50px;
+    }
+
+    .bouton_projet {
+        margin-left: 50px;
+    }
+
+}
+
+@media (max-width: 1210px) {
+    .one_line_image_benevolat {
+        width: 245px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .description_benevolat {
+        width: 91%;
+    }
+
+    .description_projet {
+        width: 82%;
+    }
+
+    .image_projet {
+        width: 452px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .one_line_image_decouvrir {
+        width: 256px;
+    }
+}
+
+@media (max-width: 1085px) {
+    .titre_decouvrir {
+        margin-top: 128px;
+    }
+
+}
+
+@media (max-width: 1080px) {
+    .famille_container {
+        display: block;
+    }
+
+    .description_famille {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1075px) {
+    .foyer_post:first-child img {
+        margin-left: 5px;
+    }
+    .foyer_img {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 1025px) {
+    .image_benevolat {
+        width: 285px;
+    }
+
+    .image_projet {
+        width: 278px;
+        margin-top: 270px;
+        margin-bottom: 55px;
+    }
+
+    .titre_projet {
+        margin-top: 110px;
+    }
+
+    .one_line_image_benevolat {
+        width: 200px;
+    }
+
+    .one_line_image_projet{
+        width: 220px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .one_line_image_decouvrir {
+        width: 228px;
+    }
+}
+
+@media (max-width: 965px) {
+    .image_projet {
+        width: 270px;
+    }
+
+}
+
+@media (max-width: 955px) {
+    .projet {
+        display: block;
+    }
+
+    .image_projet {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .description_foyer {
+        width: 83%;
+    }
+
+    .titre_decouvrir {
+        margin-top: 103px;
+    }
+
+}
+
+@media (max-width: 910px) {
+    .image_famille {
+        width: 360px;
+    }
+}
+
+@media (max-width: 895px) {
+    .one_line_image_benevolat {
+        width: 160px;
+    }
+}
+
 @media (max-width: 885px) {
 
     .decouvrir {
@@ -691,8 +933,7 @@
 
     .titre_decouvrir {
         font-size: 24px;
-        margin: 30px 0 10px 0;
-        margin-left: 0;
+        margin: 25px 0 10px;
     }
 
     .bouton_container_decouvrir {
@@ -706,10 +947,6 @@
         font-size: 18px;
     }
 
-    .one_line_image_decouvrir {
-        display: none;
-    }
-
     .back_image_decouvrir {
         position: static;
         width: 80%;
@@ -720,98 +957,16 @@
         background-color: var(--extra-decouvrir-background-color);
         z-index: 2;
     }
-}
 
-@media (max-width: 1280px) {
     .one_line_image_decouvrir {
-        display: none;
-    }
-
-    .description_decouvrir {
-        width: 80%;
-    }
-}
-
-
-@media (max-width: 1450px) {
-    .description_benevolat {
-        width: 74%;
+        width: 233px;
+        bottom: 0;
+        left: 0;
+        top: auto;
+        right: auto;
     }
 }
 
-@media (max-width: 1405px) {
-    .description_benevolat {
-        width: 60%;
-    }
-}
-
-
-@media (max-width: 1365px) {
-    .foyer_post:first-child img {
-        margin-left: 66px;
-    }
-
-    .foyer_img {
-        margin-left: 166px;
-    }
-
-}
-
-
-@media (max-width: 1310px) {
-    .one_line_image_actualite_2 {
-        display: none;
-    }
-}
-
-@media (max-width: 1210px) {
-    .one_line_image_benevolat {
-        display: none;
-    }
-
-    .description_benevolat {
-        margin-left: 50px;
-    }
-
-    .titre_benevolat {
-        margin-left: 50px;
-    }
-
-    .bouton_benevolat {
-        margin-left: 50px;
-    }
-
-}
-
-@media (max-width: 1140px) {
-    .description_benevolat {
-        width: 91%;
-    }
-}
-
-@media (max-width: 1075px) {
-    .foyer_post:first-child img {
-        margin-left: 5px;
-    }
-    .foyer_img {
-        margin-left: 0;
-    }
-
-}
-
-@media (max-width: 1025px) {
-    .image_benevolat {
-        width: 285px;
-    }
-}
-
-
-@media (max-width: 950px) {
-    .description_foyer {
-        width: 83%;
-    }
-
-}
 
 @media (max-width: 845px) {
     .image_benevolat {
@@ -819,6 +974,17 @@
     }
     .description_benevolat {
         width: 93%;
+    }
+
+    .image_projet {
+        width: 278px;
+    }
+    .description_projet {
+        width: 93%;
+    }
+
+    .one_line_image_foyer {
+        width: 315px;
     }
 }
 
@@ -830,17 +996,19 @@
     .foyer_post {
         display: block;
     }
+}
 
-    .one_line_image_foyer {
-        display: none;
+@media (max-width: 757px) {
+    .one_line_image_decouvrir {
+        width: 200px;
     }
-
 }
 
 @media (max-width: 748px) {
     .image_benevolat {
         margin-top: 55px;
         margin-left: 55px;
+        margin-bottom: 30px;
     }
     .description_benevolat {
         width: 74%;
@@ -848,10 +1016,74 @@
     .benevolat {
         display: block;
     }
+
+    .image_projet {
+        margin-top: 55px;
+        margin-left: 55px;
+        margin-bottom: 30px;
+    }
+    .description_projet {
+        width: 74%;
+    }
+    .projet {
+        display: block;
+    }
+
+    .one_line_image_benevolat {
+        bottom: 0;
+        left: auto;
+        right: 0;
+        top: auto;
+        width: 230px;
+    }
+
 }
 
-@media (max-width: 660px) {
+@media (max-width: 757px) {
+    .one_line_image_partenaire {
+        width: 300px;
+    }
+}
+
+@media (max-width: 700px) {
+    .description_famille {
+        width: 84%;
+        margin-left: 30px;
+    }
+
+    .bouton_famille {
+        margin-left: 30px;
+    }
+
+    .one_line_image_famille {
+        bottom: -60px;
+    }
+}
+
+@media (max-width: 687px) {
+    .one_line_image_decouvrir {
+        width: 150px;
+    }
+    .one_line_image_partenaire {
+        width: 245px;
+    }
+
+}
+
+@media (max-width: 680px) {
     .one_line_image_actualite {
-        display: none;
+        width: 153px;
+    }
+}
+
+@media (max-width: 560px) {
+    .one_line_image_foyer {
+        width: 235px;
+    }
+}
+
+@media (max-width: 525px) {
+    .one_line_image_actualite_2 {
+        width: 250px;
     }
 }
