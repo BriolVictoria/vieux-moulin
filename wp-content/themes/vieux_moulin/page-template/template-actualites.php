@@ -29,7 +29,7 @@ $actualites = new WP_Query([
 </section>
 
 <section class=intro_actualite>
-    <img class="one_line_image_actualite" src="<?= $one_line_image_actualite['url'] ?>" alt="<?= $one_line_image_actualite['alt'] ?>">
+    <img class="one_line_image_intro_actualite" src="<?= $one_line_image_actualite['url'] ?>" alt="<?= $one_line_image_actualite['alt'] ?>">
     <div class="intro_container">
         <h2 class="intro_titre_actualite"><?= $titre_actualite_intro ?></h2>
         <p class="intro_description_actualite"><?= $description_actualite_intro ?></p>
@@ -41,7 +41,6 @@ $actualites = new WP_Query([
     <ul class="actualite_list">
     <?php if($actualites->have_posts()): while($actualites->have_posts()): $actualites->the_post(); ?>
     <li>
-        <img class="image_cpt" src="<?= $image_cpt['url'] ?>" alt="<?= $image_cpt['alt'] ?>">
         <article class="actualite_all" id="<?= sanitize_html_class(get_the_title()) ?>">
 
             <div class="actualite_all_text_container">

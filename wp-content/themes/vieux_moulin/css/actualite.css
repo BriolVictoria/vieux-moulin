@@ -32,6 +32,14 @@
     font-weight: 600;
 }
 
+.one_line_image_intro_actualite {
+    width: 217.11px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 /*Fin style du fond d'actualité*/
 
 /*Style intro actualité*/
@@ -208,4 +216,137 @@
 
 .actualite_all_text_container {
     margin-top: 20px;
+}
+
+@media (max-width: 1185px) {
+    .actualite_all_description {
+        margin-left: 80px;
+    }
+
+    .actualite_all_title {
+        margin-left: 80px;
+        padding-top: 50px;
+    }
+
+    .actualite_list li:nth-child(even) .actualite_all_title {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 1425px) {
+    .titre_page_actualite {
+        top: 245px;
+        padding: 32px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .titre_page_actualite {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 1275px) {
+    .intro_image_actualite {
+        margin-right: 110px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .titre_page_actualite {
+        top: 183px;
+    }
+
+    .intro_description_actualite {
+        margin-left: 65px;
+    }
+
+    .intro_titre_actualite {
+        margin-left: 65px;
+    }
+
+    .one_line_image_intro_actualite {
+        width: 153px;
+    }
+}
+
+@media (max-width: 1015px) {
+    .titre_page_actualite {
+        top: 190px;
+        padding: 13px;
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .actualite_all_title {
+        margin-top: 95px;
+    }
+}
+
+@media (max-width: 900px) {
+    .actualite_all {
+        display: block;
+    }
+
+    .back_image_actualite_all {
+        display: none;
+    }
+
+    .actualite_all_img {
+        margin-left: 80px;
+        margin-top: 20px;
+    }
+
+    .actualite_list li:nth-child(even) .actualite_all_img {
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+}
+
+
+@media (max-width: 870px) {
+    .titre_page_actualite {
+        top: 150px;
+    }
+}
+
+@media (max-width: 825px) {
+    .intro_actualite {
+        display: block;
+    }
+
+    .intro_image_actualite {
+        margin-top: 35px;
+        margin-left: 65px;
+    }
+
+    .intro_description_actualite {
+        width: 80%;
+    }
+
+    .one_line_image_intro_actualite {
+        top: -90px;
+        width: 125px;
+    }
+}
+
+@media (max-width: 715px) {
+    .titre_page_actualite {
+        top: 110px;
+    }
+}
+
+@media (max-width: 565px) {
+    .titre_page_actualite {
+        top: 70px;
+    }
+}
+
+@media (max-width: 450px) {
+    .titre_page_actualite {
+        top: 59px;
+        padding: 8px;
+        font-size: 18px;
+    }
 }
