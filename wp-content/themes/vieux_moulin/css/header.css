@@ -77,6 +77,13 @@ a.titre_header:hover {
     background-color: var(--white-color);
 }
 
+.main-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Pour être au-dessus des autres éléments */
+    background-color: var(--header-background);
+}
+
 /* Liens de navigation */
 .lien_navigation_header {
     text-decoration: none;
@@ -136,6 +143,8 @@ a.titre_header:hover {
 .lien:first-child {
     margin-left: 431px;
 }
+
+
 
 /* Responsive - Desktop */
 @media (min-width: 886px) {

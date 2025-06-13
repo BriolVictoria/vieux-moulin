@@ -40,7 +40,7 @@
         </svg>
     </label>
 
-    <ul class="bottom_header">
+    <ul class="navigation_header">
         <?php foreach (dw_get_navigation_links('header-menu') as $link): ?>
             <li class="lien">
                 <a href="<?= $link->href ?>" title="Vers la page <?= $link->label; ?>" class="lien_navigation_header"><?= $link->label; ?></a>
