@@ -19,10 +19,10 @@
     <section class="top_header">
         <img class="logo_header" src="<?= get_site_icon_url('106') ?>" alt="Icône du site, initial de Vieux Moulin">
         <h1>
-            <a class="titre_header" href="<?= esc_url(home_url('/')); ?>">Le vieux moulin</a>
+            <a class="titre_header" title="Vers la page d'Accueil" href="<?= esc_url(home_url('/')); ?>">Le vieux moulin</a>
         </h1>
 
-        <a class="logo_facebook" target="_blank"
+        <a class="logo_facebook" title="Vers la page Facebook" target="_blank"
            href="https://www.facebook.com/people/Vieux-Moulin-Strainchamps/pfbid02bHjUPaiNnGz9aNMzjdTKdNVNAFZFMSpA6jM7U7szSNdDSpcrUkawR43UuDs23fqsl/">
             <img src="https://vieux-moulin.test/wp-content/uploads/2025/05/Screenshot-2025-05-03-at-3.25.03 PM.png"
                  alt="Facebook">
@@ -32,7 +32,7 @@
     <!-- Menu Burger -->
     <input type="checkbox" tabindex="0" id="bgm_navigation" class="navigation_burger_menu">
     <label for="bgm_navigation" class="nav_bgm_label">
-        <svg class="nav_bgm_svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+        <svg class="nav_bgm_svg" width="45" height="45" viewBox="0 0 30 30" fill="none"
              xmlns="http://www.w3.org/2000/svg">
             <path class="nav_element" d="M6.25 9.30469H23.75" stroke-width="2"/>
             <path class="nav_element" d="M6.25 15.554H23.75" stroke-width="2"/>
@@ -40,10 +40,10 @@
         </svg>
     </label>
 
-    <ul class="navigation_header">
+    <ul class="bottom_header">
         <?php foreach (dw_get_navigation_links('header-menu') as $link): ?>
             <li class="lien">
-                <a href="<?= $link->href ?>" class="lien_navigation_header"><?= $link->label; ?></a>
+                <a href="<?= $link->href ?>" title="Vers la page <?= $link->label; ?>" class="lien_navigation_header"><?= $link->label; ?></a>
             </li>
         <?php endforeach; ?>
     </ul>

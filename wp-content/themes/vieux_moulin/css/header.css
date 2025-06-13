@@ -51,14 +51,6 @@ a.titre_header:hover {
     letter-spacing: 6px;
 }
 
-/* Icônes */
-.header_icons {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-right: 26px;
-}
-
 .logo_facebook {
     width: 25.5px;
     display: flex;
@@ -67,8 +59,10 @@ a.titre_header:hover {
 }
 
 .logo_facebook img {
-    width: 32px;
+    width: 25px;
     display: block;
+    margin-right: 55px;
+    margin-left: -70px;
 }
 
 .logo_facebook:hover {
@@ -77,28 +71,10 @@ a.titre_header:hover {
 
 /* Bas du header */
 .bottom_header {
-    border-top: 0.5px var(--black-color) solid;
-    border-bottom: 0.5px var(--black-color) solid;
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: var(--white-color);
-}
-
-/* Navigation principale */
-.navigation_header {
-    background: var(--header-background);
-    opacity: 0;
-    transform: translateY(-20px);
-    pointer-events: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    flex-direction: column;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 999;
-    justify-content: flex-start;
 }
 
 /* Liens de navigation */
@@ -161,20 +137,6 @@ a.titre_header:hover {
     margin-left: 431px;
 }
 
-/* Hamburger */
-.navigation_burger_menu {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 20px;
-}
-
-/* Icône hamburger SVG */
-.nav_bgm_svg .nav_element {
-    stroke: var(--logo-facebook); /* ou une couleur adaptée */
-    transition: all 0.3s ease;
-}
-
 /* Responsive - Desktop */
 @media (min-width: 886px) {
     .navigation_header {
@@ -193,31 +155,6 @@ a.titre_header:hover {
     }
 }
 
-/* Responsive - Mobile */
-@media (max-width: 885px) {
-    .navigation_header {
-        padding: 50px 0 20px 0;
-        margin: 90px 0;
-    }
-
-    .navigation_burger_menu:not(:checked) ~ .navigation_header {
-        left: 100%;
-    }
-
-    .navigation_burger_menu:checked ~ .navigation_header {
-        left: 0;
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    .navigation_burger_menu {
-        display: none;
-    }
-
-    .top_header {
-        border-bottom: none;
-    }
-}
 
 /* Media queries supplémentaires */
 @media (max-width: 720px) {
@@ -253,3 +190,4 @@ a.titre_header:hover {
         margin-left: 0;
     }
 }
+
