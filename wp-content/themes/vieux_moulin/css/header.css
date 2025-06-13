@@ -1,21 +1,18 @@
-/*Style du corps général du site*/
-
+/* Style global du body */
 body {
     margin: 0;
     padding: 0;
-    font-family: Montserrat, sans serif;
+    font-family: Montserrat, sans-serif;
     overflow-x: hidden;
     position: relative;
 }
 
-/*Fin du style du corps général du site*/
-
-/*Style du haut du header*/
-
+/* HEADER GLOBAL */
 header {
     display: block;
 }
 
+/* Haut du header */
 .top_header {
     background-color: var(--header-background);
     display: flex;
@@ -23,10 +20,10 @@ header {
     padding: 0 20px;
     justify-content: space-between;
     position: relative;
+    border-bottom: var(--black-color) 1px solid;
 }
 
-/*Style du logo du header*/
-
+/* Logo du header */
 .logo_header {
     display: flex;
     width: 119px;
@@ -34,8 +31,11 @@ header {
     margin-left: 18px;
 }
 
-/*Style du titre du header*/
+.logo_header img {
+    width: 100%;
+}
 
+/* Titre du header */
 a.titre_header {
     color: var(--black-color);
     font-size: 28px;
@@ -46,34 +46,36 @@ a.titre_header {
     transition: transform 0.3s ease, letter-spacing 0.3s ease;
 }
 
-/*Effet du titre du header*/
-
 a.titre_header:hover {
     transform: scale(1.08);
     letter-spacing: 6px;
 }
 
-/*Style du logo facebook du header*/
+/* Icônes */
+.header_icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 26px;
+}
 
 .logo_facebook {
     width: 25.5px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-right: 26px;
 }
 
-/*Effet du logo facebook du header*/
+.logo_facebook img {
+    width: 32px;
+    display: block;
+}
 
 .logo_facebook:hover {
     transform: scale(1.3);
 }
 
-/*Fin du style du haut du header*/
-
-/*Style du bas du header*/
-
-
+/* Bas du header */
 .bottom_header {
     border-top: 0.5px var(--black-color) solid;
     border-bottom: 0.5px var(--black-color) solid;
@@ -83,8 +85,23 @@ a.titre_header:hover {
     background-color: var(--white-color);
 }
 
-/*Style des liens du header*/
+/* Navigation principale */
+.navigation_header {
+    background: var(--header-background);
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    justify-content: flex-start;
+}
 
+/* Liens de navigation */
 .lien_navigation_header {
     text-decoration: none;
     color: var(--black-color);
@@ -92,36 +109,6 @@ a.titre_header:hover {
     display: inline-block;
     padding: 5px 0;
     transition: color 0.3s ease;
-}
-
-.lien {
-    display: inline-block;
-    margin-left: 33px;
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 12px;
-}
-
-/*Style du lien nous soutenir du header*/
-
-.lien:last-child a {
-    font-weight: 600;
-    background-color: var(--pink-color);
-    color: var(--white-color);
-    padding: 10px;
-    border-radius: 45px;
-}
-
-.lien:first-child {
-    margin-left: 431.0px;
-}
-
-/*Effet des liens du header*/
-
-.lien:last-child a:hover {
-    background-color: var(--white-color);
-    color: var(--pink-color);
-    text-shadow: none;
 }
 
 .lien_navigation_header::after {
@@ -145,22 +132,50 @@ a.titre_header:hover {
     transform-origin: left;
 }
 
+/* Items de menu */
+.lien {
+    display: inline-block;
+    margin-left: 33px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 12px;
+}
 
-/* Style de base du bouton hamburger */
-.nav_bgm {
+/* Bouton "Nous soutenir" */
+.lien:last-child a {
+    font-weight: 600;
+    background-color: var(--pink-color);
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: 45px;
+}
+
+.lien:last-child a:hover {
+    background-color: var(--white-color);
+    color: var(--pink-color);
+    text-shadow: none;
+}
+
+/* Espacement spécifique desktop */
+.lien:first-child {
+    margin-left: 431px;
+}
+
+/* Hamburger */
+.navigation_burger_menu {
     background: none;
     border: none;
     cursor: pointer;
     padding: 20px;
 }
 
-/* Style du SVG hamburger */
+/* Icône hamburger SVG */
 .nav_bgm_svg .nav_element {
-    stroke: var(--logo-facebook); /* Personnalise ici la couleur */
+    stroke: var(--logo-facebook); /* ou une couleur adaptée */
     transition: all 0.3s ease;
 }
 
-/* Menu visible par défaut sur desktop */
+/* Responsive - Desktop */
 @media (min-width: 886px) {
     .navigation_header {
         display: flex !important;
@@ -171,60 +186,40 @@ a.titre_header:hover {
         flex-direction: row;
     }
 
-    .nav_bgm {
-        display: none; /* bouton caché sur desktop */
+    .navigation_burger_menu,
+    .nav_bgm_label,
+    .nav_bgm_svg {
+        display: none !important;
     }
 }
 
-/* Menu caché sur mobile (visible seulement si actif) */
+/* Responsive - Mobile */
 @media (max-width: 885px) {
     .navigation_header {
-        background: var(--white-color);
-        opacity: 0;
-        transform: translateY(-20px);
-        pointer-events: none;
-        transition: opacity 0.3s ease, transform 0.3s ease;
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        z-index: 999;
         padding: 50px 0 20px 0;
-        background: var(--white-color);
-        display: flex;
-        justify-content: flex-start;
-        margin: 120px 0;
+        margin: 90px 0;
     }
 
-    .navigation_header.active {
+    .navigation_burger_menu:not(:checked) ~ .navigation_header {
+        left: 100%;
+    }
+
+    .navigation_burger_menu:checked ~ .navigation_header {
+        left: 0;
         opacity: 1;
         pointer-events: auto;
-        transform: translateY(0);
-
-        display: flex; /* s'assurer que c'est un flex container */
-        flex-direction: column; /* les éléments s'empilent verticalement */
-        align-items: center; /* centrage horizontal */
-        justify-content: flex-start; /* alignement en haut */
-        text-align: center; /* pour centrer le texte dans les liens */
-
     }
 
-    .lien:first-child {
-        margin-left: 25px;
-    }
-
-    .nav_bgm {
-        padding-right: 0;
-        display: flex;
-    }
-
-    .hidden_for_bgm {
+    .navigation_burger_menu {
         display: none;
+    }
+
+    .top_header {
+        border-bottom: none;
     }
 }
 
+/* Media queries supplémentaires */
 @media (max-width: 720px) {
     a.titre_header {
         font-size: 21px;
@@ -236,6 +231,7 @@ a.titre_header:hover {
         width: 81px;
     }
 }
+
 @media (max-width: 619px) {
     .navigation_header {
         margin: 91.5px 0;
@@ -257,4 +253,3 @@ a.titre_header:hover {
         margin-left: 0;
     }
 }
-

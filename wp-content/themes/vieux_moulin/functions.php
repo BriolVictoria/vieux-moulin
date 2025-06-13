@@ -1,106 +1,77 @@
 <?php
 
-// Gutenberg est le nouvelle éditeur de contenu propre à wordPress
-// il ne nous intérresse pas pour l'utilisation du thème que
-// nous allons créer. On va le désactiver :
-
-// Disable Gutenberg on the back end.
-add_filter('use_block_editor_for_post', '__return_false'); // une chaîne de caractère qui existe dans wordPress
-
+// Désactivation de Gutenberg (éditeur de blocs) sur le back-end et widgets
+add_filter('use_block_editor_for_post', '__return_false');
 add_filter('use_block_editor_for_post_type', function ($is_enabled, $post_type) {
-    return false; // désactive Gutenberg pour tous les types de contenus
+    return false;
 }, 10, 2);
-
-// Disable Gutenberg for widgets.
 add_filter('use_widgets_block_editor', '__return_false');
-// Disable default front-end styles.
 
+// Suppression des styles Gutenberg front-end
 add_action('wp_enqueue_scripts', function () {
-    // Remove CSS on the front end.
     wp_dequeue_style('wp-block-library');
-    // Remove Gutenberg theme.
     wp_dequeue_style('wp-block-library-theme');
-    // Remove inline global CSS on the front end.
     wp_dequeue_style('global-styles');
 }, 20);
 
-//debut postType
-// Activer l'utilisation des vignettes (images de couverture) sur nos post_type
-add_theme_support('post-thumbnails', ['actualite']);
+// Enregistrement des post types
 
-// Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
-// avec un identifint spécifique dans la colonne "post_type"
+add_theme_support('post-thumbnails', ['actualite', 'foyer', 'partenaire']);
 
 register_post_type('actualite', [
-    'label' => 'Actualites',
+    'label' => 'Actualités',
     'description' => 'Listes représentant mes actualités',
     'menu_position' => 2,
     'menu_icon' => 'dashicons-email-alt',
     'public' => true,
-    'rewrite' => [
-        'slug' => 'actualite'
-    ],
+    'rewrite' => ['slug' => 'actualite'],
     'supports' => ['title', 'thumbnail', 'editor', 'excerpt'],
 ]);
-
-
-// Activer l'utilisation des vignettes (images de couverture) sur nos post_type
-add_theme_support('post-thumbnails', ['foyer']);
-
-
-// Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
-// avec un identifint spécifique dans la colonne "post_type"
 
 register_post_type('foyer', [
     'label' => 'Foyers',
     'description' => 'Listes représentant mes foyers',
-    'menu_position' => 2,
+    'menu_position' => 3,
     'menu_icon' => 'dashicons-admin-home',
     'public' => true,
-    'rewrite' => [
-        'slug' => 'foyer'
-    ],
+    'rewrite' => ['slug' => 'foyer'],
     'supports' => ['title', 'thumbnail', 'editor'],
 ]);
-
-
-// Activer l'utilisation des vignettes (images de couverture) sur nos post_type
-add_theme_support('post-thumbnails', ['partenaire']);
-
-
-// Enregistrer de nouveau type de contenu qui seront stockés dans la table "wp_posts",
-// avec un identifint spécifique dans la colonne "post_type"
 
 register_post_type('partenaire', [
     'label' => 'Partenaires',
     'description' => 'Listes représentant mes partenaires',
-    'menu_position' => 2,
+    'menu_position' => 4,
     'menu_icon' => 'dashicons-businessman',
     'public' => true,
-    'rewrite' => [
-        'slug' => 'partenaire'
-    ],
+    'rewrite' => ['slug' => 'partenaire'],
     'supports' => ['title', 'thumbnail'],
 ]);
 
+register_post_type('contact_message', [
+    'label' => 'Messages de contact',
+    'description' => 'Les envois de formulaire via la page de contact',
+    'menu_position' => 5,
+    'menu_icon' => 'dashicons-email',
+    'public' => true,
+    'has_archive' => false,
+    'supports' => ['title', 'editor'],
+]);
 
-//fin postType
+// Fonction pour créer une taxonomy personnalisée "projet_category"
+function create_projet_terms() {
+    register_taxonomy('projet_category', ['projet'], [
+        'label' => 'Catégories de projets',
+        'hierarchical' => true,
+        'public' => true,
+        'rewrite' => ['slug' => 'projet-category'],
+        'show_ui' => true,
+        'show_admin_column' => true,
+    ]);
+}
+add_action('init', 'create_projet_terms');
 
-
-//fonction dd
-
-
-/*function dd($value)
-{
-    var_dump($value);
-    die();
-}*/
-
-//fin fonction dd
-
-
-
-//fonction  pour la navigation
+// Fonction de gestion des menus de navigation
 function register_my_menus() {
     register_nav_menus([
         'header-menu' => 'Menu principal',
@@ -111,7 +82,6 @@ add_action('init', 'register_my_menus');
 
 function dw_get_navigation_links(string $location): array
 {
-    //Récupérer l'objet WP pour le menu à la location $location
     $locations = get_nav_menu_locations();
 
     if (!isset($locations[$location])) {
@@ -121,9 +91,6 @@ function dw_get_navigation_links(string $location): array
     $nav_id = $locations[$location];
     $nav = wp_get_nav_menu_items($nav_id);
 
-
-    // Transformer le menu en un tableau de liens, chaque lien étant un objet personnalisé
-
     $links = [];
 
     foreach ($nav as $post) {
@@ -132,36 +99,34 @@ function dw_get_navigation_links(string $location): array
         $link->label = $post->title;
         $link->icone = get_field('icon', $post);
 
-
-        /*$links[] = $link; même chose mais en plus court*/
-        array_push($links, $link);
+        $links[] = $link;
     }
-
-
-    //Retourner ce tableau d'objets (liens).
 
     return $links;
-
 }
 
-//fin fonction  pour la navigation
-//Import de la MAP
+// Inclusion de la classe ContactForm
+use DW_Theme\Forms\ContactForm;
 
-function enqueue_leaflet_map_script() {
-    // Ton champ ACF (OpenStreetMap)
-    $location = get_field('ma_carte');
+require __DIR__ . '/./form/ContactForm.php';
 
-    // Si les données sont présentes, on les passe au JS
-    if( $location ) {
-        wp_enqueue_script('carte-js', get_template_directory_uri() . '/assets/js/map.js', [], false, true);
+// Gestion du formulaire de contact
+add_action('admin_post_nopriv_dw_submit_contact_form', 'dw_handle_contact_form');
+add_action('admin_post_dw_submit_contact_form', 'dw_handle_contact_form');
 
-        wp_localize_script('carte-js', 'acfMapData', [
-            'lat' => $location['lat'],
-            'lng' => $location['lng'],
-            'zoom' => $location['zoom'],
-            'address' => $location['address']
-        ]);
-    }
+function dw_handle_contact_form()
+{
+    $form = (new ContactForm())
+        ->rule('firstname', 'required')
+        ->rule('lastname', 'required')
+        ->rule('email', 'required')
+        ->rule('email', 'email')
+        ->rule('message', 'required')
+        ->rule('message', 'no_test')
+        ->sanitize('firstname', 'sanitize_text_field')
+        ->sanitize('lastname', 'sanitize_text_field')
+        ->sanitize('email', 'sanitize_text_field')
+        ->sanitize('message', 'sanitize_textarea_field');
+
+    return $form->handle($_POST);
 }
-add_action('wp_enqueue_scripts', 'enqueue_leaflet_map_script');
-

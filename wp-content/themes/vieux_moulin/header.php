@@ -15,46 +15,40 @@
 
 <body>
 
-<header>
+<header class="main-header">
+    <section class="top_header">
+        <img class="logo_header" src="<?= get_site_icon_url('106') ?>" alt="Icône du site, initial de Vieux Moulin">
+        <h1>
+            <a class="titre_header" href="<?= esc_url(home_url('/')); ?>">Le vieux moulin</a>
+        </h1>
 
-    <header>
-        <section class="top_header">
-            <img class="logo_header" src="<?= get_site_icon_url('106') ?>" alt="Icône du site, initial de Vieux Moulin">
-            <h1>
-                <a class="titre_header" href="<?php echo esc_url(home_url('/')); ?>">Le vieux moulin</a>
-            </h1>
-            <button class="nav_bgm" aria-expanded="false" aria-label="Menu principal" aria-controls="nav_menu">
-                <svg class="nav_bgm_svg" width="50" height="50" viewBox="0 0 30 30">
-                    <path class="nav_element" d="M6.25 9.30469H23.75" stroke-width="2"/>
-                    <path class="nav_element" d="M6.25 15.554H23.75" stroke-width="2"/>
-                    <path class="nav_element" d="M6.25 21.8347H23.75" stroke-width="2"/>
-                </svg>
-            </button>
-            <a class="logo_facebook<!-- hidden_for_bgm-->" target="_blank"
-               href="https://www.facebook.com/people/Vieux-Moulin-Strainchamps/pfbid02bHjUPaiNnGz9aNMzjdTKdNVNAFZFMSpA6jM7U7szSNdDSpcrUkawR43UuDs23fqsl/">
-                <img class="logo_facebook"
-                     src="https://vieux-moulin.test/wp-content/uploads/2025/05/Screenshot-2025-05-03-at-3.25.03 PM.png"
-                     alt="Facebook">
-            </a>
+        <a class="logo_facebook" target="_blank"
+           href="https://www.facebook.com/people/Vieux-Moulin-Strainchamps/pfbid02bHjUPaiNnGz9aNMzjdTKdNVNAFZFMSpA6jM7U7szSNdDSpcrUkawR43UuDs23fqsl/">
+            <img src="https://vieux-moulin.test/wp-content/uploads/2025/05/Screenshot-2025-05-03-at-3.25.03 PM.png"
+                 alt="Facebook">
+        </a>
+    </section>
 
-        </section>
+    <!-- Menu Burger -->
+    <input type="checkbox" tabindex="0" id="bgm_navigation" class="navigation_burger_menu">
+    <label for="bgm_navigation" class="nav_bgm_label">
+        <svg class="nav_bgm_svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path class="nav_element" d="M6.25 9.30469H23.75" stroke-width="2"/>
+            <path class="nav_element" d="M6.25 15.554H23.75" stroke-width="2"/>
+            <path class="nav_element" d="M6.25 21.8347H23.75" stroke-width="2"/>
+        </svg>
+    </label>
 
-        <section class="bottom_header" id="nav_menu">
-            <ul class="navigation_header">
-                <?php foreach (dw_get_navigation_links('header-menu') as $link): ?>
-                    <li class="lien">
-                        <a href="<?= $link->href ?>" class="lien_navigation_header"><?= $link->label; ?></a>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </section>
-    </header>
-
-
-
-
-
+    <ul class="navigation_header">
+        <?php foreach (dw_get_navigation_links('header-menu') as $link): ?>
+            <li class="lien">
+                <a href="<?= $link->href ?>" class="lien_navigation_header"><?= $link->label; ?></a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
 </header>
+
 
 <main>
 
