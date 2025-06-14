@@ -38,7 +38,7 @@ $one_line_image_formulaire = get_field('one_line_image_formulaire');
 
             <div class="prenom">
                 <label class="nom_form" for="prenom">
-                    <span class="titre_soulignement_form">Prenom</span>
+                    <span class="titre_soulignement_form">Prénom</span>
                 </label>
                 <input class="champs_form" type="text" name="prenom" id="prenom" placeholder="Joe">
             </div>
@@ -65,7 +65,7 @@ $one_line_image_formulaire = get_field('one_line_image_formulaire');
 
             <div class="payement">
                 <label class="nom_form" for="payement">
-                    <span class="titre_soulignement_form">Moyen de payement</span>
+                    <span class="titre_soulignement_form">Moyen de paiement</span>
                 </label>
                 <select class="champs_form" name="payement" id="payement">
                     <option value="visa">Visa</option>

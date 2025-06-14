@@ -134,7 +134,7 @@ $partenaires = new WP_Query([
                 </div>
             </article>
         <?php endwhile; else: ?>
-            <p>Je n'ai pas d'actualités récents à montrer pour le moment...</p>
+            <p>Je n'ai pas de foyers récents à montrer pour le moment...</p>
         <?php endif; ?>
 
     </div>
@@ -182,7 +182,7 @@ $partenaires = new WP_Query([
                 </header>
             </article>
         <?php endwhile; else: ?>
-            <p>Je n'ai pas d'actualités récents à montrer pour le moment...</p>
+            <p>Je n'ai pas de partenaires récents à montrer pour le moment...</p>
         <?php endif; ?>
     </div>
 

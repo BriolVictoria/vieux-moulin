@@ -65,7 +65,7 @@ $titre_question = get_field('titre_question');
                 </div>
             </article>
         <?php endwhile; else: ?>
-            <p>Je n'ai pas d'actualités récents à montrer pour le moment...</p>
+            <p>Je n'ai pas de foyer récent à montrer pour le moment...</p>
         <?php endif; ?>
 
     </div>

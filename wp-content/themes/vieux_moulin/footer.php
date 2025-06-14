@@ -58,7 +58,7 @@
         </section>
 
         <div class="infos_supp">
-            <p class="blog_info">© 2025 <?= get_bloginfo('name'); ?>. Tous droit réservé.</p>
+            <p class="blog_info">© 2025 <?= get_bloginfo('name'); ?>. Tous droits réservés.</p>
             <a href="<?= get_permalink(get_page_by_path('mentions-legales')) ?>" class="mention_lien">Mentions légales</a>
         </div>
 
