@@ -11,6 +11,7 @@
     background-color: var(--decouvrir-background-color);
     display: flex;
     position: relative;
+    z-index: -1;
 }
 
     /*Image découvrir*/

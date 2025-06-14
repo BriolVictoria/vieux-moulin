@@ -177,10 +177,27 @@ a.titre_header:hover {
     left: 0;
     bottom: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 9999;
     background: var(--header-background);
     display: flex;
     justify-content: flex-start;
+
+}
+
+
+
+.nav_bgm {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+
+}
+
+.nav_bgm_svg .nav_element {
+    stroke: var(--logo-facebook); /* Personnalise ici la couleur */
+    transition: all 0.3s ease;
+
 }
 
 @media (max-width: 1590px) and (min-width: 887px) {
@@ -222,13 +239,9 @@ a.titre_header:hover {
         display: none;
     }
 }
-
-
-
-/* Responsive - Desktop */
 @media (min-width: 886px) {
     .navigation_header {
-        display: flex ;
+        display: flex !important;
         position: static;
         opacity: 1;
         transform: none;
@@ -236,60 +249,59 @@ a.titre_header:hover {
         flex-direction: row;
     }
 
-    .navigation_burger_menu,
-    .nav_bgm_label,
-    .nav_bgm_svg {
-        display: none ;
+
+    .nav_bgm {
+        display: none; /* bouton caché sur desktop */
     }
+
 }
 
 @media (max-width: 885px) {
     .navigation_header {
-        height: 100vh;
-        padding: 50px 0 20px 0;
-        margin: 180px 0;
-        display: flex;
+        background: var(--white-color);
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
         flex-direction: column;
-        justify-content: flex-start;    /* place en haut */
-        align-items: center;            /* centre horizontalement */
-        text-align: center;
-        overflow-y: auto;
-
+        position: fixed;
+        top: 90px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+        padding: 50px 0 20px 0;
+        background: var(--white-color);
+        display: flex;
+        justify-content: flex-start;
+        margin: 50px 0;
+    }
+    .navigation_header.active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+        display: flex; /* s'assurer que c'est un flex container */
+        flex-direction: column; /* les éléments s'empilent verticalement */
+        align-items: center; /* centrage horizontal */
+        justify-content: flex-start; /* alignement en haut */
+        text-align: center; /* pour centrer le texte dans les liens */
+        margin-top: 100px;
     }
 
     .lien:first-child {
-        margin-left: 33px;
+        margin-left: 25px;
     }
 
-    .navigation_burger_menu:not(:checked) ~ .navigation_header {
-        left: 100%;
+    .nav_bgm {
+        padding-right: 0;
+        display: flex;
     }
 
-    .navigation_burger_menu:checked ~ .navigation_header {
-        left: 0;
-        opacity: 1;
-    }
-
-    .navigation_burger_menu:not(:checked) ~ .navigation_header {
-        pointer-events: auto;
-    }
-
-    ul.navigation_header li.lien:last-child a {
-        margin-right: 0;
-    }
-
-    .navigation_burger_menu {
+    .hidden_for_bgm {
         display: none;
     }
 
-    .lien_navigation_header.active {
-        color: var(--pink-color);
-    }
-
-    .lien_navigation_header.active::after {
-        transform: scaleX(1);
-        transform-origin: left;
-    }
 }
 
 
