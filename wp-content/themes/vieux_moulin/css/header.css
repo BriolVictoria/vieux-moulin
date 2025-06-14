@@ -265,7 +265,7 @@ a.titre_header:hover {
         transition: opacity 0.3s ease, transform 0.3s ease;
         flex-direction: column;
         position: fixed;
-        top: 90px;
+        top: 30px;
         left: 0;
         bottom: 0;
         width: 100%;
