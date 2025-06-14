@@ -1,8 +1,11 @@
+/*Style de l'erreur 404*/
 
 .simple-404 {
     text-align: center;
     padding: 80px 20px;
 }
+
+/*Titre de l'erreur 404*/
 
 .simple-404 h1 {
     font-size: 6rem;
@@ -10,15 +13,23 @@
     margin: 0;
 }
 
+/*Sous-titre de l'erreur 404*/
+
 .simple-404 h2 {
     font-size: 2rem;
     margin: 10px 0;
 }
 
+
+/*Paragraphe de l'erreur 404*/
+
+
 .simple-404 p {
     font-size: 1rem;
     color: #555;
 }
+
+/*Lien de l'erreur 404*/
 
 .simple-404 a {
     display: inline-block;
@@ -30,6 +41,10 @@
     border-radius: 8px;
     transition: background-color 0.3s ease;
 }
+
+
+/*Effet du lien de l'erreur 404*/
+
 
 .simple-404 a:hover {
     background-color: var(--pink-darker-color);
@@ -46,6 +61,10 @@
         transform: scale(1);
     }
 }
+
+
+/*Bouton de l'erreur 404*/
+
 
 .pulse {
     display: inline-block;

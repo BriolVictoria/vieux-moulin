@@ -671,9 +671,8 @@
 }
 
 
-/* Base desktop déjà définie */
 
-/* Responsive tablette et mobile */
+/* Media queries de toute la page */
 
 @media (max-width: 1615px) {
     .back_image_benevolat {

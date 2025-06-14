@@ -132,6 +132,8 @@
 
 /*Fin style du formulaire*/
 
+/*Media queries de toute la page*/
+
 @media (max-width: 1365px) {
     .one_line_image_formulaire {
         width: 320px;

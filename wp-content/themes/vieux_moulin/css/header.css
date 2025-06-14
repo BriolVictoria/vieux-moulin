@@ -75,6 +75,8 @@ a.titre_header:hover {
     z-index: 1000;
     background-color: var(--white-color);
     box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+    padding: 10px 20px;
+
 }
 
 .main-header {
@@ -149,7 +151,7 @@ a.titre_header:hover {
 }
 
 
-/* Style de base du bouton hamburger */
+/* Style de base du bouton burger */
 .navigation_burger_menu {
     background: none;
     border: none;
@@ -157,9 +159,9 @@ a.titre_header:hover {
     padding: 20px;
 }
 
-/* Style du SVG hamburger */
+/* Style du SVG burger */
 .nav_bgm_svg .nav_element {
-    stroke: var(--logo-facebook); /* Personnalise ici la couleur */
+    stroke: var(--logo-facebook);
     transition: all 0.3s ease;
 }
 
@@ -182,12 +184,11 @@ a.titre_header:hover {
 }
 
 @media (max-width: 1590px) and (min-width: 887px) {
-    /* On conserve la navigation en ligne mais on ajuste l'espacement et la taille */
 
     .navigation_header {
         display: flex;
         flex-direction: row;
-        justify-content: center; /* Centrer les liens */
+        justify-content: center;
         padding: 10px 20px;
         position: static;
         opacity: 1;
@@ -253,6 +254,7 @@ a.titre_header:hover {
         align-items: center;            /* centre horizontalement */
         text-align: center;
         overflow-y: auto;
+
     }
 
     .lien:first-child {
@@ -280,7 +282,14 @@ a.titre_header:hover {
         display: none;
     }
 
+    .lien_navigation_header.active {
+        color: var(--pink-color);
+    }
 
+    .lien_navigation_header.active::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
 }
 
 

@@ -1,13 +1,13 @@
 /*Style du fond d'actualité*/
 
-    /*Image actualité*/
+/*Image actualité*/
 .image_actualite {
     width: 100%;
     display: block;
     position: relative;
 }
 
-    /*Titre actualité*/
+/*Titre actualité*/
 
 .titre_page_actualite {
     position: absolute;
@@ -52,7 +52,7 @@
     position: relative;
 }
 
-    /*Titre intro actualité*/
+/*Titre intro actualité*/
 
 .intro_titre_actualite {
     font-size: 28px;
@@ -60,7 +60,7 @@
     margin-left: 237px;
 }
 
-    /*Description intro actualité*/
+/*Description intro actualité*/
 
 .intro_description_actualite {
     font-size: 16px;
@@ -69,7 +69,7 @@
     margin-top: 26px;
 }
 
-    /*Image intro actualité*/
+/*Image intro actualité*/
 
 .intro_image_actualite {
     border-radius: 15px;
@@ -88,8 +88,8 @@
 
 /*Style banniére actualité*/
 
-.actualite_list{
-    padding:0;
+.actualite_list {
+    padding: 0;
     list-style: none;
 }
 
@@ -101,7 +101,7 @@
     margin-bottom: 113px;
 }
 
-    /*Titre banniére actualité*/
+/*Titre banniére actualité*/
 
 .actualite_all_title {
     font-size: 28px;
@@ -110,7 +110,7 @@
     margin-left: 237px;
 }
 
-    /*Description banniére actualité*/
+/*Description banniére actualité*/
 
 .actualite_all_description {
     font-size: 16px;
@@ -120,7 +120,7 @@
     width: 60%;
 }
 
-    /*Image banniére actualité*/
+/*Image banniére actualité*/
 
 .actualite_all_img {
     width: 294px;
@@ -133,7 +133,7 @@
     z-index: 2;
 }
 
-    /*BackImage banniére actualité*/
+/*BackImage banniére actualité*/
 
 .back_image_actualite_all {
     position: absolute;
@@ -155,6 +155,7 @@
     right: 0;
     z-index: 1;
 }
+
 /*Fin style banniére actualité*/
 
 /*Style banniére actualité inversé*/
@@ -187,7 +188,7 @@
     margin: 127px 0 107px 74.1px;
 }
 
-    /*Titre banniére actualité inversé*/
+/*Titre banniére actualité inversé*/
 
 .actualite_list li:nth-child(even) .actualite_all_title {
     font-size: 28px;
@@ -196,7 +197,7 @@
     margin-left: 48px;
 }
 
-    /*Description banniére actualité inversé*/
+/*Description banniére actualité inversé*/
 
 .actualite_list li:nth-child(even) .actualite_all_description {
     font-size: 16px;
@@ -217,6 +218,8 @@
 .actualite_all_text_container {
     margin-top: 20px;
 }
+
+/*Media queries pour toutes la page*/
 
 @media (max-width: 1185px) {
     .actualite_all_description {

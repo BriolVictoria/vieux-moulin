@@ -288,6 +288,8 @@
     z-index: 1;
 }
 
+/* Media queries de toute la page*/
+
 @media (max-width: 1460px) {
     .one_line_image_qrcode {
         width: 415px;

@@ -1,11 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const burger = document.querySelector('.nav_bgm');
-    const menu = document.querySelector('.navigation_header');
+const footer = document.querySelector('footer');
 
-    burger.addEventListener('click', () => {
-        const isActive = burger.classList.toggle('active');
-        menu.classList.toggle('active');
+function checkVisibility() {
+    if (!footer) return;
+    const rect = footer.getBoundingClientRect();
+    const windowBottom = window.innerHeight;
 
-        burger.setAttribute('aria-expanded', isActive);
-    });
-});
+    if (rect.top < windowBottom - 100) {
+        footer.classList.add('visible');
+        window.removeEventListener('scroll', checkVisibility);
+    }
+}
+
+window.addEventListener('scroll', checkVisibility);
+checkVisibility();

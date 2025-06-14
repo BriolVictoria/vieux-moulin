@@ -72,7 +72,7 @@
 
 /*Style de la faq d'une journée type*/
 
-    /*Titre de la faq d'une journée type*/
+  /*  !*Titre de la faq d'une journée type*!
 
 .titre_faq {
     font-size: 28px;
@@ -80,7 +80,7 @@
     margin-left: 237px;
 }
 
-    /*Question de la faq d'une journée type*/
+    !*Question de la faq d'une journée type*!
 
 .titre_question {
     display: flex;
@@ -95,18 +95,19 @@
     align-items: center;
 }
 
-    /*Etoile de la faq d'une journée type*/
+    !*Etoile de la faq d'une journée type*!
 
 .etoile {
     display: flex;
     justify-content: flex-end;
     color: var(--white-color);
     margin-right: 25px;
-    margin-left: auto; /*Aide à mettre l'étoile sur le côté le plus à droite*/
+    margin-left: auto; !*Aide à mettre l'étoile sur le côté le plus à droite*!
     transform: scale(4);
     margin-top: -17.4px;
-}
+}*/
 
+/*Media queries de toute la page*/
 
 @media (max-width: 1515px) {
     .journee_intro_image {

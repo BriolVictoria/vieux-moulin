@@ -223,11 +223,11 @@
     display: flex;
 }
 
-
-
 .image_container_vieuxmoulin {
     margin-left: 220px;
 }
+
+/*Media queries de toute la page*/
 
 
 @media (max-width: 1570px) {
