@@ -62,7 +62,6 @@ a.titre_header:hover {
     width: 25px;
     display: block;
     margin-right: 55px;
-    margin-left: -70px;
 }
 
 .logo_facebook:hover {
@@ -70,11 +69,12 @@ a.titre_header:hover {
 }
 
 /* Bas du header */
-.bottom_header {
+.navigation_header {
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: var(--white-color);
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 }
 
 .main-header {
@@ -144,12 +144,90 @@ a.titre_header:hover {
     margin-left: 431px;
 }
 
+.nav_bgm_svg {
+    margin-left: 35px;
+}
+
+
+/* Style de base du bouton hamburger */
+.navigation_burger_menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+}
+
+/* Style du SVG hamburger */
+.nav_bgm_svg .nav_element {
+    stroke: var(--logo-facebook); /* Personnalise ici la couleur */
+    transition: all 0.3s ease;
+}
+
+
+.navigation_header {
+    background: var(--header-background);
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    background: var(--header-background);
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media (max-width: 1590px) and (min-width: 887px) {
+    /* On conserve la navigation en ligne mais on ajuste l'espacement et la taille */
+
+    .navigation_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Centrer les liens */
+        padding: 10px 20px;
+        position: static;
+        opacity: 1;
+        pointer-events: auto;
+        background-color: var(--header-background);
+    }
+
+    /* Réduire les marges des liens */
+    .lien {
+        margin-left: 20px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    /* Enlever la marge énorme du premier lien */
+    .lien:first-child {
+        margin-left: 0;
+    }
+
+    /* Ajuster bouton "Nous soutenir" */
+    .lien:last-child a {
+        padding: 8px 18px;
+        font-size: 16px;
+        border-radius: 40px;
+    }
+
+    /* Toujours cacher le burger */
+    .navigation_burger_menu,
+    .nav_bgm_label,
+    .nav_bgm_svg {
+        display: none;
+    }
+}
+
 
 
 /* Responsive - Desktop */
 @media (min-width: 886px) {
     .navigation_header {
-        display: flex !important;
+        display: flex ;
         position: static;
         opacity: 1;
         transform: none;
@@ -160,7 +238,35 @@ a.titre_header:hover {
     .navigation_burger_menu,
     .nav_bgm_label,
     .nav_bgm_svg {
-        display: none !important;
+        display: none ;
+    }
+}
+
+@media (max-width: 885px) {
+    .navigation_header {
+        padding: 50px 0 20px 0;
+        margin: 90px 0;
+    }
+
+    .navigation_burger_menu:not(:checked) ~ .navigation_header {
+        left: 100%;
+    }
+
+    .navigation_burger_menu:checked ~ .navigation_header {
+        left: 0;
+        opacity: 1;
+    }
+
+    .navigation_burger_menu:not(:checked) ~ .navigation_header {
+        pointer-events: auto;
+    }
+
+    ul.navigation_header li.lien:last-child a {
+        margin-right: 0;
+    }
+
+    .navigation_burger_menu {
+        display: none;
     }
 }
 
@@ -198,5 +304,10 @@ a.titre_header:hover {
     .logo_header {
         margin-left: 0;
     }
+
+    .nav_bgm_svg {
+        margin-left: 15px;
+    }
+
 }
 
