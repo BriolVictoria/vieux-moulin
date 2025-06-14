@@ -1,4 +1,3 @@
-/*
 const footer = document.querySelector('footer');
 
 function checkVisibility() {
@@ -13,7 +12,7 @@ function checkVisibility() {
 }
 
 window.addEventListener('scroll', checkVisibility);
-checkVisibility();*/
+checkVisibility();
 
 const burgerBtn = document.querySelector('.nav_bgm');
 const menu = document.querySelector('.navigation_header');
