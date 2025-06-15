@@ -21,7 +21,7 @@ Créer un site informatif et engageant qui reflète les valeurs humaines du SRG 
 
 ## Retrouvés le site 
 - **Déroulé du processus**
-  - Figma: https://www.figma.com/design/UCtwi5nqnxi65qJ6wsRK7O/Le-vieux-moulin?node-id=429-349&t=RTZ6ERwSX9dSfVWO-1
+  - Figma: [https://www.figma.com/design/UCtwi5nqnxi65qJ6wsRK7O/Le-vieux-moulin?node-id=429-349&t=RTZ6ERwSX9dSfVWO-1](https://www.figma.com/design/UCtwi5nqnxi65qJ6wsRK7O/Le-vieux-moulin?node-id=429-349&t=PZFHIDXY8ANvW9Jn-1)
   - Cahier des charges: https://www.notion.so/Cahier-des-charges-1a8128eedba5808ea1e4c723a1368d75?pvs=4
   - Personae (fait en groupe avec Amandine Fourny): https://www.figma.com/design/kstIIQvSr3DFPEbZQ00vbD/Le-Vieux-Moulin?node-id=6-50&t=oFz4Us1vRiYcBW3w-1
 ---
