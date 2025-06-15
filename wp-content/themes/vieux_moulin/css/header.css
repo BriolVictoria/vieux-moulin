@@ -1,11 +1,16 @@
 /* Style global du body */
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
     font-family: Montserrat, sans-serif;
     overflow-x: hidden;
     position: relative;
+    max-width: 2000px;
 }
+/*main {
+    z-index: 1;
+    position: relative;
+}*/
 
 /* HEADER GLOBAL */
 header {

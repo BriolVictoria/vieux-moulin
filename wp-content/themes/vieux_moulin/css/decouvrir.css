@@ -11,7 +11,7 @@
 
 .titre_vieuxmoulin {
     position: absolute;
-    top: 470.8px;
+    top: 477.8px;
     left: 0;
     right: 0;
     display: flex;
@@ -370,13 +370,13 @@
 
 @media (max-width: 885px) {
     .titre_vieuxmoulin {
-        top: 273px;
+        top: 345px;
     }
 }
 
 @media (max-width: 870px) {
     .titre_vieuxmoulin {
-        top: 270px;
+        top: 340px;
     }
 }
 
@@ -409,7 +409,7 @@
 
 @media (max-width: 715px) {
     .titre_vieuxmoulin {
-        top: 230px;
+        top: 300px;
     }
 }
 
@@ -440,7 +440,7 @@
 
 @media (max-width: 620px) {
     .titre_vieuxmoulin {
-        top: 175px;
+        top: 235px;
     }
 }
 
@@ -467,7 +467,7 @@
 
 @media (max-width: 565px) {
     .titre_vieuxmoulin {
-        top: 160px;
+        top: 220px;
     }
 }
 
