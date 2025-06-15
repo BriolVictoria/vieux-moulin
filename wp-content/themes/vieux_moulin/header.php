@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= wp_title('·', false, 'right') . get_bloginfo('name') ?></title>
     <link rel="stylesheet"
-          href="<?php echo get_template_directory_uri(); ?>/css/all-template-css.css?v=<?php echo time(); ?>">
+          href="<?= vieux_moulin_asset('css') ?>">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 
-    <script defer src="<?= get_template_directory_uri(); ?>/js/bgm.js?v=<?= time(); ?>"></script>
+    <script defer src="<?= vieux_moulin_asset('js') ?>"></script>
     <link rel="icon" href="<?= get_site_icon_url('22') ?>">
 
 

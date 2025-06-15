@@ -130,3 +130,44 @@ function dw_handle_contact_form()
 
     return $form->handle($_POST);
 }
+
+function enqueue_assets_from_vite_manifest(): void
+{
+    $manifestPath = get_theme_file_path('public/.vite/manifest.json');
+
+    if (file_exists($manifestPath)) {
+        $manifest = json_decode(file_get_contents($manifestPath), true);
+
+        // Vérifier et ajouter le fichier JavaScript
+        if (isset($manifest['wp-content/themes/vieux_moulin/resources/js/main.js'])) {
+            wp_enqueue_script('vieux_moulin',
+                get_theme_file_uri('public/' . $manifest['wp-content/themes/vieux_moulin/resources/js/main.js']['file']), [], null, true);
+        }
+
+        // Vérifier et ajouter le fichier CSS
+        if (isset($manifest['wp-content/themes/vieux_moulin/resources/css/all-template-css.css'])) {
+            wp_enqueue_style('vieux_moulin',
+                get_theme_file_uri('public/' . $manifest['wp-content/themes/vieux_moulin/resources/css/all-template-css.css']['file']));
+        }
+    }
+}
+
+// 1. Charger un fichier "public" (asset/image/css/script/...) pour le front-end sans que cela ne s'applique à l'admin.
+function vieux_moulin_asset(string $file): string
+{
+    $manifestPath = get_theme_file_path('public/.vite/manifest.json');
+
+    if (file_exists($manifestPath)) {
+        $manifest = json_decode(file_get_contents($manifestPath), true);
+
+        if (isset($manifest['wp-content/themes/vieux_moulin/resources/js/main.js']) && $file === 'js') {
+            return get_theme_file_uri('public/' . $manifest['wp-content/themes/vieux_moulin/resources/js/main.js']['file']);
+        }
+
+        if (isset($manifest['wp-content/themes/vieux_moulin/resources/css/all-template-css.css']) && $file === 'css') {
+            return get_theme_file_uri('public/' . $manifest['wp-content/themes/vieux_moulin/resources/css/all-template-css.css']['file']);
+        }
+    }
+
+    return get_template_directory_uri() . '/public/' . $file;
+}
