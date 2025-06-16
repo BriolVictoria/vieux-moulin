@@ -1,0 +1,59 @@
+.mentions_container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--black-color);
+}
+
+.mention {
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--pink-darker-color);
+    padding-left: 1rem;
+    background-color: var(--white-color);
+}
+
+.legal-header {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.legal-header__title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+    color: var(--pink-color);
+    border-bottom: 2px solid var(--pink-color); /* Ajout du soulignement */
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+
+.legal-header__title {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--pink-color);
+}
+
+.legal-section__text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.legal-section__text a {
+    color: var(--pink-color);
+    text-decoration: underline;
+}
+
+.mention_lien {
+    color: var(--black-color);
+    font-weight: 200;
+}
+
+.legal-title_page {
+    font-size: 2.2rem;
+    color: var(--pink-color); /* Titre en rose vif */
+    border-bottom: 4px solid var(--pink-darker-color); /* Ligne plus sombre en contraste */
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    display: inline-block;
+}

@@ -1,0 +1,125 @@
+/*Style du footer*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 20px;
+    border-top: 0.5px var(--black-color) solid;
+}
+
+.footer > section {
+    flex: 1;
+    min-width: 220px;
+}
+
+.soulignement_footer {
+    display: inline-block;
+    border-bottom: 3px solid var(--pink-color);
+    font-weight: 600;
+}
+
+    /*Style 1er colonne du footer*/
+
+.logo_footer {
+    width: 119px;
+    margin-top: 22px;
+    margin-left: 18px;
+}
+
+.asbl_footer {
+    margin-top: 26px;
+    margin-left: 18px;
+    font-weight: 200;
+
+}
+
+    /*Style 2e colonne du footer*/
+
+.footer_boutton {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--black-color);
+    text-decoration: none;
+    font-weight: 200;
+    margin-top: 0;
+}
+
+p > .footer_boutton {
+    margin-top: 0;
+}
+
+.footer_element {
+    font-weight: 500;
+}
+
+    /*Effet 2e colonne du footer*/
+
+.footer_boutton:hover {
+    color: var(--pink-more-light-color);
+    font-weight: 300;
+}
+
+.footer_boutton:hover span {
+    color: initial; /* demander si on peut */
+}
+    /*Style 3e colonne du footer*/
+
+.navigation_footer {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.lien_navigation_footer {
+    text-decoration: none;
+    color: var(--black-color);
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+    /*Effet 3e colonne du footer*/
+
+.lien_navigation_footer::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 2px solid var(--pink-more-light-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+
+}
+
+.lien_navigation_footer:hover {
+    color: var(--pink-color);
+    font-weight: 300;
+}
+
+.lien_navigation_footer:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.infos_supp {
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+
+.blog_info,
+.mention_lien {
+    font-size: 14px;
+    color: var(--black-color);
+    margin-right: 10px;
+}

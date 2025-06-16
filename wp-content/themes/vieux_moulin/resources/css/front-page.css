@@ -1,0 +1,1091 @@
+.bouton_container {
+    display: flex;
+    justify-content: center;
+}
+
+/*Style de la section découvrir*/
+
+    /*Fond découvrir*/
+
+.decouvrir {
+    background-color: var(--decouvrir-background-color);
+    display: flex;
+    position: relative;
+    z-index: -1;
+}
+
+    /*Image découvrir*/
+
+.image_decouvrir {
+    width: 495px;
+    border-radius: 15px;
+    margin-top: 119px;
+    margin-left: 74px;
+    margin-bottom: 118px;
+    position: relative;
+    z-index: 2;
+}
+
+    /*Titre découvrir*/
+
+.titre_decouvrir {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 163px;
+    margin-left: 48px;
+}
+
+    /*Description découvrir*/
+
+.description_decouvrir {
+    font-size: 16px;
+    font-weight: 400;
+    width: 52.1%;
+    margin-top: 26px;
+    margin-left: 48px;
+    margin-bottom: 26px;
+}
+
+    /*Bouton découvrir*/
+
+.bouton_decouvrir {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: var(--extra-decouvrir-background-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    margin-left: 48px;
+    transition: transform 0.2s ease;
+    margin-top: 0;
+}
+
+.bouton_container_decouvrir {
+    display: flex;
+}
+
+.decouvrir_container {
+    display: inline-block;
+}
+
+    /*Style one line découvrir*/
+
+.one_line_image_decouvrir {
+    width: 484px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+    /*Style backImage découvrir*/
+
+.back_image_decouvrir {
+    position: absolute;
+    top: 65.8px;
+    left: -44.2px;
+    width: 413px;
+    border-radius: 32px;
+    aspect-ratio: 306 / 248; /*Pour faire un carrée sans utiliser heifht*/
+    background-color: var(--extra-decouvrir-background-color);
+    z-index: 2;
+}
+
+
+    /*Effet bouton découvrir*/
+
+.bouton_decouvrir:hover {
+    display: inline-block;
+    transform: translateX(2px);
+    box-shadow: 0 10px 30px var(--extra-decouvrir-background-color);
+}
+
+
+/*Fin du style de la section découvrir*/
+
+/*Style de la section actualité*/
+
+.actualite {
+    position: relative;
+}
+
+    /*Titre actualité*/
+
+.titre_soulignement_actualite {
+    display: inline-block;
+    border-bottom: 3px solid var(--pink-color);
+    padding-bottom: 5px;
+    margin-top: 113px;
+    font-weight: 600;
+}
+
+/*Image actualité*/
+
+.actualite_fig {
+    width: 66.2%;
+}
+
+    /*Description actualité*/
+
+.description_actualite {
+    font-weight: 200;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+    /*One line actualité*/
+
+.one_line_image_actualite {
+    width: 217.11px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.one_line_image_actualite_2 {
+    width: 428px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+    /*Carte actualité*/
+
+.actualite_card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+    /*Bouton actualité*/
+
+.bouton_actualite {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: var(--pink-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+    margin-top: 26px;
+}
+
+    /*Effet bouton actualité*/
+
+.bouton_actualite:hover {
+    display: inline-block;
+    margin-top: 26px;
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--pink-color);
+}
+
+    /*Effet actualité*/
+
+.actualite_card {
+    transition: transform 0.2s ease;
+}
+
+.actualite_post {
+    border-radius: 30px;
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+
+.actualite_post:hover {
+    transform: translateX(2px);
+
+}
+
+.actualite_fig:hover {
+    box-shadow: 0 10px 30px var(--pink-color, #ffccd5);
+}
+
+.actualite_card_inner {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+    /*Fin du style de la section actualité*/
+
+    /*Style de la section foyer*/
+
+.foyer_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.foyer {
+    position: relative;
+}
+
+.foyer_post {
+    display: flex;
+}
+
+.foyer_head {
+    display: inline-block;
+}
+
+    /*Titre foyer*/
+
+.foyer_title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 48px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.titre_soulignement_foyer {
+    display: inline-block;
+    border-bottom: 3px solid var(--decouvrir-background-color);
+    padding-bottom: 5px;
+    margin-top: 113px;
+    margin-bottom: 26px;
+    font-weight: 600;
+}
+
+    /*Description foyer*/
+
+.description_foyer {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 26px;
+    margin-left: 48px;
+    width: 57.9%;
+}
+
+    /*Style différent foyer*/
+
+.foyer_img {
+    border-radius: 15px;
+    border: var(--decouvrir-background-color) 6.5px solid;
+    margin-left: 374px;
+    width: 321px;
+}
+
+.foyer_content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.foyer_post:first-child img {
+    margin-left: 237px;
+}
+
+    /*Bouton foyer*/
+
+.bouton_foyer {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: var(--extra-decouvrir-background-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    margin-bottom: 113px;
+    margin-top: 26px;
+    transition: transform 0.2s ease;
+}
+
+    /*One line image foyer*/
+
+.one_line_image_foyer {
+    width: 428px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+    /*Effet bouton foyer*/
+
+.bouton_foyer:hover {
+    display: inline-block;
+    margin-top: 26px;
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
+}
+
+/*Fin du style de la section foyers*/
+
+/*Style de la section bénévolat*/
+
+.benevolat {
+    background-color: var(--benevolat-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 0;
+    margin-top: 113px;
+    position: relative;
+}
+
+/*Titre bénévolat*/
+
+.titre_benevolat {
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 237px;
+}
+
+/*Description bénévolat*/
+
+.description_benevolat {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 26px;
+    margin-left: 237px;
+    width: 51.7%;
+    margin-bottom: 0;
+}
+
+/*Image bénévolat*/
+
+.image_benevolat {
+    width: 495px;
+    border-radius: 15px;
+    margin-top: 119px;
+    margin-right: 78px;
+    margin-bottom: 118px;
+    z-index: 2;
+}
+
+/*One line image bénévolat*/
+
+.benevolat_container {
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.one_line_image_benevolat {
+    width: 306px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+    /*Back image bénévolat*/
+
+.back_image_benevolat {
+    position: absolute;
+    top: 128.4px;
+    left: 1264.5px;
+    width: 351.8px;
+    border-radius: 32px 0 0 0;
+    aspect-ratio: 306 / 248; /*Pour faire un carrée sans utiliser heifht, demander si on peut*/
+    background-color: var(--extra-benevolat-background-color);
+    z-index: 1;
+}
+
+    /*Bouton bénévolat*/
+
+.bouton_benevolat {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: var(--extra-benevolat-background-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    margin-left: 237px;
+    margin-top: 26px;
+    transition: transform 0.2s ease;
+}
+
+.bouton_container_benevolat {
+    display: flex;
+}
+    /*Effet bouton benevolat*/
+
+.bouton_benevolat:hover {
+    display: inline-block;
+    transform: translateX(2px);
+    box-shadow: 0 10px 30px var(--extra-benevolat-background-color);
+}
+/*Fin du style de la section bénévolat*/
+
+/*Style de la section famille*/
+
+.famille {
+    position: relative;
+}
+
+.famille_container {
+    display: flex;
+    align-items: center;
+}
+
+    /*Titre famille*/
+
+.titre_soulignement_famille {
+    display: inline-block;
+    border-bottom: 3px solid var(--decouvrir-background-color);
+    padding-bottom: 5px;
+    margin-top: 113px;
+    font-weight: 600;
+}
+
+    /*Image famille*/
+
+.image_famille {
+    width: 495px;
+    border-radius: 15px;
+    margin-left: 237px;
+    margin-top: 26px;
+    border: var(--decouvrir-background-color) 6.5px solid;
+}
+
+    /*Description famille*/
+
+.description_famille {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 48px;
+    margin-top: 58px;
+    width: 56.8%;
+    margin-bottom: 0;
+}
+
+    /*Bouton famille*/
+
+.bouton_famille {
+    display: inline-block;
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: var(--extra-decouvrir-background-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    margin-top: 26px;
+    margin-left: 48px;
+    transition: transform 0.2s ease;
+}
+
+/*One line image famille*/
+
+.one_line_image_famille {
+    width: 345px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+    /*Effet bouton famille*/
+
+.bouton_famille:hover {
+    display: inline-block;
+    margin-top: 26px;
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
+}
+
+
+/*Fin du style de la section famille*/
+
+/*Style de la section partenaires*/
+
+.partenaires {
+    position: relative;
+}
+
+    /*One line image partenaires*/
+
+
+.one_line_image_partenaire {
+    width: 335px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/*Image partenaires*/
+
+.partenaire_fig{
+    width: 75%;
+}
+
+    /*Titre partenaires*/
+
+.titre_soulignement_partenaires {
+    display: inline-block;
+    border-bottom: 3px solid var(--pink-color);
+    padding-bottom: 5px;
+    margin-top: 113px;
+    font-weight: 600;
+}
+
+/*Fin du style de la section partenaires*/
+
+/*Style de la section projets*/
+
+.projet {
+    display: flex;
+    position: relative;
+}
+
+.projet {
+    background-color: var(--pink-light-color);
+    display: flex;
+    margin-top: 113px;
+    margin-bottom: 113px;
+}
+
+.projet_container {
+    display: inline-block;
+}
+
+/*Titre projets*/
+
+.titre_projet {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 157px;
+    margin-left: 237px;
+}
+
+/*Description projets*/
+
+.description_projet {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 26px;
+    margin-left: 237px;
+    width: 51.7%;
+    margin-bottom: 26px;
+}
+
+/*Image projets*/
+
+.image_projet {
+    width: 495px;
+    border-radius: 15px;
+    margin-top: 119px;
+    margin-right: 78px;
+    margin-bottom: 118px;
+    z-index: 2;
+
+}
+
+/*One line image projets*/
+
+.one_line_image_projet {
+    width: 332px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.back_image_projet {
+    position: absolute;
+    top: 81.4px;
+    left: 1264.5px;
+    width: 351.8px;
+    border-radius: 32px 0 0 0;
+    aspect-ratio: 306 / 248; /*Pour faire un carrée sans utiliser heifht, demander si on peut*/
+    background-color: var(--pink-darker-color);
+    z-index: 1;
+}
+
+/*Fin style de la section projets*/
+
+/*Debut style de la section actualité et partenaires en commun*/
+
+.actualite_container, .partenaire_container {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+    /*Titre actualité et partenaires*/
+
+.actualite_title, .partenaire_title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+
+    /*Fig actualité et partenaires*/
+
+.actualite_fig, .partenaire_fig {
+    background-color: var(--pink-color);
+    padding: 19px;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+
+    /*Effet actualité et partenaires*/
+
+.actualite_card:hover, .partenaire_fig:hover {
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--pink-color);
+}
+
+    /*Image actualité et partenaires*/
+
+.actualite_img, .partenaire_img {
+    border-radius: 15px;
+}
+
+
+    /*Post actualité et partenaires*/
+
+.actualite_post, .partenaire_post {
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/*Debut style en commun de certains éléments*/
+
+.titre_actualite, .titre_foyer, .titre_partenaires, .titre_famille {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 3.9px;
+    margin: 0;
+}
+
+
+
+/* Media queries de toute la page */
+
+@media (max-width: 1615px) {
+    .back_image_benevolat {
+        display: none;
+    }
+
+    .back_image_projet {
+        display: none;
+    }
+}
+
+@media (max-width: 1450px) {
+    .description_benevolat {
+        width: 74%;
+    }
+
+    .description_projet {
+        width: 74%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .one_line_image_famille {
+        width: 280px;
+    }
+}
+
+@media (max-width: 1405px) {
+    .description_benevolat {
+        width: 60%;
+    }
+
+    .description_projet {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 1365px) {
+    .foyer_post:first-child img {
+        margin-left: 66px;
+    }
+
+    .foyer_img {
+        margin-left: 166px;
+    }
+
+}
+
+@media (max-width: 1350px) {
+    .description_famille {
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 1310px) {
+    .image_famille {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .description_decouvrir {
+        width: 80%;
+    }
+
+    .one_line_image_decouvrir {
+        width: 296px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .one_line_image_actualite_2 {
+        width: 280px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .description_benevolat {
+        margin-left: 50px;
+    }
+
+    .titre_benevolat {
+        margin-left: 50px;
+    }
+
+    .bouton_benevolat {
+        margin-left: 50px;
+    }
+
+    .description_projet {
+        margin-left: 50px;
+    }
+
+    .titre_projet {
+        margin-left: 50px;
+    }
+
+    .bouton_projet {
+        margin-left: 50px;
+    }
+
+}
+
+@media (max-width: 1210px) {
+    .one_line_image_benevolat {
+        width: 245px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .description_benevolat {
+        width: 91%;
+    }
+
+    .description_projet {
+        width: 82%;
+    }
+
+    .image_projet {
+        width: 452px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .one_line_image_decouvrir {
+        width: 256px;
+    }
+}
+
+@media (max-width: 1085px) {
+    .titre_decouvrir {
+        margin-top: 128px;
+    }
+
+}
+
+@media (max-width: 1080px) {
+    .famille_container {
+        display: block;
+    }
+
+    .description_famille {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1075px) {
+    .foyer_post:first-child img {
+        margin-left: 5px;
+    }
+    .foyer_img {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 1025px) {
+    .image_benevolat {
+        width: 285px;
+    }
+
+    .image_projet {
+        width: 278px;
+        margin-top: 270px;
+        margin-bottom: 55px;
+    }
+
+    .titre_projet {
+        margin-top: 110px;
+    }
+
+    .one_line_image_benevolat {
+        width: 200px;
+    }
+
+    .one_line_image_projet{
+        width: 220px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .one_line_image_decouvrir {
+        width: 228px;
+    }
+}
+
+@media (max-width: 965px) {
+    .image_projet {
+        width: 270px;
+    }
+
+}
+
+@media (max-width: 955px) {
+    .projet {
+        display: block;
+    }
+
+    .image_projet {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .description_foyer {
+        width: 83%;
+    }
+
+    .titre_decouvrir {
+        margin-top: 103px;
+    }
+
+}
+
+@media (max-width: 910px) {
+    .image_famille {
+        width: 360px;
+    }
+}
+
+@media (max-width: 895px) {
+    .one_line_image_benevolat {
+        width: 160px;
+    }
+}
+
+@media (max-width: 885px) {
+
+    .decouvrir {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 20px;
+    }
+
+    .image_decouvrir {
+        width: 90%;
+        max-width: 400px;
+        margin: 30px 0 20px 0;
+        border-radius: 15px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .decouvrir_container {
+        width: 90%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto 40px auto;
+    }
+
+    .titre_decouvrir {
+        font-size: 24px;
+        margin: 25px 0 10px;
+    }
+
+    .bouton_container_decouvrir {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .bouton_decouvrir {
+        margin-left: 0;
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+
+    .back_image_decouvrir {
+        position: static;
+        width: 80%;
+        max-width: 350px;
+        margin: 20px auto;
+        border-radius: 32px;
+        aspect-ratio: auto; /* Supprime l’aspect-ratio pour auto */
+        background-color: var(--extra-decouvrir-background-color);
+        z-index: 2;
+    }
+
+    .one_line_image_decouvrir {
+        width: 233px;
+        bottom: 0;
+        left: 0;
+        top: auto;
+        right: auto;
+    }
+}
+
+
+@media (max-width: 845px) {
+    .image_benevolat {
+        width: 278px;
+    }
+    .description_benevolat {
+        width: 93%;
+    }
+
+    .image_projet {
+        width: 278px;
+    }
+    .description_projet {
+        width: 93%;
+    }
+
+    .one_line_image_foyer {
+        width: 315px;
+    }
+}
+
+@media (max-width: 840px) {
+    .description_foyer {
+        width: 83%;
+    }
+
+    .foyer_post {
+        display: block;
+    }
+}
+
+@media (max-width: 757px) {
+    .one_line_image_decouvrir {
+        width: 200px;
+    }
+}
+
+
+@media (max-width: 757px) {
+    .one_line_image_partenaire {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 748px) {
+    .image_benevolat {
+        margin-top: 55px;
+        margin-left: 55px;
+        margin-bottom: 30px;
+    }
+    .description_benevolat {
+        width: 74%;
+    }
+    .benevolat {
+        display: block;
+    }
+
+    .image_projet {
+        margin-top: 55px;
+        margin-left: 55px;
+        margin-bottom: 30px;
+    }
+    .description_projet {
+        width: 74%;
+    }
+    .projet {
+        display: block;
+    }
+
+    .one_line_image_benevolat {
+        bottom: 0;
+        left: auto;
+        right: 0;
+        top: auto;
+        width: 230px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .description_famille {
+        width: 84%;
+        margin-left: 30px;
+    }
+
+    .bouton_famille {
+        margin-left: 30px;
+    }
+
+    .one_line_image_famille {
+        bottom: -60px;
+    }
+}
+
+@media (max-width: 687px) {
+    .one_line_image_decouvrir {
+        width: 150px;
+    }
+    .one_line_image_partenaire {
+        width: 245px;
+    }
+
+}
+
+@media (max-width: 680px) {
+    .one_line_image_actualite {
+        width: 153px;
+    }
+}
+
+@media (max-width: 560px) {
+    .one_line_image_foyer {
+        width: 235px;
+    }
+}
+
+@media (max-width: 525px) {
+    .one_line_image_actualite_2 {
+        width: 250px;
+    }
+}

@@ -1,0 +1,153 @@
+/*Style du formulaire*/
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px 20px;
+}
+
+.form_container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+    /*Titre du formulaire*/
+
+.form_title {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 26px;
+    font-weight: 600;
+}
+
+.form_title > p {
+    margin: 0;
+}
+
+    /*Nom des champs du formulaire*/
+
+.nom_form {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 8px 0;
+    display: block;
+    width: 108%;
+}
+
+.titre_soulignement_form {
+    display: inline-block;
+    border-bottom: 3px solid var(--pink-color);
+    padding-bottom: 5px;
+    margin-bottom: 26px;
+    font-weight: 400;
+}
+
+/*Style champs du formulaire*/
+
+.champs_form {
+    border-radius: 15px;
+    border: solid 2px var(--pink-color);
+    width: 100%;
+    padding: 16px 16px;
+    box-sizing: border-box;
+    margin: 0;
+}
+    /*Email du formulaire*/
+
+.email input, .note textarea {
+    width: 100%;
+}
+
+    /*Note du formulaire*/
+
+
+.note > .champs_form {
+    margin-bottom: 26px;
+}
+
+/*Fin style champs du formulaire*/
+
+/*Bouton champs du formulaire*/
+
+.form_boutton {
+    align-self: center;
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: var(--pink-color);
+    padding: 12px 30px;
+    border-radius: 15px;
+    margin-top: 26px;
+    transition: transform 0.2s ease;
+    border: none;
+}
+
+    /*Effet bouton champs du formulaire*/
+
+.form_boutton:hover {
+    display: inline-block;
+    margin-top: 26px;
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--pink-color);
+}
+
+    /*One line image champs du formulaire*/
+
+.one_line_image_formulaire {
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+    /*Placeholder et textarea du formulaire*/
+
+[placeholder], textarea {
+    font-size: 16px;
+    color: var(--pink-color);
+    font-weight: 200;
+    resize: vertical;
+}
+
+    /*Rangé double ou simple du formulaire*/
+
+.form_row.double {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form_row.double > div {
+    flex: 1;
+}
+
+/*Fin style du formulaire*/
+
+/*Media queries de toute la page*/
+
+@media (max-width: 1365px) {
+    .one_line_image_formulaire {
+        width: 320px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .one_line_image_formulaire {
+        width: 240px;
+    }
+}
+
+@media (max-width: 610px) {
+    .one_line_image_formulaire {
+        width: 155px;
+    }
+}

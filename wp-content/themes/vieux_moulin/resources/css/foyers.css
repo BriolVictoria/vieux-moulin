@@ -1,0 +1,410 @@
+/*Style intro foyers*/
+
+.intro_foyers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    position: relative;
+}
+
+    /*Titre intro foyers*/
+
+.intro_titre_foyers {
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 237px;
+    margin-top: 90px;
+}
+
+    /*Description intro foyers*/
+
+.intro_description_foyers {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 237px;
+    margin-top: 26px;
+}
+
+    /*Image intro foyers*/
+
+.intro_image_foyers {
+    width: 321px;
+    border-radius: 15px;
+    border: var(--decouvrir-background-color) 6.5px solid;
+    flex: 1;
+    margin-top: 143px;
+    margin-right: 327px;
+}
+
+    /*One line image intro foyers*/
+
+.one_line_image_foyers {
+    width: 366px;
+    position: absolute;
+    top: 0; /* ajuste selon où tu veux la placer */
+    left: 0; /* ou left, selon ton design */
+    z-index: 1; /* si besoin de la superposer à autre chose */
+}
+
+/*Fin style intro foyers*/
+
+/*Style différents foyers*/
+
+.foyer_cartes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 142px;
+    position: relative;
+}
+
+    /*Titre différents foyers*/
+
+.titre_soulignement_foyer {
+    display: inline-block;
+    border-bottom: 3px solid var(--decouvrir-background-color);
+    padding-bottom: 5px;
+    margin-top: 113px;
+    font-weight: 600;
+}
+
+.foyer_carte_titre {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+    /*Bouton différents foyers*/
+
+.bouton_foyer_cartes {
+    margin-left: 43.7px;
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: var(--extra-decouvrir-background-color);
+    padding: 9px 27.5px;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+
+.decouvrir_container {
+    display: inline-block;
+}
+
+.bouton_container_foyer {
+    display: flex;
+}
+
+    /*Image différents foyers*/
+
+.foyer_carte_image {
+    border-radius: 15px;
+    border: var(--decouvrir-background-color) 6.5px solid;
+    width: 321px;
+    margin-bottom: 26px;
+}
+
+    /*One line image différents foyers*/
+
+.one_line_image_nos_foyers {
+    width: 366px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+    /*Effet différents foyers*/
+
+.bouton_foyer_cartes:hover {
+    transform: translateX(2px);
+    box-shadow:  0 10px 30px var(--extra-decouvrir-background-color);
+}
+
+/*Fin style différents foyers*/
+
+/*Style encadrement*/
+
+.encadrement {
+    background-color: var(--decouvrir-background-color);
+    display: flex;
+    position: relative;
+    margin-bottom: 113px;
+    margin-top: 113px;
+}
+
+.encadrement_container {
+    padding-top: 30px;
+}
+
+    /*Backimage encadrement*/
+
+.back_image_encadrement {
+    position: absolute;
+    top: 65.8px;
+    left: -44.2px;
+    width: 413px;
+    border-radius: 32px;
+    aspect-ratio: 306 / 248; /*// pour faire un carrée sans utiliser heifht*/
+    background-color: var(--extra-decouvrir-background-color);
+    z-index: 2;
+}
+
+    /*Image encadrement*/
+
+.encadrement_image {
+    width: 495px;
+    border-radius: 15px;
+    margin-top: 119px;
+    margin-left: 74px;
+    margin-bottom: 118px;
+    position: relative;
+    z-index: 2;
+}
+
+    /*Titre encadrement*/
+
+.encadrement_titre {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 163px;
+    margin-left: 48px;
+}
+
+    /*Description encadrement*/
+
+.encadrement_description {
+    font-size: 16px;
+    font-weight: 400;
+    width: 52.1%;
+    margin-top: 26px;
+    margin-left: 48px;
+    margin-bottom: 26px;
+}
+
+footer {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+footer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Media queries pour toute la page*/
+
+@media (max-width: 1477px) {
+    .one_line_image_galery {
+        width: 270px;
+    }
+}
+
+
+@media (max-width: 1525px) {
+    .one_line_image_nos_foyers {
+        width: 290px;
+    }
+}
+
+@media (max-width: 1370px) {
+    .one_line_image_nos_foyers {
+        bottom: -117px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .bouton_journee_type {
+        margin-left: 190px;
+    }
+}
+
+@media (max-width: 1275px) {
+    .intro_image_foyers {
+        margin-right: 110px;
+    }
+}
+
+
+@media (max-width: 1180px) {
+    .encadrement_image {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .bouton_journee_type {
+        margin-left: 110px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .encadrement_titre {
+        margin-top: 115px;
+        width: 70%;
+    }
+}
+
+
+
+@media (max-width: 1070px) {
+    .intro_description_foyers {
+        margin-left: 65px;
+    }
+
+    .intro_titre_foyers {
+        margin-left: 65px;
+    }
+
+    .one_line_image_foyers{
+        width: 252px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .image_galerie_container {
+        grid-template-columns: repeat(2, auto);
+        gap: 30px;
+    }
+
+    .one_line_image_galerie {
+        width: 160px;
+    }
+
+    .titre_galerie {
+        margin-left: 50px;
+    }
+
+    .one_line_image_foyers {
+        top: -143px;
+        width: 311px;
+    }
+
+    .bouton_journee_type {
+        margin-left: 35px;
+    }
+}
+
+
+
+@media (max-width: 1015px) {
+    .bouton_journee_type {
+        margin-left: 115px;
+    }
+}
+
+
+@media (max-width: 960px) {
+    .encadrement_image {
+        width: 295px;
+        margin-left: 40px;
+    }
+
+    .encadrement_description {
+        width: 85%;
+    }
+
+    .encadrement_titre {
+        margin-top: 85px;
+    }
+    
+    .back_image_encadrement {
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    .foyer_cartes > article.foyer_carte:nth-of-type(2) .titre_soulignement_foyer {
+        margin-top: -25px;
+    }
+}
+
+
+@media (max-width: 825px) {
+    .intro_foyers {
+        display: block;
+    }
+
+    .intro_image_foyers {
+        margin-top: 35px;
+        margin-left: 65px;
+    }
+
+    .intro_description_foyers {
+        width: 80%;
+    }
+
+    .one_line_image_foyers {
+        top: -100px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .one_line_image_foyers {
+        top: -127px;
+        width: 254px;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .encadrement {
+        display: block;
+    }
+
+    .encadrement_description {
+        padding-bottom: 30px;
+    }
+
+    .encadrement_image {
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .encadrement_titre {
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+    .image_galerie_container {
+        margin-left: 40px;
+    }
+
+    .galerie_photo {
+        max-width: 93%;
+    }
+
+    .bouton_journee_type {
+        margin-left: 45px;
+    }
+}
+
+
+@media (max-width: 560px) {
+    .one_line_image_nos_foyers {
+        width: 240px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

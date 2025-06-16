@@ -1,0 +1,45 @@
+{
+  "wp-content/themes/vieux_moulin/resources/css/all-template-css.css": {
+    "file": "assets/css-CETOkCbR.css",
+    "src": "wp-content/themes/vieux_moulin/resources/css/all-template-css.css",
+    "isEntry": true
+  },
+  "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-Bold.ttf": {
+    "file": "assets/Montserrat-Bold-BSrD1I5P.ttf",
+    "src": "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-Bold.ttf"
+  },
+  "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-ExtraBold.ttf": {
+    "file": "assets/Montserrat-ExtraBold-DnlpJ974.ttf",
+    "src": "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-ExtraBold.ttf"
+  },
+  "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-ExtraLight.ttf": {
+    "file": "assets/Montserrat-ExtraLight-fStl-XCH.ttf",
+    "src": "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-ExtraLight.ttf"
+  },
+  "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-Light.ttf": {
+    "file": "assets/Montserrat-Light-Cbfxly1I.ttf",
+    "src": "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-Light.ttf"
+  },
+  "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-Medium.ttf": {
+    "file": "assets/Montserrat-Medium-CpRznguy.ttf",
+    "src": "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-Medium.ttf"
+  },
+  "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-Regular.ttf": {
+    "file": "assets/Montserrat-Regular-Cw3fqWkz.ttf",
+    "src": "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-Regular.ttf"
+  },
+  "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-SemiBold.ttf": {
+    "file": "assets/Montserrat-SemiBold-Cyv6qdWd.ttf",
+    "src": "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-SemiBold.ttf"
+  },
+  "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-Thin.ttf": {
+    "file": "assets/Montserrat-Thin-CLa9vnJU.ttf",
+    "src": "wp-content/themes/vieux_moulin/resources/fonts/Montserrat/static/Montserrat-Thin.ttf"
+  },
+  "wp-content/themes/vieux_moulin/resources/js/main.js": {
+    "file": "assets/js-DJhxNRAq.js",
+    "name": "js",
+    "src": "wp-content/themes/vieux_moulin/resources/js/main.js",
+    "isEntry": true
+  }
+}
