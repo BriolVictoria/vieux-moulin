@@ -6,4 +6,4 @@ wp-content/*
 wp-content/themes/*
 !wp-content/themes/vieux_moulin
 !wp-content/themes/vieux_moulin/*
-!wp-content/themes/vieux_moulin/*/*
+!wp-content/themes/vieux_moulin/**/*
